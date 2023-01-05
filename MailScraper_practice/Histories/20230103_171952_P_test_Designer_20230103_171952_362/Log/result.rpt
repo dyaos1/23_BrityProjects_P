@@ -1,0 +1,1395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="bd47c769-6137-4d67-b432-519d3bd7600d" name="P_test" result="Pass" start="2023-01-03T08:19:54.264" end="2023-01-03T08:20:44.457" jobId="Designer_20230103_171952_362">
+  <Step id="S87eed55c9cf245608e043a8baa0d498f" type="Flow" name="InternalData" displayName="... 71 steps" callDepth="1" depth="1" num="" result="None" start="2023-01-03T08:19:54.327" end="2023-01-03T08:20:31.784" />
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:31.786" end="2023-01-03T08:20:31.884" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A63'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'배송일정지금 주문하면 내일(1/4,수) 도착예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:31.899" end="2023-01-03T08:20:31.996" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A64'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'관심 등록장바구니바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:32.011" end="2023-01-03T08:20:32.100" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A65'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'상품선택'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:32.116" end="2023-01-03T08:20:32.215" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A66'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기미리보기스카이 버스분당강쌤 · 다산에듀  · 2023.01.0310%16,200원정가18,000원|900p0.0(0개의 리뷰)관심 등록'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:32.235" end="2023-01-03T08:20:32.332" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A67'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'배송일정지금 주문하면 내일(1/4,수) 도착예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:32.347" end="2023-01-03T08:20:32.468" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A68'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'관심 등록장바구니바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:32.483" end="2023-01-03T08:20:32.585" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A69'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'상품선택'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:32.603" end="2023-01-03T08:20:32.715" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A70'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기슬로매거진 달팽이(2023년 1월 46호)지안출판사 편집부 · 지안출판사  · 2023.01.025%14,250원정가15,000원|430p0.0(0개의 리뷰)관심 등록'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:32.718" end="2023-01-03T08:20:32.812" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A71'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'배송일정지금 주문하면 내일(1/4,수) 도착예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:32.828" end="2023-01-03T08:20:32.923" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A72'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'관심 등록장바구니바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:32.937" end="2023-01-03T08:20:33.051" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A73'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'상품선택'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:33.067" end="2023-01-03T08:20:33.164" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A74'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기미리보기내 영혼을 만지고 간 책들김병종 · 너와숲  · 2022.12.1310%16,200원정가18,000원|900p0.0(0개의 리뷰)관심 등록'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:33.179" end="2023-01-03T08:20:33.299" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A75'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'배송일정지금 주문하면 내일(1/4,수) 도착예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:33.315" end="2023-01-03T08:20:33.401" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A76'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'관심 등록장바구니바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:33.409" end="2023-01-03T08:20:33.518" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A77'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'상품선택'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:33.521" end="2023-01-03T08:20:33.616" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A78'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기미리보기신경 끄기 연습나이토 요시히토 · 유노책주  · 2023.01.0210%13,500원정가15,000원|750p0.0(0개의 리뷰)관심 등록'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:33.635" end="2023-01-03T08:20:33.748" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A79'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'배송일정지금 주문하면 내일(1/4,수) 도착예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:33.764" end="2023-01-03T08:20:33.865" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A80'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'관심 등록장바구니바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:33.883" end="2023-01-03T08:20:34.022" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A81'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:34.037" end="2023-01-03T08:20:34.132" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A82'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n장애인복지론\n우주형 외 · 어가 · 2022.12.20\n10%20,700원정가23,000원|1,150p\n\n본 책은 크게 세 부분 13개의 장으로 구성하였다. 제 ...445" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:34.148" end="2023-01-03T08:20:34.270" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A83'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'출시예정 상품입니다.'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:34.291" end="2023-01-03T08:20:34.423" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A84'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:34.443" end="2023-01-03T08:20:34.557" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A85'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:34.579" end="2023-01-03T08:20:34.666" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A86'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n2023 산업안전기사 필기 기출문제집: 핵심이론+11개년 기출문제\n강윤진 · 성안당 · 2023.01.11\n10%27,000원정가30,000원|1,500p\n\n강 ...1025" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:34.683" end="2023-01-03T08:20:34.780" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A87'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 4일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:34.796" end="2023-01-03T08:20:34.900" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A88'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:34.916" end="2023-01-03T08:20:35.041" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A89'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:35.059" end="2023-01-03T08:20:35.167" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A90'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n근대 초기 중국과 서유럽의 경제\n패트릭 K. 오브라이언 · 선인 · 2022.11.28\n10%13,500원정가15,000원|750p\n\n이 책은 글로벌 비교경제사 ...663" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:35.187" end="2023-01-03T08:20:35.283" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A91'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 3일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:35.299" end="2023-01-03T08:20:35.395" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A92'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:35.411" end="2023-01-03T08:20:35.523" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A93'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:35.539" end="2023-01-03T08:20:35.627" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A94'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n캐나다 로키 홀리데이 2023-2024 최신판\n김산환 · 꿈의지도 · 2023.01.25\n10%15,300원정가17,000원|850p\n\n0.0(0개의 리뷰)'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:35.643" end="2023-01-03T08:20:35.732" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A95'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 5일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:35.747" end="2023-01-03T08:20:35.834" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A96'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:35.839" end="2023-01-03T08:20:35.974" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A97'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:35.994" end="2023-01-03T08:20:36.083" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A98'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n코리아 인권: 북한 인권과 한반도 평화(리커버)\n서보혁 · 책세상 · 2022.12.23\n10%10,080원정가11,200원|560p\n\n북한 인권 문제를 제기하 ...596" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:36.099" end="2023-01-03T08:20:36.219" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A99'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 4일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:36.236" end="2023-01-03T08:20:36.337" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A100'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:36.355" end="2023-01-03T08:20:36.491" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A101'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:36.497" end="2023-01-03T08:20:36.603" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A102'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n크로아티아 홀리데이 2023-2024 최신판\n양인선 · 꿈의지도 · 2023.01.25\n10%16,200원정가18,000원|900p\n\n0.0(0개의 리뷰)'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:36.610" end="2023-01-03T08:20:36.717" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A103'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 5일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:36.739" end="2023-01-03T08:20:36.835" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A104'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:36.851" end="2023-01-03T08:20:37.001" displayTime="0.2s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A105'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:37.017" end="2023-01-03T08:20:37.136" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A106'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n라 파트리치오, 그리고 동쪽 바다 묵호\n권석순 · 청옥 · 2022.12.21\n10%7,200원정가8,000원|400p\n\n『라 파트리치오, 그리고 동쪽 바다 묵 ...283" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:37.150" end="2023-01-03T08:20:37.266" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A107'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 5일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:37.281" end="2023-01-03T08:20:37.391" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A108'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:37.406" end="2023-01-03T08:20:37.533" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A109'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:37.549" end="2023-01-03T08:20:37.660" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A110'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n정치와 법치(리커버)\n정태욱 · 책세상 · 2022.12.23\n10%8,010원정가8,900원|440p\n\n이 책은 법학자가 바라본 우리의 정치 현실을 바탕으로  ...519" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:37.676" end="2023-01-03T08:20:37.794" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A111'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 4일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:37.809" end="2023-01-03T08:20:37.923" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A112'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:37.940" end="2023-01-03T08:20:38.060" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A113'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:38.091" end="2023-01-03T08:20:38.202" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A114'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n어린이 기도수첩: 초등부(2023년 2월호)\n생명 편집부 · 생명 · 2023.01.03\n5%5,700원정가6,000원|180p\n\n0.0(0개의 리뷰)'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:38.218" end="2023-01-03T08:20:38.363" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A115'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'배송일정\n\n지금 주문하면\n1월 5일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:38.379" end="2023-01-03T08:20:38.483" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A116'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:38.500" end="2023-01-03T08:20:38.641" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A117'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:38.659" end="2023-01-03T08:20:38.751" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A118'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n2023 NCS 모듈의 코드: 응용 모듈형 2\n모듈의 코드 · 법률저널 · 2023.01.20\n10%14,400원정가16,000원|800p\n\n0.0(0개의 리뷰 ...2" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:38.754" end="2023-01-03T08:20:38.866" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A119'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 13일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:38.882" end="2023-01-03T08:20:38.995" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A120'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:39.011" end="2023-01-03T08:20:39.158" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A121'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:39.179" end="2023-01-03T08:20:39.300" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A122'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n전자민주주의가 오고 있다(리커버)\n박동진 · 책세상 · 2022.12.23\n10%8,010원정가8,900원|440p\n\n정보화는 과연 우리에게 장미빛 미래인가,  ...200" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:39.316" end="2023-01-03T08:20:39.435" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A123'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 4일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:39.451" end="2023-01-03T08:20:39.555" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A124'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:39.571" end="2023-01-03T08:20:39.692" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A125'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:39.696" end="2023-01-03T08:20:39.799" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A126'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n영어 공용어화, 과연 가능한가(리커버)\n한학성 · 책세상 · 2022.12.23\n10%8,010원정가8,900원|440p\n\n소설가 복거일의 〈국제어 시대의 민족 ...682" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:39.809" end="2023-01-03T08:20:39.915" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A127'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 4일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:39.931" end="2023-01-03T08:20:40.051" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A128'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:40.065" end="2023-01-03T08:20:40.207" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A129'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:40.227" end="2023-01-03T08:20:40.316" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A130'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\nRemnant 기도수첩(중국어)(2023년 2월호)\n생명 편집부 · 생명 · 2023.01.03\n5%6,650원정가7,000원|200p\n\n0.0(0개의 리뷰)'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:40.321" end="2023-01-03T08:20:40.419" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A131'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'배송일정\n\n지금 주문하면\n1월 5일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:40.432" end="2023-01-03T08:20:40.563" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A132'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:40.578" end="2023-01-03T08:20:40.706" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A133'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:40.723" end="2023-01-03T08:20:40.819" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A134'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\nRemnant 기도수첩(일어)(2023년 2월호)\n생명 편집부 · 생명 · 2023.01.03\n5%5,700원정가6,000원|180p\n\n0.0(0개의 리뷰)'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:40.835" end="2023-01-03T08:20:40.951" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A135'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'배송일정\n\n지금 주문하면\n1월 5일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:40.972" end="2023-01-03T08:20:41.082" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A136'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:41.099" end="2023-01-03T08:20:41.239" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A137'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:41.243" end="2023-01-03T08:20:41.347" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A138'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n2023 NCS 모듈의 코드 응용 모듈형 1\n모듈의 코드 · 법률저널 · 2023.01.20\n10%22,500원정가25,000원|1,250p\n\n0.0(0개의 리 ...3" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:41.363" end="2023-01-03T08:20:41.468" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A139'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 13일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:41.473" end="2023-01-03T08:20:41.572" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A140'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:41.588" end="2023-01-03T08:20:41.716" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A141'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:41.731" end="2023-01-03T08:20:41.844" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A142'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n감정평가 및 보상법규 기출문제 암기장\n강정훈 · 박문각 · 2023.01.30\n10%25,200원정가28,000원|1,400p\n\n감정평가 및 보상법규 기출문제  ...428" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:41.860" end="2023-01-03T08:20:41.983" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A143'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 11일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:42.011" end="2023-01-03T08:20:42.122" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A144'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:42.127" end="2023-01-03T08:20:42.244" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A145'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:42.259" end="2023-01-03T08:20:42.352" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A146'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n역사와 환경: 중국 명청 시대의 경우(리커버)\n정철웅 · 책세상 · 2022.12.23\n10%8,010원정가8,900원|440p\n\n우리 시대가 해결해야 할 공동 ...533" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:42.371" end="2023-01-03T08:20:42.486" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A147'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 4일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:42.492" end="2023-01-03T08:20:42.615" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A148'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:42.635" end="2023-01-03T08:20:42.772" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A149'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:42.795" end="2023-01-03T08:20:42.899" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A150'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n고등 수학의 발견 수학(상) 해설서\n사교육걱정없는세상 수학교육혁신센터 외 16인 · 비아에듀 · 2023.01.09\n10%17,100원정가19,000원|950p\n ...448" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:42.916" end="2023-01-03T08:20:43.043" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A151'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 5일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:43.058" end="2023-01-03T08:20:43.156" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A152'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:43.171" end="2023-01-03T08:20:43.324" displayTime="0.2s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A153'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:43.328" end="2023-01-03T08:20:43.432" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A154'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\nRemnant 기도수첩(영어)(2023년 2월호)\n생명 편집부 · 생명 · 2023.01.03\n5%5,700원정가6,000원|180p\n\n0.0(0개의 리뷰)'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:43.451" end="2023-01-03T08:20:43.579" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A155'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'배송일정\n\n지금 주문하면\n1월 5일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:43.594" end="2023-01-03T08:20:43.715" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A156'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:43.731" end="2023-01-03T08:20:43.875" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A157'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:43.890" end="2023-01-03T08:20:43.986" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A158'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'새창보기\n신희원 보건교사 길라잡이 1: 지역사회간호학\n신희원 · 박문각 · 2023.01.20\n10%27,900원정가31,000원|1,550p\n\n《신희원 보건교사 길라잡 ...313" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:44.003" end="2023-01-03T08:20:44.132" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A159'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'예약판매\n\n1월 9일\n출고예정'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-03T08:20:44.148" end="2023-01-03T08:20:44.250" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A160'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'장바구니\n바로구매'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S73131791029043f49d34bae7cc159157" taskName="P_test" type="Flow" name="EndLoop" displayName="End-For" callDepth="1" depth="2" num="11" result="Pass" start="2023-01-03T08:20:44.268" end="2023-01-03T08:20:44.268" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S15779d66297844fe8f87c9f648704ae3" taskName="P_test" type="Excel" name="SaveExcel" displayName="SaveExcel" callDepth="1" depth="1" num="12" result="Pass" start="2023-01-03T08:20:44.283" end="2023-01-03T08:20:44.456" displayTime="0.2s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="File_SaveAs" displayKey="SaveAs" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

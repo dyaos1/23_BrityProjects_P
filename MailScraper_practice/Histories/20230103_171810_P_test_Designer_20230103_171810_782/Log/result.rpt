@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="bd47c769-6137-4d67-b432-519d3bd7600d" name="P_test" result="Fail" detail="워크시트 이름을 확인해주세요.&#xA;&#xA;Recent Warning Messages =&gt;&#xA;[CATCH_STEP_EXCEPTION] Process: P_test&#xA;Step: WriteString (9/11)&#xA;&#xA;Error: 워크시트 이름을 확인해주세요." start="2023-01-03T08:18:12.843" end="2023-01-03T08:18:48.251" jobId="Designer_20230103_171810_782">
+  <Step id="Sde885ced212f42bda40f7581f35406a5" taskName="P_test" type="Excel" name="OpenExcel" displayName="OpenExcel" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-03T08:18:12.906" end="2023-01-03T08:18:17.639" displayTime="4.7s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : Workbook" runtimeType="Any" key="Output_OutputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\MailScraper_practice\\Excel_test.xlsx'" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_Invisible" displayKey="Invisible" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ReadOnly" displayKey="ReadOnly" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="File_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ExecuteShell" displayKey="Execute Shell" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="File_Timeout" displayKey="Timeout" visible="false" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_UsePassword" displayKey="UsePassword" visible="true" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_OpenPassword" displayKey="OpenPassword" visible="false" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_WritePassword" displayKey="WritePassword" visible="false" required="false" />
+      <Property value="Comma(,)" runtimeType="String" key="File_TextDelimiter" displayKey="Text Delimiter" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S32df252a64244426b513687d9cb3f81f" taskName="P_test" type="Chrome" name="ChromeOpen" displayName="ChromeOpen" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-03T08:18:17.655" end="2023-01-03T08:18:30.865" displayTime="13.2s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="Workbook" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : &lt;object:ChromeBrowserObject&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="Chrome" runtimeType="String" key="CHROME_TypeOfBrowser" displayKey="Browser Type" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_BrowserType" displayKey="Headless Mode" visible="true" required="false" />
+      <Property value="'https://www.kyobobook.co.kr/'" runtimeType="String" key="CHROME_URL" displayKey="URL" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="CHROME_ChromePath" displayKey="Browser Path" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_ExtensionList" displayKey="Included Extensions" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_DownloadPath" displayKey="Download Path" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sa57c591432a84256aec90e5dfdf09de5" taskName="P_test" type="Chrome" name="ChromeClick" displayName="ChromeClick" callDepth="1" depth="1" num="3" result="Pass" start="2023-01-03T08:18:30.868" end="2023-01-03T08:18:32.501" displayTime="1.6s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://www.kyobobook.co.kr/'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://www.kyobobook.co.kr/" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[3]/header/div[3]/nav/ul[1]/li[2]/a'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//header[@id=\'welcome_header_wrap\']/div[3]/nav/ul[1]/li[2]/a'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAOy9e3MbR5Yn+vf2p6hh792W45oqvB+25B7b7en22G73bWlmY3Zjg1EAiiQsEOACoGT1jTtBSaCGFumW1CZFUAJp ...159368" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;A&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;href&quot;,&quot;Value&quot;:&quot;http ...1350" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://www.kyobobook.co.kr/" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="A" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="14428" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'교보문고 | 대한민국 최고의 도서쇼핑몰 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|19060928|Chrome'" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Document" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="8,96,1859,992" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="'교보문고 | 대한민국 최고의 도서쇼핑몰'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'https://www.kyobobook.co.kr/'" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'https://www.kyobobook.co.kr/'" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="Chrome_RenderWidgetHostHWND" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="19060928" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.1312044.4.-470373" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="557,148" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Scroll;Value;Text;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="450,381" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="396,389" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'388, 293'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sfcc6ae9a78f0407d8599a39c5a6adbd9" taskName="P_test" type="Chrome" name="ChromeClick" displayName="ChromeClick" callDepth="1" depth="1" num="4" result="Pass" start="2023-01-03T08:18:32.518" end="2023-01-03T08:18:38.285" displayTime="5.8s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://product.kyobobook.co.kr/new/'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/#?page=1&amp;sort=new&amp;year=2023&amp;month=01&amp;week=1&amp;per=20&amp;saleCmdtDvsnC ...40" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[3]/main/section[2]/div/section/div[2]/div[1]/ul/li[3]/a/span'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//a[@id=\'ui-id-61\']/span'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAOy9e3MbR5Yn+n9/ilr23m05rqnCkwBsyT222zPtsbvdt6WZjdmNDUYBKJJogQAXACWrb9wJSgI1sEi3pDYpghJI ...98200" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="42.1312044.4.-504708" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="19060928" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome_RenderWidgetHostHWND" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'https://product.kyobobook.co.kr/new/#?page=1&amp;sort=new&amp;year=2023&amp;month=01&amp;week=1&amp;per=20&amp;saleCmdtDvsn ...42" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="'https://product.kyobobook.co.kr/new/#?page=1&amp;sort=new&amp;year=2023&amp;month=01&amp;week=1&amp;per=20&amp;saleCmdtDvsn ...42" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'교보문고 국내도서 신간 - 교보문고'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="8,96,1859,992" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="Document" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|19060928|Chrome'" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="'교보문고 국내도서 신간 - 교보문고 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="14428" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="SPAN" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;SPAN&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;class&quot;,&quot;Value&quot;:&quot; ...2159" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="557,148" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Scroll;Value;Text;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="1014,607" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="960,615" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'952, 519'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S60952c793d0c4844904d8d30cf1148b4" taskName="P_test" type="Chrome" name="ChromeClick" displayName="ChromeClick" callDepth="1" depth="1" num="5" result="Pass" start="2023-01-03T08:18:38.288" end="2023-01-03T08:18:38.889" displayTime="0.6s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://product.kyobobook.co.kr/new/'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/#?page=1&amp;sort=new&amp;year=&amp;month=&amp;week=&amp;per=20&amp;saleCmdtDvsnCode=KOR ...17" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[3]/main/section[2]/div/section/div[2]/div[4]/div/div[1]/button/span[1]'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//div[@id=\'tabBest03\']/div/div[1]/button/span[1]'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAOy9e3MbR5Yn+n9/ilr23m05rqnC+2FL7rHdnm6P3e2+Lc1szG5sMApAkUQLBLgAKFl9405QEqiBRXoktUkRlEAa ...106516" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;SPAN&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;1&quot;,&quot;IsUse&quot;:true},{&quot;Name&quot;:&quot;class&quot;,&quot;Value&quot;:&quot; ...2091" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="SPAN" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="14428" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'교보문고 국내도서 신간 - 교보문고 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|19060928|Chrome/Group||mainDiv| ...22" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Group" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="7,356,1838,8081" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.1312044.4.-504719" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="367,808" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Invoke;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="1711,716" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="1657,724" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'1650, 368'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S08e0aaf97bd94ab59f9f40ab9cfc0960" taskName="P_test" type="Chrome" name="ChromeClick" displayName="ChromeClick" callDepth="1" depth="1" num="6" result="Pass" start="2023-01-03T08:18:38.899" end="2023-01-03T08:18:39.229" displayTime="0.3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://product.kyobobook.co.kr/new/'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/#?page=1&amp;sort=new&amp;year=&amp;month=&amp;week=&amp;per=20&amp;saleCmdtDvsnCode=KOR ...17" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[3]/main/section[2]/div/section/div[2]/div[4]/div/div[1]/div/ul/li[21]/a/span'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//div[@id=\'tabBest03\']/div/div[1]/div/ul/li[21]/a/span'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAOy9e3MbR5Yn+n9/ilr23m05rqnC+2FL7rHdnm6P3e2+Lc1szG5sMApAkUQLBLgAKFl9405QEqiBRXoktUkRlEAa ...106396" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;SPAN&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;class&quot;,&quot;Value&quot;:&quot; ...2559" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="SPAN" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="14428" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'교보문고 국내도서 신간 - 교보문고 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|19060928|Chrome'" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Document" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="8,96,1859,992" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="'교보문고 국내도서 신간 - 교보문고'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'https://product.kyobobook.co.kr/new/#?page=1&amp;sort=new&amp;year=&amp;month=&amp;week=&amp;per=20&amp;saleCmdtDvsnCode=KO ...19" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'https://product.kyobobook.co.kr/new/#?page=1&amp;sort=new&amp;year=&amp;month=&amp;week=&amp;per=20&amp;saleCmdtDvsnCode=KO ...19" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="Chrome_RenderWidgetHostHWND" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="19060928" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.1312044.4.-504708" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="557,148" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Scroll;Value;Text;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA1DSURBVHhe7V37ixtHEt5/c34ZDMIgDIPBHIiACESYFYcXn0WwCRaLZfD6QjZgc4tyQWZPwWwwG4wMRhAERmAEQbAnMIJlc36krmoe0syo1Op561EffHjV3TPTU19/Xd0z2vXe1dUVzDjuQt00wLx3BhN/+agNVcOA6sloXubj+LQOplGGVt8rG0G7aoDxsIc/96AZOrb3EOuwjGPztXuO183g5wyoAtc+MS8G0L5Txvsy5/G4xFjdNu0y624XRlS2Kt4vak68zAacfQjWjU6qWFeF9ihYPn3ZwPZN6F0Gy21eokaoO53z1rNhsM7VYcZq2+mjq7H5NX72nZOub86u746D2THpM2vMDTLBIN3AmzHr0B0HO6ESbPK2BRUMbvmwB2fhgb/EIFocD+D81TkMwn1JkSpw7ZOy/9gxR+3ZIDgBXU6g92Mdaj/0nc8qg1z2oYU6le43oUFxf+we45I3yBTO7uFgtvXwlzt0DFeDg7slx3QTX71iopq8PYLKNTzvdQsq39SgYpXQHHh/P3n93haD/HEGDyycxcwqHP8+WezIEsHGLx+ARSLdwZkvMDOpM4jN8My0hFuVQSZDGIRmdpYfRtDDyaH3fhqqQyM9RJO5k5gzW5fh4HQeW9YgH85sMzVehs+HfI/aYl0JtZq6K4jSfmeu56pMfjmF0W9NsLCNdXgO46m/fgsMMjg5sAe5ceMAOkO+E4sGGeOMZNmzReVxDyYLaVvDIKvoXjMrg/z5559uCHhQPXdcarwYQvdpHSo3yxhHb0IwoWRZUPuuDb2wkXAp1r1PMS9jTLxJDA1z6Opw2IUhzvysQXCQm8bicowmxgatGm7g0svNGhNsW8a+lO90YEi6rjII0dWq8iNmxosJcgh9NPj5oJ+pQVZpmAb2ShTcR+ehDBAik0EmbzvQ4bKNTQ2DuOf0MsUybqVB6N5xUjJvH0FvOIGpL/bT0QA6nhHezGd8O1uYFWj+Np6VeRz+8gCXNy3o43k4g/Qf4dJpvxtc1k3QHLg8Mq7VoP3eV450VgauETmD/MFpZ0L5pgUW8as6PDhswtGvvc03yDQ8q3BkDKKmvkGyMsAqfvz40Q0BD6rnjkuDziC+Bc+XZezLc2jQoLPjNy+fBpYvPBcNgnuW6wbUTxcns8mwD8OLYNmMU9ecOhlkKbNdYq3SMA0En2It45YZhGaeT58+uSHgQfWZZZEYGUSXCwbpt6CEG/BO3Icda2oQHQ3TQEYG8bMPR5h2D16ElgbuOYNpmmFGwf3y5YsbAh5Un5lBiBdohEdL9iD3juE8vAfRZNggwx+sZDFMZJAxdO7ikutuB8ZsfXzqaJgG9AyyZaTg6iBTg+RCnMH3Laj/HGdic/muC03cT3TfMXUFUlfDpNhJg+imZmrHHS8snnksrwg7aZC//vrLvX01qB13vLB46mqYFDtlEErLUZ98UPvNX2ptD+NomAQ7l0GizjySRdaPeWUPws4YhGaeuOtWOk6ySPFMomFc7JRBkkAMUjyTahgHO2OQpM/M6XjuvML8mMd7jzB2wiCfP392bzcZ6Dzc+YXZMy0No2LrDZJ2YMUk+bMocxC22iBZBVZMkh+LNAdh6wxCGzli1utVOr93La4fwvjMS0MdbI1BvIGa92NAup7/+sL4LEpDFbbGIPR2Nc8XSH7Qden6XL+E+ixSw2XYSIN4KZhIs826BJX6Qf3x94/rv3B9NQxjYwziBZNmGQroOqxPVaD+UT+pv17fufvaJW6ahoQ991+BQMBADCIQKCAGEQgUEIMIBAqIQQQCBcQgAoECYhCBQAExiECggBhEIFBADCIQKKD1VZNN+4qAfM0jyE3Tj1C0ht41I38XyzuQSDcgXxTcLPrjs076EdZRw1S+rEguLyrQdF26PtcvoR6L1I+wzhqmYhDP6eT+PEHX819fGI9F6UdYdw1T/bo73SQx6zUund+7FtcPYTzmpR9hUzRM1SB+yh9M2Gxm+ccSNknDzAxCTDvIYo58mYVJNk3DTA1CTCvIYo5imKZJNlHDzA1CTLqmpeO58wrzYRp7kk3VMBeD0EYsCdZ9I7ftTKofYVM1zM0gcR8h0nFJg/up+0/hCnJx85hEP0IaGhbFXAziMerLKGrPnScquQEhDJKLW5hxXiampWFRzM0gNIPQ29IooPZpzDzcgBAGycXNzzj6EdLSsCjmmkGIurNQmjNPlIGwS4wTlyhZZNOzB3GveTpkK4j9J+n/J/C6a1lqxx0fh3EGQt6cvu/B+asejD7w9VfvjsEyqtAeMXUxGScuUfYiaWqYD8cweHUO54PxrGzPeNjzNRhBu2qAV9Z7iD9X2zCa1ScnpVsdpJmWow2EPhzdxInhST9QPjqpgmFgPDRYPYn+H/c7519ugOEPVupaRIuLQ139CIUsrV43bQ2ar5m6lexBkzT0eWIvIG61Cc0cDLLquTrVZ2GQq3/9Y36vAfoH5mKQAuQEUIiiMpbfSGqDOBPXrWdutnev5xzv9ldJ/rxxDaLzXiRtDXXu044/p8WoDdVQ2zCd9oxBZiexmU8GWZWmqT4Lg3ADwZ6ZjSb0ZmVZGGT10kjZzhbYguN37ueAQXB5djGBicdfGnZd5cfBvAw5vfSdz6UqLsuoox8hbQ3DtMdmQDeXCi0cumOcHdeMQQzDhPI3D6Dz+wQLsjcIcdXTEKrnjotLZxA8hf+dHvkGzQgGbzrQ/Bve434XJrP262eQ8YsaGNdb0PfKQgYJUFUXYhyDEHWeZqWtYZBDOL6JGuGkcfR7qM69f4+LcYhokKvpCLrflsEwD6CLg8Y+2HeBLAxCM4sKac889iA4PYTxkwOwaH9xswaNwyY0virhPZageXK8mILXxiAT6O4bUHrs2xMVbJBV+hGyzB7j0zqYRhnKNwwwv8bx6c+OCi0cjuB5BfWtPNc0CP3grtGar/PJIIUYJDQQJr81wTINKOO9zrMHkc8gzgDGcg36B+fy45rQXqhjDHLRhTqauPXWV7bDBhm/bEAZ7698iLq9x3GLGpq3n8Pgwm2zyiAfzqBhx7qOCSFcr5tBMjYIUQWufRIGBsLFADr3KzgDmVB5jEFeWJuvWGJFZNIMMsUBYZi41mZmyaIMQlwF7phEvOjB8b5l62bdP4OxF49hBw4sE2NUhtab6UqD2MtV0peNEWOQIvYgRBW49kloD4L/PIb/fn8HA4wzzlfe/XLt18kgUzi7h/0N92UXDXI5hOf3WtB9x+s26g8c07zrQhOXz13vgYafH1BbWpZ924Wzh7i8NsPx5jLIrJI4hdGb+YuSLF4UelSBa5+EziB4Clf/fgSDMc4yTBs/7adCsxd2zL5Mh+7GP5FBaDmAS4jGy1Cfd9EgHv/AjIH7yCP/klOrfoITPq2U3BhPXLNYTTifLbUYg/ROHkANT1hCITxxzbIFlb+3oI17kvkF0mOxexA3CKu4LINwKZwrc8kPfHqKNoT+qw503zgzItsOz2saDTgLv10v2CBF7kHm+2Wmbln9pbuNwNVSIC64h6ldQ62vVaD16wimnEFMC5cbA6z0rXGnkyH0ntbs9V71p/RNsg4GWT6AgsvMBcYyiGs6j9fKztO0bxpw9MrpB2eQ/iNcBgQeQbsUg8xjuYR+LSa4jzNNCw5OmZjgnrR9rwbHffrMGKTxytc4QPdxWAZ7kGLegxRjEF0uGqQPresG1E+ZNXfBBin0PUicDIKcToOfeUbJIM8OoJxBBqGZpdg36RtikH4LSkYNOuNgO5sFGkRHP0Jmb9JjGkSPjEHy3oNQ0Ir6LpYzENwgrOIyg7w9spdHgU0gVxaRYYNk8eXEMINx4duEqaMfIf3vYrmMscTSJ2OQYIPsSUHTQXYG4dsUzeDX3TGL7VtQ/zn9CcrPOHHR1Y+QiUFyZu4G0UnPBGrHHR+HcQbCLjBOXHT1I6SpYVHM3SDyG4Xrwzhx2bnfKOQKsyClW52nH35Q+zTSdJyBsAuMEpc4+hHS0rAo5ppBosw+hLRmoCgDYZcYNS5R9SNsehbJxSA0g0RZu/pBxyWdgaIOhF2hblyS6EdIQ8OimJtBkkAMkg1145JUP4IYREGd5+Yq0PHceXWpOxB2jbpxSaofIamGRTFzg6zDX3fXHQi7Rp24yF93ZwrTYprBJcQNsM5A2EWuikva+hE2zSSZGSSL4BLiBNg/EIQ8wzHLSj/CJpkkVYPQRoyYxppVBTq/dy2uH2FyA0IYJMUpL/0IUTUsiqkYxLvJJI8C44Cu57/+MnIDQjjn51++d+KUs34EXQ2LYioGobelcV4ipQG6Ll2f65dQj0XqR1hnDSMbxEuLRHJ/kYH1g/pB/fH3j+v/rtMfn3XSj7COGmoZxOssuZxuII81ahJQ/6if1N91CXSR3DT9CEVr6F1zz+2PQCBgIAYRCBQQgwgECohBBAIFxCACgQJiEIFAATGIQKCAGEQgUEAMIhAoIAYRCBQQgwgECohBBAIFxCACgQJiEIFAATGIQKCAGEQgUEAMIhAoIAYRCBQQgwgECohBBAIFxCACwVIA/B9kay9JAcG5fAAAAABJRU5ErkJggg==" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="1525,759" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="1471,767" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'1463, 671'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S55a4dd2d1d2e44b99666d4ebe3a6a164" taskName="P_test" type="Chrome" name="ChromeGetListData" displayName="ChromeGetListData" callDepth="1" depth="1" num="7" result="Pass" start="2023-01-03T08:18:39.242" end="2023-01-03T08:18:40.143" displayTime="0.9s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:ChromeBrowserObject&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://product.kyobobook.co.kr/new/'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/#?page=1&amp;sort=new&amp;year=&amp;month=&amp;week=&amp;per=20&amp;saleCmdtDvsnCode=KOR ...37" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'html/body/div[3]/main/section[2]/div/section/div[2]/div[4]/div/div[2]/div[3]/ol/li/div'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//div[3]/ol/li/div'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAOy9e3MbR5Yn+n9/ihr23m05rqnC+2FL7rHdnmmP3e2+Le1szG5sMApAkUQLBLgAKFl9425QEqiBRboltUkRlEAa ...105872" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="Text" runtimeType="String" key="CHROME_DataType" displayKey="Data Type" visible="true" required="false" />
+      <Property value="새창보기비됴클래스의 유튜브 영상 편집 시작하기 with 프리미어 프로하지원 · 한빛미디어  · 2023.01.1810%20,700원정가23,000원|1,150p누구나 유튜브로 성공 ...467" runtimeType="String" key="CHROME_ExpectedValue" displayKey="Expected Value" visible="true" required="false" />
+      <Property value="2" runtimeType="Integer" key="CHROME_Scope" displayKey="Scope" visible="false" required="false" />
+      <Property value="RESULT : &lt;object:System.Object[]&gt;" runtimeType="Array1D" key="CHROME_Data" displayKey="Data" visible="true" required="true" />
+      <Property value="4" runtimeType="String" key="CHROME_ColumnCnt" displayKey="ColumnCnt" visible="false" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;DIV&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;2&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;class&quot;,&quot;Value&quot;:&quot; ...2415" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="'/html/body/div[3]/main/section[2]/div/section/div[2]/div[4]/div/div[2]/div[3]/ol/li[1]/div[2]'" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="3632" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'교보문고 국내도서 신간 - 교보문고 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|76202816|Chrome/Group||mainDiv| ...22" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Group" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="7,-701,1838,8279" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.526458.4.-55256" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="367,827" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Invoke;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVHhe7dMBAQAwDMOg+zfdK1gUgAfegJMgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAIBEEgCAJBEAiCQBAEgiAQBIEgCARBIAgCQRAIgkAQBIIgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAIBEEgCAJBEAiCQBAEgiAQBIEgCARBIAgCQRAIgkAQBIIgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAIBEEgCAJBEAiCQBAEgiAQBIEgCARBIAgCQRAIgkAQBIIgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAIBEEgCAJBEAiCQBAEgiAQBIEgCARBIAgCQRAIgkAQBIIgEASBIAictg8f/Vm6bO3ZlwAAAABJRU5ErkJggg==" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="1011,422" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="957,430" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'950, 1131'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sc3478332e4144534bab059fb73d2b3d3" taskName="P_test" type="Flow" name="Loop" displayName="For" callDepth="1" depth="1" num="8" result="Pass" start="2023-01-03T08:18:40.159" end="2023-01-03T08:18:40.159" displayTime="0s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Conditions_InitializeIndex" displayKey="Initialize" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Conditions_LoopCondition" displayKey="Condition" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_UpdateIndex" displayKey="Update" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S956737c69d6942d183afc6a0b304be99" taskName="P_test" type="Excel" name="WriteString" displayName="WriteString" callDepth="1" depth="2" num="9" result="Fail" detail="[CATCH_STEP_EXCEPTION] Process: P_test&#xA;Step: WriteString (9/11)&#xA;&#xA;Error: 워크시트 이름을 확인해주세요.&#xA;워크시트 이름을 확인해주세요." start="2023-01-03T08:18:40.175" end="2023-01-03T08:18:48.251" displayTime="8.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:System.Object[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A1'" runtimeType="String" key="Sheet_Range" displayKey="Range" visible="true" required="true" />
+      <Property value="'상품선택'" runtimeType="String" key="Sheet_InputString" displayKey="InputString" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

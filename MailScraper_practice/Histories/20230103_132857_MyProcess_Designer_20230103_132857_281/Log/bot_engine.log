@@ -1,0 +1,1340 @@
+﻿2023-01-03 13:28:58,612 [T1] INFO  EngineStarter
+BOT Engine Start - v2.5.000.00921
+BOT ID: D_20230103_132857_681
+BOT PID: 400
+BOT PPID: 13620
+BOT Working Directory: C:\Users\k\AppData\Roaming\Brity RPA Designer
+
+2023-01-03 13:28:58,908 [T1] INFO  Config
+Initialize Config
+
+2023-01-03 13:28:58,940 [T1] DEBUG Config
+Config Loaded
+
+2023-01-03 13:28:58,955 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2023-01-03 13:28:58,955 [T1] INFO  Config
+Initialize Resource Config
+
+2023-01-03 13:28:58,987 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-03 13:28:59,080 [T1] INFO  Config
+All Config Initialized.
+
+2023-01-03 13:28:59,096 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2023-01-03 13:28:59,237 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2023-01-03 13:28:59,283 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2023-01-03 13:28:59,283 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2023-01-03 13:28:59,299 [T4] DEBUG JobService
+Connect to agent service
+
+2023-01-03 13:28:59,315 [T4] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2023-01-03 13:28:59,315 [T4] DEBUG JobService
+Open connection
+
+2023-01-03 13:28:59,330 [T4] DEBUG JobService
+Register engine to agent
+
+2023-01-03 13:28:59,330 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2023-01-03 13:28:59,346 [T4] DEBUG JobService
+Engine is connected to agent service.
+
+2023-01-03 13:28:59,346 [T4] DEBUG JobService
+Owner Process PID: 13620
+
+2023-01-03 13:28:59,346 [T4] INFO  JobService
+Start monitoring owner process is terminated.
+
+2023-01-03 13:28:59,346 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2023-01-03 13:28:59,728 [T13] INFO  JobService
+Start Job: MyProcess (Foreground)
+{
+  "UsePIP": false,
+  "UserID": null,
+  "UserPWD": null,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "JobWorkDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\MailScraper_practice\\Histories\\20230103_132857_MyProcess_Designer_20230103_132857_281",
+  "JobLogDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\MailScraper_practice\\Histories\\20230103_132857_MyProcess_Designer_20230103_132857_281\\Log",
+  "JobScreenshotDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\MailScraper_practice\\Histories\\20230103_132857_MyProcess_Designer_20230103_132857_281\\Log\\Screenshot",
+  "TotalProcessStepCount": 0,
+  "CurrentStepNo": 0,
+  "CurrentStepName": null,
+  "StartTime": "2023-01-03 13:28:57",
+  "EndTime": null,
+  "EngineID": "D_20230103_132857_681",
+  "EnginePID": 0,
+  "JobId": "Designer_20230103_132857_281",
+  "JobType": 1,
+  "UserAuthentication": null,
+  "ProcessPath": "C:\\Users\\k\\Documents\\Brity RPA Projects\\MailScraper_practice\\MyProcess.proc",
+  "ProcessId": "6f1fe7df-4afd-4b0d-b0bb-01db101c118d",
+  "ProcessVer": "",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 13620,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "State": 0
+}
+
+2023-01-03 13:28:59,931 [T5] DEBUG JobService
+Waiting library loading...
+
+2023-01-03 13:29:01,462 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,1920,1080
+
+2023-01-03 13:29:02,227 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2023-01-03 13:29:02,399 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2023-01-03 13:29:02,415 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-03 13:29:02,415 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2023-01-03 13:29:02,431 [T5] DEBUG Config
+Reload User Settings
+
+2023-01-03 13:29:02,431 [T5] INFO  JobService
+Config Loading Completed.
+
+2023-01-03 13:29:02,431 [T5] DEBUG JobService
+Config Loading Time: 2499 ms.
+
+2023-01-03 13:29:02,446 [T5] INFO  JobManager
+Create JobManager instance for job MyProcess(Designer_20230103_132857_281)
+
+2023-01-03 13:29:02,463 [T8] INFO  JobRequest
+Start Callback Sender
+
+2023-01-03 13:29:02,463 [T5] INFO  JobRequest
+Job ID : Designer_20230103_132857_281
+Project Path  : C:\Users\k\Documents\Brity RPA Projects\MailScraper_practice\MailScraper_practice.proj
+Process Name  : MyProcess
+Engine Mode   : Designer
+Requester Type: DesignerRequester PID : 13620
+
+2023-01-03 13:29:02,463 [T8] DEBUG JobRequest
+Step Callback Interval: 500
+
+2023-01-03 13:29:02,514 [T5] DEBUG ProjectManager
+Set Project Information
+
+2023-01-03 13:29:02,545 [T5] INFO  JobRunner
+Initialize Script Engine
+
+2023-01-03 13:29:02,577 [T12] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2023-01-03 13:29:02,592 [T8] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2023-01-03 13:29:02,800 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtNumber, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-03 13:29:02,800 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtInteger, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-03 13:29:02,800 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtDouble, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-03 13:29:02,800 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtPoint, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-03 13:29:02,800 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtRect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtDate, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtDateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtArray1D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtArray2D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtXml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtJson, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtString, Type:RPAGO.Custom.ExtendLibrary.DataConverter_String, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtString_DateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Point, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Rect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Xml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-03 13:29:02,815 [T12] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Json, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-03 13:29:03,221 [T12] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2023-01-03 13:29:03,237 [T8] DEBUG JobRequest
+Callback - State: Ready
+
+
+2023-01-03 13:29:03,237 [T5] INFO  JobRunnerHook
+HotKey Hook Started
+
+2023-01-03 13:29:03,237 [T5] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2023-01-03 13:29:03,237 [T12] INFO  JobRunner
+RunProcess start
+
+2023-01-03 13:29:03,237 [T12] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2023-01-03 13:29:03,237 [T12] INFO  JobRequest
+Last job life cycle state: Running
+
+2023-01-03 13:29:03,253 [T8] DEBUG JobRequest
+Callback - State: Starting
+
+
+2023-01-03 13:29:03,268 [T8] DEBUG JobRequest
+Callback - State: Running
+
+
+2023-01-03 13:29:03,550 [T12] INFO  ScreenCapture
+Initialize DirectX Screen Capture.
+
+2023-01-03 13:29:03,565 [T1] INFO  DirectXScreenCapturePlayer
+DirextX Target Screen Bounds: {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-03 13:29:03,604 [T1] INFO  DirectXScreenCapturePlayer
+Screen 0 Bounds : {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-03 13:29:03,619 [T9] DEBUG DirectXScreenCapturePlayer
+try capture screen to check DirectX screen.
+
+2023-01-03 13:29:03,651 [T12] INFO  ScreenCapture
+DirectX Screen Capture Initialized.
+
+2023-01-03 13:29:03,666 [T12] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2023-01-03 13:29:03,713 [T12] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - MyProcess
+##############################################################
+6f1fe7df-4afd-4b0d-b0bb-01db101c118d
+MyProcess
+
+
+2023-01-03 13:29:03,776 [T12] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 1: S503df39dbad54858900ac41690d8273a (1/28) - (1/28)
+ - [1] ChromeOpen
+
+
+2023-01-03 13:29:04,072 [T5] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-03 13:29:04,072 [T5] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-03 13:29:04,275 [T5] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-03 13:29:04,275 [T5] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-03 13:29:16,397 [T12] INFO  JobRequest
+ - STEP 2: S3952ad57995c447e938457deb41c12fc (2/28) - (2/28)
+ - [2] ChromeClick
+
+
+2023-01-03 13:29:18,244 [T12] INFO  JobRequest
+ - STEP 3: S9df6e1ef46ea447da1a1b3088bd0c38d (3/28) - (3/28)
+ - [3] ChromeClick
+
+
+2023-01-03 13:29:23,780 [T12] INFO  JobRequest
+ - STEP 4: Sd65505d89427474fb85d0ecb29fa5465 (4/28) - (4/28)
+ - [4] ChromeClick
+
+
+2023-01-03 13:29:24,044 [T12] INFO  JobRequest
+ - STEP 5: S3320812838a1401191e8b7d32b71e44b (5/28) - (5/28)
+ - [5] ChromeClick
+
+
+2023-01-03 13:29:24,542 [T12] INFO  JobRequest
+ - STEP 6: S211b13ade01648b59af2b6882839791d (6/28) - (6/28)
+ - [6] NewExcel
+
+
+2023-01-03 13:29:28,714 [T12] INFO  JobRequest
+ - STEP 7: S4a78307a297448e58b187788787e3fd3 (7/28) - (7/28)
+ - [7] CreateWorkSheet
+
+
+2023-01-03 13:29:28,809 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:28,809 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:28,906 [T12] INFO  JobRequest
+ - STEP 8: S7a9d62d771d64b4e8e45409a6678cef6 (8/28) - (8/28)
+ - [8] CreateWorkSheet
+
+
+2023-01-03 13:29:28,937 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:28,937 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:28,985 [T12] INFO  JobRequest
+ - STEP 9: Sea0b5be6b108479a961c822988eb7ebb (9/28) - (9/28)
+ - [9] Block
+
+
+2023-01-03 13:29:29,001 [T12] INFO  JobRequest
+ - STEP 10: S0e67e3586b4a4ead9dc42f8de31fef2e (10/28) - (10/28)
+ - [10] WaitAppear
+
+
+2023-01-03 13:29:30,197 [T7] INFO  UIAEventHandler
+Start UIA event handler
+
+2023-01-03 13:29:32,208 [T7] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-01-03 13:29:32,208 [T7] INFO  UIAEventHandler
+waiting for 1964 msec during the screen structure is changing.
+
+2023-01-03 13:29:32,410 [T12] INFO  JobRequest
+ - STEP 11: S9b17d315defa49cf80033fe29863dce7 (11/28) - (11/28)
+ - [11] ChromeGetMultipleElements
+
+
+2023-01-03 13:29:34,502 [T12] INFO  JobRequest
+ - STEP 12: Sa6b2739a0bbc41a7b18b91fb43bab4e9 (12/28) - (12/28)
+ - [12] For
+
+
+2023-01-03 13:29:34,517 [T12] INFO  JobRequest
+ - STEP 13: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:34,564 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:34,564 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:34,657 [T12] INFO  JobRequest
+ - STEP 14: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:34,691 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:34,691 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:34,722 [T12] INFO  JobRequest
+ - STEP 15: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:34,753 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:34,753 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:34,784 [T12] INFO  JobRequest
+ - STEP 16: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:34,816 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:34,816 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:34,847 [T12] INFO  JobRequest
+ - STEP 17: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:34,878 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:34,878 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:34,909 [T12] INFO  JobRequest
+ - STEP 18: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:34,941 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:34,941 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:34,972 [T12] INFO  JobRequest
+ - STEP 19: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,003 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,003 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,044 [T12] INFO  JobRequest
+ - STEP 20: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,075 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,075 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,106 [T12] INFO  JobRequest
+ - STEP 21: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,137 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,137 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,169 [T12] INFO  JobRequest
+ - STEP 22: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,200 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,200 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,231 [T12] INFO  JobRequest
+ - STEP 23: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,262 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,262 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,294 [T12] INFO  JobRequest
+ - STEP 24: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,325 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,325 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,356 [T12] INFO  JobRequest
+ - STEP 25: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,387 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,387 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,419 [T12] INFO  JobRequest
+ - STEP 26: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,450 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,450 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,481 [T12] INFO  JobRequest
+ - STEP 27: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,512 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,512 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,543 [T12] INFO  JobRequest
+ - STEP 28: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,575 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,575 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,606 [T12] INFO  JobRequest
+ - STEP 29: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,637 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,637 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,668 [T12] INFO  JobRequest
+ - STEP 30: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,700 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,700 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,731 [T12] INFO  JobRequest
+ - STEP 31: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,762 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,762 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,793 [T12] INFO  JobRequest
+ - STEP 32: Sd8ecac9fe3704e8ebe4bfe6224ed5bac (13/28) - (13/28)
+ - [13] WriteString
+
+
+2023-01-03 13:29:35,825 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,825 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:35,856 [T12] INFO  JobRequest
+ - STEP 33: S3242f4bc7eba43959355e5ac2dc602b4 (14/28) - (14/28)
+ - [14] End-For
+
+
+2023-01-03 13:29:35,872 [T12] INFO  JobRequest
+ - STEP 34: S5cd685e656384ab2931d91aa2b917721 (15/28) - (15/28)
+ - [15] SaveExcel
+
+
+2023-01-03 13:29:35,903 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:35,903 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:36,047 [T12] INFO  JobRequest
+ - STEP 35: Sc9ac0bc1f5e14f66869a05cc6efecab5 (16/28) - (16/28)
+ - [16] End-Block
+
+
+2023-01-03 13:29:36,064 [T12] INFO  JobRequest
+ - STEP 36: S2f6a8de5d46f4d0c81bd66e6b13a3717 (17/28) - (17/28)
+ - [17] Block
+
+
+2023-01-03 13:29:36,071 [T12] INFO  JobRequest
+ - STEP 37: S57699d6827044f95a6d1885c42759c8e (18/28) - (18/28)
+ - [18] ChromeGetTableData
+
+
+2023-01-03 13:29:36,440 [T12] INFO  JobRequest
+ - STEP 38: S57011af753414f18aee74bf1bd0787c7 (19/28) - (19/28)
+ - [19] MessageBox
+
+
+2023-01-03 13:29:36,517 [T12] INFO  ScriptSupport
+Array(Object[][])2=>
+0: 새창보기
+생일
+울리카 케스테레 · 문학과지성사 · 2023.01.12
+10%12,600원정가14,000원|700p
+
+0.0(0개의 리뷰)
+예약판매
+
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+공시최고 실무 매뉴얼[어음.수표.등기등록의 말소.실종선고](2023 년 최신판)
+법률연구회 · 법률정보센터 · 2023.01.10
+10%18,000원정가20,000원|1,000p
+
+0.0(0개의 리뷰)
+배송일정
+
+지금 주문하면
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+헨리에타 랙스의 불멸의 삶
+리베카 스클루트 · 꿈꿀자유 · 2023.01.01
+10%22,500원정가25,000원|1,250p
+
+평범한 젊은 여성이 자궁경부암으로 죽었다. 의사들은 허락도 받지 않고 몰래 그녀의 세포를 가져갔다. 헨리에타 랙스는 이름 없는 무덤에 묻혀 잊혔지만, 그녀의 이름을 딴 헬라 세포는 무한 증식해 불멸의 존재가 되었다. 의학 혁명을 일으키고 수백억 달러 규모의 산업을 탄생시켰다. 하지만 수십 년간 가족은 이런 사실도 모른 채, 가난과 질병에 시달리며 의료 혜택도 받지 못하고 살았다. 시간이 흐를수록 그 의미가 더욱 중요해질 우리 시대의 새로운 고전 과학과 역사와 휴먼드라마가 하나로 합쳐진 이 이야기는 첨단의학과 환자의 권리, 불평등과 차별, 의료윤리와 사회적 정의, 무엇보다 인간이 사회에 공헌한 다른 인간을 인정하고 기리는 방식에 관해 수많은 생각거리를 던지고 방향을 제시할 것이다.
+
+0.0(0개의 리뷰)
+예약판매
+
+1월 3일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+기도선교로 불을 일으키라
+김윤희 · 온리갓북스 · 2023.01.02
+10%13,500원정가15,000원|750p
+
+코로나로 폐허가 된 마음, 사라진 복음의 불꽃을 이제 일으킬 시간입니다! 하나님의 살아계신 역사가 담긴 “기도선교로 불을 일으키라” 시원시원한 글씨, 지루함 없이 생생한 감동, 하나님의 나타나심! 이 모든 것이 당신에게 제2의 인생을 선물할 것입니다. * 『기도선교로 불을 일으키라』는 기도선교에 깃든 하나님의 뜻과 깊고 진한 은혜, 그리고 기도선교의 실천법 등을 담고 있습니다. 나아가 그리스도인은 모두가 기도선교사임을 새기게 하며, 행복한 기도선교사로 사는 팁 등을 전하고 있습니다. * 이 책에서 그려진 이야기는 코로나와 같이 어려운 시기에도 하나님은 살아 역사하시며, 여전히 강력하게 일하고 계심을 드러내고 있습니다. 또한 누구나, 어디서든, 언제라도 할 수 있는 기도선교를 통해 영혼, 가정, 교회가 불과 같이 일어날 것임을 힘주어 말하고 있습니다. * 예수 이름으로 기도하며 선포할 결단과 믿음만 있다면, 누구든지 기도선교사로 살아갈 수 있습니다. 하나님은 이 책을 통해 ‘1000만 명의 기도선교사’를 일으킬 것임을 믿으며, 이를 위해 함께 기도해 주시기를 소망합니다.
+
+0.0(0개의 리뷰)
+
+출시예정 상품입니다. | 새창보기
+성경 초점책
+미스테이커(윤재희) · 토기장이 · 2022.12.30
+10%9,000원정가10,000원|500p
+
+0.0(0개의 리뷰)
+예약판매
+
+1월 4일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+아쿠아리움
+이정수 · 하움출판사 · 2022.12.21
+10%11,700원정가13,000원|650p
+
+0.0(0개의 리뷰)
+배송일정
+
+지금 주문하면
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기미리보기
+2023 박문각 공인중개사 기출 및 출제예상 핵심지문 총정리 핸드북 반드시 나오는 공법 지문
+이석규 · 박문각 · 2022.12.30
+10%5,400원정가6,000원|300p
+
+‘2023 박문각 공인중개사 기출 및 출제예상 핵심지문 총정리 핸드북 반드시 나오는 공법 지문’ 은 2023년 제34회 공인중개사 자격시험을 대비하기 위한 교재입니다. 본 교재는 반드시 나오는 공법 지문을 정리하여 방대한 내용에 고민하는 수험생들을 위하여 쉽게 공법에 접근할 수 있도록 하였습니다. 1. 안정적인 합격점수인 75점에 도달할 수 있도록 핵심지문을 총정리 하였습니다. 1. 개정공법을 완벽하게 반영하였습니다. 1. 출제빈도와 출제가능성이 높은 핵심지문으로 구성하였습니다. 본 교재만 공부해도 안정적인 합격점수를 획득할 수 있도록 합격 노하우를 기록하였습니다.
+
+0.0(0개의 리뷰)
+예약판매
+
+1월 6일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+냥 작가의 맞춤법 상담소
+즐비 · 파란정원 · 2023.01.20
+10%11,700원정가13,000원|650p
+
+‘도대체 맞춤법은 누가 만들었어? 왜 이렇게 어려운 거야?’ 아직도 이렇게 투덜거리고만 있는 거냥? 맞춤법은 ‘글쓰기 규칙’이다냥. 규칙이 없으면 운동 경기가 엉망이 되어 버리는 것처럼 글을 쓸 때도 정해진 규칙을 지켜야만 그 뜻을 정확하게 전달할 수 있다냥. 자, 맞춤법이 쉬워지는 규칙을 함께 배워 보자냥~.
+
+0.0(0개의 리뷰)
+
+출시예정 상품입니다. | 새창보기미리보기
+2023 김세현 영어 단원별 실전 400제
+김세현 · 박문각 · 2023.01.16
+10%19,800원정가22,000원|1,100p
+
+『2023 김세현 영어 단원별 실전 400제』는 기출문제를 철저히 보완할 수 있도록 구성한 영어 실전 예상 문제집입니다. 본서의 특징은 다음과 같습니다. 1. 최신 기출문제를 토대로 출제 방향 확인하기 2. 각 유형별로 분류된 문법, 독해, 어휘, 생활영어 3. 정확하고 자세한 해설 4. 모든 문제가 해설편에 한 번 더 수록되어 복습할 수 있는 구성 5. 정확한 해석과 필수 어휘 구성 철저한 기출 분석을 통해 기출문제 출제 방향을 확인하고, 자신의 약점을 확인할 수 있도록 단원별로 구성하였습니다. 『2023 김세현 영어 단원별 실전 400제』를 통해 문제풀이 적용 훈련을 함께하면 영어 고득점을 달성할 수 있을 것입니다.
+
+0.0(0개의 리뷰)
+예약판매
+
+1월 9일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+씽킹 101
+안우경 · 흐름출판 · 2023.01.05
+10%18,900원정가21,000원|1,050p
+
+0.0(0개의 리뷰)
+예약판매
+
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+패션비즈(2023년 1월호)
+섬유저널사 편집부 · 섬유저널사 · 2023.01.03
+5%21,280원정가22,400원|640p
+
+0.0(0개의 리뷰)
+배송일정
+
+지금 주문하면
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+퍼블릭아트(2023년 1월 196호)
+아트인포스트 편집부 · 아트인포스트 · 2023.01.03
+5%11,400원정가12,000원|350p
+
+월간 미술잡지로서 작가를 소개하고 전시 기획을 소개하며, 국내외 미술정보 기사를 수록한다. 또한 신간을 공개한다.
+
+0.0(0개의 리뷰)
+배송일정
+
+지금 주문하면
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+2023 EBS 랜드하나 공인중개사 전원합격 올인원 1차.2차 세트-재수생전용 강의 교재/동영상 제공
+박수현 외 · 랜드하나 · 2022.01.01
+10%153,900원정가171,000원|8,550p
+
+0.0(0개의 리뷰)
+예약판매
+
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+2023 EBS 랜드하나 공인중개사 전원합격 올인원 2차 세트-재수생전용 강의 교재/동영상 제공
+진창환 외 · 랜드하나 · 2022.01.01
+10%99,900원정가111,000원|5,550p
+
+0.0(0개의 리뷰)
+예약판매
+
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+톡톡 매거진(Talk Talk Magazine)(2023년 1월 68호)
+36.5커뮤니케이션스 편집부 · 36.5커뮤니케이션스 · 2023.01.03
+5%12,350원정가13,000원|380p
+
+깊이 있게 Talk! 다르게 Talk! 스스로 Talk! 앞서가는 진로/직업, 재미난 시사/뉴스, 유익한 인문/사회 - 톡톡은 자유학기제를 리드합니다. - 톡톡은 학업역량과 독서, 글쓰기 능력을 키워줍니다. - 톡톡은 르네상스형 인재를 컨버전스형 인재로 키워줍니다. - 톡톡은 진로 감수성을 키워줍니다. - 톡톡은 자기주도성과 도전정신을 길러줍니다. - 톡톡은 바른 인성과 가치관을 키워줍니다.
+
+0.0(0개의 리뷰)
+배송일정
+
+지금 주문하면
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+리더피아(2023년 1월 191호)
+리더피아 편집부 · 리더피아 · 2023.01.03
+5%14,250원정가15,000원|430p
+
+생각하는 리더, 생각을 이끄는 리더. 2007년에 창간된 월간 <리더피아는> '모두가 리더가 되는 행복한 세상'이라는 모토로 독자를 만났습니다. 급변하는 환경에서 리더의 역할도 바뀌어야 한다고 생각합니다. '생각'에 집중해 '리더피아2.0'을 시작합니다. 콘텐츠를 통해 리더의 생각을 독자와 나누고, 그 생각을 리더인 독자가 경험하고 함께 나누기를 원합니다. 새로운 <리더피아>를 통해 생각의 힘을 키우고, 그 생각이 선한 영향력이 되기를 기대해봅니다.
+
+0.0(0개의 리뷰)
+배송일정
+
+지금 주문하면
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+라이드 매거진(RIDE MAGAZINE)(2023년 1월 100호)
+라이더컴퍼니 편집부 · 라이더컴퍼니 · 2023.01.03
+5%7,600원정가8,000원|230p
+
+라이드컴퍼니에서 발행한 월간 라이드매거진은 국내 최고의 전통과 권위를 자랑하는 모터사이크 전문 잡지이다.
+
+0.0(0개의 리뷰)
+배송일정
+
+지금 주문하면
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+트럭특장차(2023년 1월호)
+트럭타임즈 편집부 · 트럭타임즈 · 2023.01.03
+5%14,250원정가15,000원|430p
+
+상용차 잡지『트럭특장차』.
+
+0.0(0개의 리뷰)
+배송일정
+
+지금 주문하면
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+산업종합저널(2023년 1월호)
+다아라 편집부 · 다아라 · 2023.01.03
+5%9,500원정가10,000원|290p
+
+산업체 현장의 소리에 귀 기울이고 객관적인 보도를 통해 산업방향을 제시하는 전문 월간매체 『산업종합저널』. 국내 산업계의 중요한 이슈에서부터 기획 심층 취재한 특집기사, 정부의 산업정책, 신기술/신제품, 국내외 전시회 정보 등 현장감 있는 기사를 다루고 있다.
+
+0.0(0개의 리뷰)
+배송일정
+
+지금 주문하면
+1월 5일
+출고예정
+
+장바구니
+바로구매 | 새창보기
+2023 EBS 랜드하나 공인중개사 전원합격 올인원 1차 세트-재수생전용 강의 교재/동영상 제공
+박수현 외 · 랜드하나 · 2022.01.01
+10%54,000원정가60,000원|3,000p
+
+0.0(0개의 리뷰)
+예약판매
+
+1월 5일
+출고예정
+
+장바구니
+바로구매
+
+
+2023-01-03 13:29:41,591 [T12] INFO  JobRequest
+ - STEP 39: S5a67a59df0794ac18e9cd1e2f721c47f (20/28) - (20/28)
+ - [20] WriteRange
+
+
+2023-01-03 13:29:41,648 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:41,648 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:41,757 [T12] INFO  JobRequest
+ - STEP 40: S8f1143685aae4002b402967112c3b61c (21/28) - (21/28)
+ - [21] SaveExcel
+
+
+2023-01-03 13:29:41,802 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:41,802 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:41,865 [T12] INFO  JobRequest
+ - STEP 41: Sc87f1ae0ecf74071bb890b80f8ac7cba (22/28) - (22/28)
+ - [22] End-Block
+
+
+2023-01-03 13:29:41,881 [T12] INFO  JobRequest
+ - STEP 42: S7bcc08d4e97b4b0590cbbccc696e46ac (23/28) - (23/28)
+ - [23] Block
+
+
+2023-01-03 13:29:41,896 [T12] INFO  JobRequest
+ - STEP 43: Scf0f1f61a1844b9fb484b44022303d12 (24/28) - (24/28)
+ - [24] ChromeGetListData
+
+
+2023-01-03 13:29:41,990 [T12] DEBUG ChromeGetListData
+Chrome Grid Set Report Target Image Fail
+
+2023-01-03 13:29:42,083 [T12] INFO  JobRequest
+ - STEP 44: Sd7f5285571f1433488c8c2dd4d35db9f (25/28) - (25/28)
+ - [25] For
+
+
+2023-01-03 13:29:42,099 [T12] INFO  JobRequest
+ - STEP 45: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,139 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,139 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,195 [T12] INFO  JobRequest
+ - STEP 46: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,226 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,226 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,258 [T12] INFO  JobRequest
+ - STEP 47: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,289 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,289 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,320 [T12] INFO  JobRequest
+ - STEP 48: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,352 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,352 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,398 [T12] INFO  JobRequest
+ - STEP 49: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,445 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,445 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,492 [T12] INFO  JobRequest
+ - STEP 50: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,523 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,523 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,570 [T12] INFO  JobRequest
+ - STEP 51: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,601 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,601 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,680 [T12] INFO  JobRequest
+ - STEP 52: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,711 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,711 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,742 [T12] INFO  JobRequest
+ - STEP 53: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,773 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,773 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,851 [T12] INFO  JobRequest
+ - STEP 54: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,882 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,882 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,914 [T12] INFO  JobRequest
+ - STEP 55: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:42,945 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:42,945 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:42,976 [T12] INFO  JobRequest
+ - STEP 56: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:43,008 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:43,008 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:43,039 [T12] INFO  JobRequest
+ - STEP 57: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:43,070 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:43,070 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:43,101 [T12] INFO  JobRequest
+ - STEP 58: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:43,139 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:43,139 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:43,170 [T12] INFO  JobRequest
+ - STEP 59: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:43,201 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:43,201 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:43,248 [T12] INFO  JobRequest
+ - STEP 60: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:43,279 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:43,279 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:43,326 [T12] INFO  JobRequest
+ - STEP 61: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:43,357 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:43,357 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:43,389 [T12] INFO  JobRequest
+ - STEP 62: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:43,420 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:43,420 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:43,451 [T12] INFO  JobRequest
+ - STEP 63: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:43,482 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:43,482 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:43,513 [T12] INFO  JobRequest
+ - STEP 64: S04f84f78501f4084a9ebbe90ff2c9f3f (26/28) - (26/28)
+ - [26] WriteString
+
+
+2023-01-03 13:29:43,545 [T12] ERROR ActiveExcelUtil
+개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+
+2023-01-03 13:29:43,545 [T12] ERROR ActiveExcelUtil
+
+
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: RPAGO.Lib.Excel.Util.ActiveExcelUtil.GetActiveWorkbook()
+2023-01-03 13:29:43,576 [T12] INFO  JobRequest
+ - STEP 65: Scbd4ce7bae9749a596018cab62d0b266 (27/28) - (27/28)
+ - [27] End-For
+
+
+2023-01-03 13:29:43,592 [T12] INFO  JobRequest
+ - STEP 66: S323d4a79494441288dab304fdf99dda3 (28/28) - (28/28)
+ - [28] End-Block
+
+
+2023-01-03 13:29:43,592 [T12] INFO  JobRunner
+[PASS] TASK: MyProcess
+
+2023-01-03 13:29:43,592 [T12] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - MyProcess
+##############################################################
+6f1fe7df-4afd-4b0d-b0bb-01db101c118d
+MyProcess
+
+
+2023-01-03 13:29:43,607 [T12] INFO  JobRunner
+RunProcess - Job Result: {}
+
+2023-01-03 13:29:43,607 [T12] DEBUG JobManager
+Set Result State: Completed
+
+2023-01-03 13:29:43,607 [T12] DEBUG JobRunner
+OnProcessCompleted
+
+2023-01-03 13:29:43,607 [T22] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2023-01-03 13:29:43,623 [T12] DEBUG ExcelBase
+DisposeExcel
+
+2023-01-03 13:29:44,929 [T12] INFO  JobRunner
+Start to clean up resources.
+
+2023-01-03 13:29:44,929 [T12] DEBUG JobRunner
+Remove all libraries
+
+2023-01-03 13:29:44,929 [T12] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2023-01-03 13:29:44,929 [T12] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2023-01-03 13:29:44,944 [T12] DEBUG UIAEventHandler
+Stop UIA event handler
+
+2023-01-03 13:29:44,944 [T12] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2023-01-03 13:29:44,944 [T12] INFO  JobRunner
+All Resources Clear
+
+2023-01-03 13:29:44,944 [T12] INFO  JobRunner
+Make report.
+
+2023-01-03 13:29:44,991 [T12] DEBUG JobRunner
+OnCompleted
+
+2023-01-03 13:29:44,991 [T12] DEBUG JobRunner
+SendJobResult: Completed
+
+2023-01-03 13:29:44,991 [T12] INFO  JobRequest
+##############################################################
+### STATE: Completed
+##############################################################
+{}
+
+
+2023-01-03 13:29:44,991 [T12] INFO  JobRequest
+Last job life cycle state: Completed
+
+2023-01-03 13:29:45,007 [T12] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2023-01-03 13:29:45,022 [T8] DEBUG JobRequest
+Callback - State: Completed
+{}
+
+2023-01-03 13:29:45,022 [T8] INFO  JobRequest
+Callback - JobCompleted
+
+2023-01-03 13:29:45,022 [T8] DEBUG JobRequest
+End of Callback Sender
+
+2023-01-03 13:29:45,037 [T12] INFO  JobRunner
+RunProcess end
+

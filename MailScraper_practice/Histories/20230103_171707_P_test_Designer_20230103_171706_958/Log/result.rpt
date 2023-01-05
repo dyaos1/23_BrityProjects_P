@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="bd47c769-6137-4d67-b432-519d3bd7600d" name="P_test" result="Fail" detail="브라우저 를 찾을 수 없습니다.&#xA;브라우저 를 생성 해주세요.&#xA;&#xA;Recent Warning Messages =&gt;&#xA;[CATCH_STEP_EXCEPTION] Process: P_test&#xA;Step: ChromeGetListData (3/7)&#xA;&#xA;Error: 브라우저 를 찾을 수 없습니다.&#xA;브라우저 를 생성 해주세요." start="2023-01-03T08:17:09.086" end="2023-01-03T08:17:20.267" jobId="Designer_20230103_171706_958">
+  <Step id="Sde885ced212f42bda40f7581f35406a5" taskName="P_test" type="Excel" name="OpenExcel" displayName="OpenExcel" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-03T08:17:09.164" end="2023-01-03T08:17:14.097" displayTime="4.9s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : Workbook" runtimeType="Any" key="Output_OutputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\MailScraper_practice\\Excel_test.xlsx'" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_Invisible" displayKey="Invisible" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ReadOnly" displayKey="ReadOnly" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="File_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ExecuteShell" displayKey="Execute Shell" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="File_Timeout" displayKey="Timeout" visible="false" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_UsePassword" displayKey="UsePassword" visible="true" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_OpenPassword" displayKey="OpenPassword" visible="false" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_WritePassword" displayKey="WritePassword" visible="false" required="false" />
+      <Property value="Comma(,)" runtimeType="String" key="File_TextDelimiter" displayKey="Text Delimiter" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S1d2d9944b5124159a39f70cfe2988f7e" taskName="P_test" type="Excel" name="CreateWorkSheet" displayName="CreateWorkSheet" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-03T08:17:14.113" end="2023-01-03T08:17:14.455" displayTime="0.3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'Sheet4'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="1" runtimeType="Integer" key="Sheet_Position" displayKey="Position" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S55a4dd2d1d2e44b99666d4ebe3a6a164" taskName="P_test" type="Chrome" name="ChromeGetListData" displayName="ChromeGetListData" callDepth="1" depth="1" num="3" result="Fail" detail="[CATCH_STEP_EXCEPTION] Process: P_test&#xA;Step: ChromeGetListData (3/7)&#xA;&#xA;Error: 브라우저 를 찾을 수 없습니다.&#xA;브라우저 를 생성 해주세요.&#xA;브라우저 를 찾을 수 없습니다.&#xA;브라우저 를 생성 해주세요." start="2023-01-03T08:17:14.471" end="2023-01-03T08:17:20.267" displayTime="5.8s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="Workbook" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://product.kyobobook.co.kr/new/'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/#?page=1&amp;sort=new&amp;year=&amp;month=&amp;week=&amp;per=20&amp;saleCmdtDvsnCode=KOR ...37" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'html/body/div[3]/main/section[2]/div/section/div[2]/div[4]/div/div[2]/div[3]/ol/li/div'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//div[3]/ol/li/div'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAOy9e3MbR5Yn+n9/ihr23m05rqnC+2FL7rHdnmmP3e2+Le1szG5sMApAkUQLBLgAKFl9425QEqiBRboltUkRlEAa ...105872" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="Text" runtimeType="String" key="CHROME_DataType" displayKey="Data Type" visible="true" required="false" />
+      <Property value="새창보기비됴클래스의 유튜브 영상 편집 시작하기 with 프리미어 프로하지원 · 한빛미디어  · 2023.01.1810%20,700원정가23,000원|1,150p누구나 유튜브로 성공 ...467" runtimeType="String" key="CHROME_ExpectedValue" displayKey="Expected Value" visible="true" required="false" />
+      <Property value="2" runtimeType="Integer" key="CHROME_Scope" displayKey="Scope" visible="false" required="false" />
+      <Property value="RESULT : Workbook" runtimeType="Any" key="CHROME_Data" displayKey="Data" visible="true" required="true" />
+      <Property value="4" runtimeType="String" key="CHROME_ColumnCnt" displayKey="ColumnCnt" visible="false" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;DIV&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;2&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;class&quot;,&quot;Value&quot;:&quot; ...2415" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="'/html/body/div[3]/main/section[2]/div/section/div[2]/div[4]/div/div[2]/div[3]/ol/li[1]/div[2]'" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://product.kyobobook.co.kr/new/" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="3632" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'교보문고 국내도서 신간 - 교보문고 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|76202816|Chrome/Group||mainDiv| ...22" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Group" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="7,-701,1838,8279" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.526458.4.-55256" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="367,827" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Invoke;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVHhe7dMBAQAwDMOg+zfdK1gUgAfegJMgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAIBEEgCAJBEAiCQBAEgiAQBIEgCARBIAgCQRAIgkAQBIIgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAIBEEgCAJBEAiCQBAEgiAQBIEgCARBIAgCQRAIgkAQBIIgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAIBEEgCAJBEAiCQBAEgiAQBIEgCARBIAgCQRAIgkAQBIIgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAIBEEgCAJBEAiCQBAEgiAQBIEgCARBIAgCQRAIgkAQBIIgEASBIAictg8f/Vm6bO3ZlwAAAABJRU5ErkJggg==" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="1011,422" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="957,430" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'950, 1131'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

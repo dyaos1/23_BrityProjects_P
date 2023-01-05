@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="bd47c769-6137-4d67-b432-519d3bd7600d" name="P_test" result="Fail" detail="지정된 경로에 열수 있는 파일이 없습니다. 경로를 확인 해주십시요.&#xA;=&gt; Path: C:\Users\k\Documents\Brity RPA Projects\MailScraper_practice\Excel_test&#xA;&#xA;Recent Warning Messages =&gt;&#xA;[CATCH_STEP_EXCEPTION] Process: P_test&#xA;Step: OpenExcel (1/7)&#xA;&#xA;Error: 지정된 경로에 열수 있는 파일이 없습니다. 경로를 확인 해주십시요.&#xA;=&gt; Path: C:\Users\k\Documents\Brity RPA Projects\MailScraper_practice\Excel_test" start="2023-01-03T08:16:35.878" end="2023-01-03T08:16:45.496" jobId="Designer_20230103_171629_348">
+  <Step id="Sde885ced212f42bda40f7581f35406a5" taskName="P_test" type="Excel" name="OpenExcel" displayName="OpenExcel" callDepth="1" depth="1" num="1" result="Fail" detail="[CATCH_STEP_EXCEPTION] Process: P_test&#xA;Step: OpenExcel (1/7)&#xA;&#xA;Error: 지정된 경로에 열수 있는 파일이 없습니다. 경로를 확인 해주십시요.&#xA;=&gt; Path: C:\Users\k\Documents\Brity RPA Projects\MailScraper_practice\Excel_test&#xA;지정된 경로에 열수 있는 파일이 없습니다. 경로를 확인 해주십시요.&#xA;=&gt; Path: C:\Users\k\Documents\Brity RPA Projects\MailScraper_practice\Excel_test" start="2023-01-03T08:16:35.940" end="2023-01-03T08:16:45.480" displayTime="9.5s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : " runtimeType="Any" key="Output_OutputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\MailScraper_practice\\Excel_test'" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_Invisible" displayKey="Invisible" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ReadOnly" displayKey="ReadOnly" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="File_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ExecuteShell" displayKey="Execute Shell" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="File_Timeout" displayKey="Timeout" visible="false" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_UsePassword" displayKey="UsePassword" visible="true" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_OpenPassword" displayKey="OpenPassword" visible="false" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_WritePassword" displayKey="WritePassword" visible="false" required="false" />
+      <Property value="Comma(,)" runtimeType="String" key="File_TextDelimiter" displayKey="Text Delimiter" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>
