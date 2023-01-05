@@ -1,0 +1,252 @@
+<Process id="893a610f-8cd1-4388-bf29-1c41ea6689a6" type="process" workType="foreground" name="P_DataScraper" version="" designerVersion="2.5.000.00921" lastPublishedServer="" readonly="false" isValid="true" DesignedBy="Designer" Template="">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="36" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Pro64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="1920x1080" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-04 14:54:02" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-04 16:15:29" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables>
+    <Variable name="dataTable" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="dataArray" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="dataArray2D" scope="Output" valueType="Any" formatType="Any" initValue="" desc="" />
+  </Variables>
+  <Steps>
+    <Step id="S95173256d76448d89f572d87433f2c15" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.dataArray2D" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="2ed270bf-8cd6-4da9-a7c3-47582da806ed" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataArray2D" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="[]" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.dataArray2D = [];]]></Script>
+    </Step>
+    <Step id="S56855770b85b4c3ca18fd81e47e60222" ver="250220822" createVer="250220822" type="Win" name="GetGridItems" dpName="GetGridItems" dpValue="RPA 확대 구축 및 운영 모니터링 용역" dpValue2="나라장터: 국가종합전자조달 - Chrome" dpImage="Target_Capture" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="7b866eda-df9c-4646-8f52-20451c0b2971" type="Win">
+        <Property type="Win" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Target_Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="10" />
+        <Property type="Win" key="Target_TargetNo" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" order="4" />
+        <Property type="Win" key="Target_UseName" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Win" key="Target_UseValue" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Win" key="Target_UseLegacyValue" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Win" key="Target_UseBounds" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Win" key="Target_UseAppTitle" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Win" key="Target_UseSetFocus" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Win" key="Target_DrawBounds" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Win" key="Target_UseObjectPath" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Win" key="Target_UseSearchAround" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Win" key="Target_UseImageMatch" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="NotUse" order="80" valuelist="NotUse;Always;WhenFailed" />
+        <Property type="Win" key="Target_ImageIndexMethod" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="JustBest" order="81" valuelist="JustBest;RowFirst;ColumnFirst;ScoreOrderRow;ScoreOrderColumn" />
+        <Property type="Win" key="Target_SelectImageIndex" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" order="82" />
+        <Property type="Win" key="Target_SearchBounds" controlType="String" valueType="System.String" formatType="String_Rect" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Application_PID" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="1164" />
+        <Property type="Win" key="Application_ProcessName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="chrome" order="1" />
+        <Property type="Win" key="Target_RemoteAppName" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="True" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Application_Title" controlType="PropertyItemTextFieldWithLikeSearchView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'나라장터: 국가종합전자조달 - Chrome'" />
+        <Property type="Win" key="Application_ClassName" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="Chrome_WidgetWin_1" />
+        <Property type="Win" key="Application_ClassType" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="Pane" />
+        <Property type="Win" key="Application_WindowHandle" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="527600" />
+        <Property type="Win" key="Application_Bounds" controlType="Rect" valueType="System.Windows.Rect" formatType="Rect" required="False" visible="False" readonly="True" encrypted="False" isChanged="N" value="54,-8,1874,1096" />
+        <Property type="Win" key="Target_SupportedPatterns" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Invoke;Value;ScrollItem;LegacyIAccessible" />
+        <Property type="Win" key="Target_AutomationID" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Target_FrameworkID" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="Chrome" />
+        <Property type="Win" key="Target_RuntimeID" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="42.17041666.4.-45115" />
+        <Property type="Win" key="Target_ClassName" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Target_ClassType" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Hyperlink" order="3" />
+        <Property type="Win" key="Target_Name" controlType="PropertyItemTextFieldWithLikeSearchView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'RPA 확대 구축 및 운영 모니터링 용역'" />
+        <Property type="Win" key="Target_ObjectPath" controlType="PropertyItemTextFieldWithLikeSearchView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|246197888|Chrome/Pane||sub|Chrome/Document|||Chrome/Pane|||Chrome/Document|||Chrome/Group||content_wrap|Chrome/Group||container|Chrome/Group||resultForm|Chrome/Group|||Chrome/Table|||Chrome/Custom|||Chrome/DataItem|||Chrome/Group|||Chrome/Hyperlink|||Chrome'" />
+        <Property type="Win" key="Target_Bounds" controlType="Rect" valueType="System.Windows.Rect" formatType="Rect" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="467,440,204,35" />
+        <Property type="Win" key="Mouse_WinPoint" controlType="Point" valueType="System.Windows.Point" formatType="Point" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="637,438" />
+        <Property type="Win" key="Mouse_AppPoint" controlType="Point" valueType="System.Windows.Point" formatType="Point" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="583,446" />
+        <Property type="Win" key="Mouse_Point" controlType="String" valueType="System.String" formatType="String_Point" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="'116, 6'" />
+        <Property type="Win" key="Target_Value" controlType="PropertyItemTextFieldWithLikeSearchView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'https://www.g2b.go.kr:8101/ep/tbid/serviceBidDtl.do?tbidno=20230102298&amp;bidseq=00'" />
+        <Property type="Win" key="Target_LegacyValue" controlType="PropertyItemTextFieldWithLikeSearchView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="'https://www.g2b.go.kr:8101/ep/tbid/serviceBidDtl.do?tbidno=20230102298&amp;bidseq=00'" />
+        <Property type="Win" key="Target_IsReadOnly" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Win" key="Target_IsEditable" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Win" key="Target_SizeTolerance" controlType="Size" valueType="System.Windows.Size" formatType="Size" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="408,15" />
+        <Property type="Win" key="Target_TimeStamp" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="2023-01-04 14:55:28.081" />
+        <Property type="Win" key="Target_RelativeOrigin" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Center" valuelist="Center;LeftTop;RightTop;LeftBottom;RightBottom" order="10" />
+        <Property type="Win" key="Target_RelativePoint" controlType="String" valueType="System.String" formatType="String_Point" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="'0, 0'" order="11" />
+        <Property type="Win" key="Conditions_Result" controlType="OutputControlType" valueType="System.Object[][]" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataTable" />
+        <Property type="Win" key="Target_DataType" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Name" valuelist="Name;Value;Bounds;LegacyValue;RangeText" />
+        <Property type="Win" key="Target_Delimiter" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="';'" />
+        <Property type="Win" key="Target_Capture" controlType="Bitmap" valueType="System.Drawing.Bitmap" formatType="Bitmap" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPXSURBVHhe7dhRihwxDEXR7Gn2lNVmB4H8ZwHJbwc3CBS1/CSXq6Yr5BacMG1LsnuoB0O+fPvx+wHg1XgICDBBQACBgAACAQEEAgIIBAQQCAggEBBAICCAQEAAgYAAAgEBBAICCAQEEJ4Bef7Lw8OTPgSEh0c8X379/P4A8IqAAAIBAQQCAggEBBAICCAQEEAgIIBAQACBgAACAQEEAgIIBAQQCAggEBBAICCAQEAAgYAAAgEBBAICCAQEEAgIIBAQQCAggEBAAIGAAAIBAQQCAggEBBAICCBcGpCPj69/yfbjWtdO7w71fc5yZLa/V5TVd+32n2nnLkd7nwGxX6QaUu0fsTrP1x/prWR9Z8vOHWKN/1yp6tW+nW+y/bimxHmZWV+27qneTKzxn7ueAfELs0HZoTNWO+PrfJ+tRX4v+/kMap7dQ8n6MlltXFuZN1T1s/3ZXaJYo1T1s/3OOVf0Vl4CMsRh/vPKQVVfd81U83aszNs5O+uNa0fmj56ZrH7I9uKa6s9U9bP9zjlX9FYuC0hWl801sxqvW3dEZ96osTr/84qsJ64dmXvE7C5RrFGq+tl+55wreisvAckG+bWVg0atl+131oyfpeqOmM2rzqv2I1/vxRr/+SrZObt3qepn+51zVG+Urce+jmdA1JDumjKrX53t91bvoJw56wzd+4y6VdWMbD+uKXFeZtaXrXtX9FaeAck2TDa4OmzsV6wu641rxu+pOm/UrTqjd8funLPuMXzWXTp1s5qd3korIJms9gyz2fHc3Tvs9O+e7dn3MlnNqjPvt6t7l1md/72ommzd69RkZEDU0O6lKt0e2/N19vMRK/12ByXr+yzx/NX7+O8RZfUrujPiuSbW+M/VutepyVwakMrqDF+/e/4Z9zdHZo0eJeuZWa33qt6d2cNuvzebNdZnfI3v6SIgJzjjLjszruztzrbvsCKboxzpMUd7ZUCu9o4vbHb7vdVZo96r1iuxL5P1mazeZPXvsnOfo71vDQhwdwQEEAgIIBAQQCAggEBAAGEpIP6//6Ksvmu3H7hKOyDVS6z2LUQm249rwB1cHpBZIKJYA9xBOyBD9mKbrH7I9uKa6gfeaSkgw+rLTUDwL3tbQKJYA9xBGZDsZa5UM7L9uAbcQRmQz0BAcFe3CAhwV0sB8X8mRVm9yeqjrA94t3ZAqpd45yUnILgrAgII7YAM40Weyeq7dvuBqywFBPjfEBBAICCAQEAAgYAAAgEBBAICCAQEEAgIIBAQQCAggEBAAIGAAAIBAQQCAggEBBAICCAQEEAgIIBAQACBgADC4/F4/AFOHLxEzyPCGgAAAABJRU5ErkJggg==" />
+        <Property type="Win" key="Target_ImageCompareBounds" controlType="Rect" valueType="System.Windows.Rect" formatType="Rect" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="0,0,200,100" />
+        <Property type="Win" key="Target_PointOnImage" controlType="String" valueType="System.String" formatType="String_Point" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="'100, 50'" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.dataTable = StepPlayer.Run('Win.GetGridItems', this.getgriditems_info_2);]]></Script>
+    </Step>
+    <Step id="Sbcf3bc3d17894df29a06780ea1f03e4f" ver="250220822" createVer="250220822" type="Flow" name="Loop" dpName="For" dpValue="this.i &lt; this.dataTable.length" dpValue2="" dpImage="" tag="" depth="1" stmttype="OpenBlock" enabled="True" mainSet="0">
+      <Properties id="f415ad77-a9e5-44fb-a761-00dde7095af2" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_InitializeIndex" controlType="Object" valueType="System.Object" formatType="Expression" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.i = 1" />
+        <Property type="Flow" key="Conditions_LoopCondition" controlType="Object" valueType="System.Object" formatType="Expression" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.i &lt; this.dataTable.length" />
+        <Property type="Flow" key="Conditions_UpdateIndex" controlType="Object" valueType="System.Object" formatType="Expression" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.i++" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S9aa69a24dbf743d4a4a8f84db14d3a79" type="Flow" name="EndLoop" />
+      </RelatedSteps>
+      <Script><![CDATA[for (this.i = 1; this.i < this.dataTable.length; this.i++) {]]></Script>
+    </Step>
+    <Step id="Sb5bf2c32a178492e8891f461462e696e" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.dataArray" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="be4ed1f2-08e1-4d38-ba73-c97ae4d13178" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataArray" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="[]" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.dataArray = [];]]></Script>
+    </Step>
+    <Step id="Sc7ee418967c541dca47f4bf4a0913ace" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.dataArray[0]" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="64992ac5-108b-44c9-8c25-a8c601d4c230" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataArray[0]" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataTable[this.i][1]" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.dataArray[0] = this.dataTable[this.i][1];]]></Script>
+    </Step>
+    <Step id="S0065539a43b2416786badd074c1b04c8" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.dataArray[1]" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="64992ac5-108b-44c9-8c25-a8c601d4c230" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataArray[1]" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataTable[this.i][3]" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.dataArray[1] = this.dataTable[this.i][3];]]></Script>
+    </Step>
+    <Step id="S5a3c8620f2104abf8c372dc0532a950a" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.dataArray[2]" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="64992ac5-108b-44c9-8c25-a8c601d4c230" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataArray[2]" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataTable[this.i][4]" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.dataArray[2] = this.dataTable[this.i][4];]]></Script>
+    </Step>
+    <Step id="S72f266e65b844d69bc87d1a6538111a4" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.dataArray[3]" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="64992ac5-108b-44c9-8c25-a8c601d4c230" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataArray[3]" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataTable[this.i][7]" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.dataArray[3] = this.dataTable[this.i][7];]]></Script>
+    </Step>
+    <Step id="Sc38772c53a0c401481d8d06d6903348f" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.dataArray2D[this.i-1]" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="b6a75912-8036-4a31-8e9f-201d2f3d4f01" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataArray2D[this.i-1]" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dataArray" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.dataArray2D[this.i-1] = this.dataArray;]]></Script>
+    </Step>
+    <Step id="S9aa69a24dbf743d4a4a8f84db14d3a79" ver="250220822" createVer="250220822" type="Flow" name="EndLoop" dpName="End-For" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseBlock" enabled="True" mainSet="0">
+      <Properties id="41571bc2-fd28-4215-83ef-af513c9d14e8" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="Sbcf3bc3d17894df29a06780ea1f03e4f" type="Flow" name="Loop" />
+      </RelatedSteps>
+      <Script><![CDATA[}]]></Script>
+    </Step>
+  </Steps>
+  <Libraries>
+    <string>FlowControl</string>
+    <string>App</string>
+  </Libraries>
+  <JScript><![CDATA[function P_DataScraper() {
+
+    this.dataTable;
+    this.dataArray;
+    this.dataArray2D;
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('S95173256d76448d89f572d87433f2c15', '[1] Assign');
+        this.dataArray2D = [];
+
+        //------------------------------------------------
+        STEP('S56855770b85b4c3ca18fd81e47e60222', '[2] GetGridItems');
+        this.dataTable = StepPlayer.Run('Win.GetGridItems', this.getgriditems_info_2);
+
+        //------------------------------------------------
+        STEP('Sbcf3bc3d17894df29a06780ea1f03e4f', '[3] For');
+        for (this.i = 1; this.i < this.dataTable.length; this.i++) {
+
+            //------------------------------------------------
+            STEP('Sb5bf2c32a178492e8891f461462e696e', '[4] Assign');
+            this.dataArray = [];
+
+            //------------------------------------------------
+            STEP('Sc7ee418967c541dca47f4bf4a0913ace', '[5] Assign');
+            this.dataArray[0] = this.dataTable[this.i][1];
+
+            //------------------------------------------------
+            STEP('S0065539a43b2416786badd074c1b04c8', '[6] Assign');
+            this.dataArray[1] = this.dataTable[this.i][3];
+
+            //------------------------------------------------
+            STEP('S5a3c8620f2104abf8c372dc0532a950a', '[7] Assign');
+            this.dataArray[2] = this.dataTable[this.i][4];
+
+            //------------------------------------------------
+            STEP('S72f266e65b844d69bc87d1a6538111a4', '[8] Assign');
+            this.dataArray[3] = this.dataTable[this.i][7];
+
+            //------------------------------------------------
+            STEP('Sc38772c53a0c401481d8d06d6903348f', '[9] Assign');
+            this.dataArray2D[this.i-1] = this.dataArray;
+
+        //------------------------------------------------
+        }
+        STEP('S9aa69a24dbf743d4a4a8f84db14d3a79', '[10] End-For');
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+        return {'dataArray2D':this.dataArray2D};
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="S95173256d76448d89f572d87433f2c15" group_name="51392fe0-c23e-40f0-9a01-4afd9ff09bc2_Untitled" folded="False" />
+      <StepNode step_id="S56855770b85b4c3ca18fd81e47e60222" group_name="e6afcc96-ac02-4d74-881a-4d3e09a5ffc7_Untitled" folded="False" />
+      <StepNode step_id="Sbcf3bc3d17894df29a06780ea1f03e4f" group_name="" folded="False" />
+      <StepNode step_id="Sb5bf2c32a178492e8891f461462e696e" group_name="c021987e-0c2e-4cb2-8593-e396d130fe38_Untitled" folded="False" />
+      <StepNode step_id="Sc7ee418967c541dca47f4bf4a0913ace" group_name="3075fddf-8cee-47e6-9e8c-6232c3b2aec1_Untitled" folded="False" />
+      <StepNode step_id="S0065539a43b2416786badd074c1b04c8" group_name="3075fddf-8cee-47e6-9e8c-6232c3b2aec1_Untitled" folded="False" />
+      <StepNode step_id="S5a3c8620f2104abf8c372dc0532a950a" group_name="3075fddf-8cee-47e6-9e8c-6232c3b2aec1_Untitled" folded="False" />
+      <StepNode step_id="S72f266e65b844d69bc87d1a6538111a4" group_name="3075fddf-8cee-47e6-9e8c-6232c3b2aec1_Untitled" folded="False" />
+      <StepNode step_id="Sc38772c53a0c401481d8d06d6903348f" group_name="fec0f087-add9-4db4-9db2-adde3a10591c_Untitled" folded="False" />
+      <StepNode step_id="S9aa69a24dbf743d4a4a8f84db14d3a79" group_name="" folded="False" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>5awwvY01tuSE69uhq9XY3syZ7Is=</DigestValue></Reference></SignedInfo><SignatureValue>MWWbF3AtD3aDI4HKRFup5H365pVKF5bAFGMOThMlX7EBrEKBb80n19pmG3ngxxBqxQQn10WNkh8VZNZEvus+NMEgDrDkh7NTapDj1pPCdus4DJADF2bXHuR60Nf6f4agGq6+/CiqASGuipYiPXKtj3rPlRGrMAAwUNt4hvH8JkOTHGB31zQpeZk2+XMdycny99Iq6X8jUTrcTN9PCSJ/bmcex82Z+wiEEvXU150gGWROkbdzk7aE+yuovAbYLtUxGqfjJIUDnQf4oHyKRBLpeOU1IIgM0YYKDfoSDu+icPUyyFXK0tTjqR3NbaBVMAKMhYVjFJ5IA6S3xutzBzUn+A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

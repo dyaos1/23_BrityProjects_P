@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="71b471c1-62fd-4545-af5d-38a43de76303" name="P_Init" result="Pass" start="2023-01-05T00:36:19.656" end="2023-01-05T00:36:25.148" jobId="Designer_20230105_093612_877">
+  <Step id="S26d7ba761d5148d5bef9931636a10e09" taskName="P_Init" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-05T00:36:19.719" end="2023-01-05T00:36:19.906" displayTime="0.2s">
+    <Variables>
+      <Variable name="daysBefore" scope="Output" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.daysBefore : 2023-01-05 09:36:19" runtimeType="Date" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="2023-01-05 09:36:19" runtimeType="Date" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc783b1915d254486a2ab24e5a814f371" taskName="P_Init" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-05T00:36:19.922" end="2023-01-05T00:36:19.922" displayTime="0s">
+    <Variables>
+      <Variable name="daysBefore" scope="Output" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Date" value="2023-01-05 09:36:19" />
+      <Variable name="today" scope="Normal" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.today : '2023-01-05'" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2023-01-05'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sbffe035fb3fd4428aa0f3ed069f17edb" taskName="P_Init" type="Flow" name="CustomLibrary" displayName="DateTime_AddDays" callDepth="1" depth="1" num="3" result="Pass" start="2023-01-05T00:36:19.938" end="2023-01-05T00:36:20.062" displayTime="0.1s">
+    <Variables>
+      <Variable name="daysBefore" scope="Output" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Date" value="2023-01-05 09:36:19" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Global" runtimeType="String" key="Conditions_LibraryScope" displayKey="LibraryScope" visible="false" required="false" />
+      <Property value="DataConverter" runtimeType="String" key="Conditions_LibraryNamespace" displayKey="LibraryNamespace" visible="false" required="false" />
+      <Property value="DateTime_AddDays" runtimeType="String" key="Conditions_LibraryName" displayKey="Library" visible="false" required="false" />
+      <Property value="DotNetDll" runtimeType="String" key="Conditions_LibraryType" displayKey="LibraryType" visible="false" required="false" />
+      <Property value="this.daysBefore : 2022-12-11 09:36:19" runtimeType="Date" key="Conditions_Result" displayKey="Result" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Options_Instance" displayKey="Instance" visible="false" required="false" />
+      <Property value="2023-01-05 09:36:19" runtimeType="Date" key="Arguments_date" displayKey="date" visible="true" required="true" />
+      <Property value="-25" runtimeType="Integer" key="Arguments_dayValue" displayKey="dayValue" visible="true" required="true" />
+      <Property value="IPA.Custom.ExtendLibrary.dll" runtimeType="String" key="Conditions_TargetAssembly" displayKey="TargetAssembly" visible="false" required="false" />
+      <Property value="RPAGO.Custom.ExtendLibrary.DataConverter_DateTime" runtimeType="String" key="Conditions_TargetClass" displayKey="TargetClass" visible="false" required="false" />
+      <Property value="System.Object AddDays(System.Object, Int32)" runtimeType="String" key="Conditions_TargetMethod" displayKey="TargetMethod" visible="false" required="false" />
+      <Property value="IPA.Custom.ExtendLibrary.dll" runtimeType="String" key="Conditions_ExternLibrary" displayKey="ExternLibrary" visible="false" required="false" />
+      <Property value="RPAGO.Custom.ExtendLibrary.DataConverter_DateTime" runtimeType="String" key="Conditions_ExternLibraryModule" displayKey="ExternLibraryModule" visible="false" required="false" />
+      <Property value="System.Object AddDays(System.Object, Int32)" runtimeType="String" key="Conditions_ExternLibraryMethodFullName" displayKey="ExternLibraryMethodFullName" visible="false" required="false" />
+      <Property value="Static_Method" runtimeType="String" key="Conditions_TargetMethodType" displayKey="TargetMethodType" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Seeffd6cf3ca6468490dc7a24d763bb21" taskName="P_Init" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="1" num="4" result="Pass" start="2023-01-05T00:36:20.078" end="2023-01-05T00:36:20.078" displayTime="0s">
+    <Variables>
+      <Variable name="daysBefore" scope="Output" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Date" value="2022-12-11 09:36:19" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.daysBefore : '2022/12/11'" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2022/12/11'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S0845891b678d4c058c8ece8d99749f99" taskName="P_Init" type="Desktop" name="CopyFile" displayName="CopyFile" callDepth="1" depth="1" num="5" result="Pass" start="2023-01-05T00:36:20.094" end="2023-01-05T00:36:20.125" displayTime="0s">
+    <Variables>
+      <Variable name="today" scope="Normal" owner="P_Init" declareType="Any" isChanged="false" isChangable="false" runtimeType="String" value="'2023-01-05'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\g2bSearcher_test\\Resources\\나라장터 RPA공고 ...6" runtimeType="String" key="Command_SrcFilePath" displayKey="SrcFilePath" visible="true" required="true" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\g2bSearcher_test\\Report\\2023-01-05 나라 ...13" runtimeType="String" key="Command_DescFilePath" displayKey="DescFilePath" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Command_Overwrite" displayKey="Overwrite" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S0726ec41b36d48cc9aca8bc4f42f5eca" taskName="P_Init" type="Excel" name="OpenExcel" displayName="OpenExcel" callDepth="1" depth="1" num="6" result="Pass" start="2023-01-05T00:36:20.141" end="2023-01-05T00:36:25.132" displayTime="5s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+      <Variable name="today" scope="Normal" owner="P_Init" declareType="Any" isChanged="false" isChangable="false" runtimeType="String" value="'2023-01-05'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : Workbook" runtimeType="Any" key="Output_OutputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\g2bSearcher_test\\Report\\2023-01-05 나라 ...13" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_Invisible" displayKey="Invisible" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ReadOnly" displayKey="ReadOnly" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="File_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ExecuteShell" displayKey="Execute Shell" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="File_Timeout" displayKey="Timeout" visible="false" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_UsePassword" displayKey="UsePassword" visible="true" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_OpenPassword" displayKey="OpenPassword" visible="false" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_WritePassword" displayKey="WritePassword" visible="false" required="false" />
+      <Property value="Comma(,)" runtimeType="String" key="File_TextDelimiter" displayKey="Text Delimiter" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

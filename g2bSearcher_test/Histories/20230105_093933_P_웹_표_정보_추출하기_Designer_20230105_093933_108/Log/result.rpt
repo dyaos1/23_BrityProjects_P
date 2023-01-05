@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="332fa756-cb3b-4ebe-a4bb-87951ca99d20" name="P_웹_표_정보_추출하기" result="Pass" start="2023-01-05T00:39:34.951" end="2023-01-05T00:40:41.980" jobId="Designer_20230105_093933_108">
+  <Step id="Se013ce049a8b4f12ba23daa7d5ec6497" taskName="P_웹_표_정보_추출하기" type="Flow" name="RunTask" displayName="RunTask (P_Init)" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-05T00:39:35.014" end="2023-01-05T00:39:35.155" displayTime="0s">
+    <Variables>
+      <Variable name="daysBefore" scope="Normal" owner="P_웹_표_정보_추출하기" declareType="Any" isChanged="false" isChangable="false" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="P_Init" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+      <Property value="this.daysBefore : &lt;undefined&gt;" runtimeType="Undefined" key="Output_daysBefore" displayKey="daysBefore" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S26d7ba761d5148d5bef9931636a10e09" taskName="P_Init" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="1" num="1" result="Pass" start="2023-01-05T00:39:35.170" end="2023-01-05T00:39:35.201" displayTime="0s">
+    <Variables>
+      <Variable name="daysBefore" scope="Output" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.daysBefore : 2023-01-05 09:39:35" runtimeType="Date" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="2023-01-05 09:39:35" runtimeType="Date" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc783b1915d254486a2ab24e5a814f371" taskName="P_Init" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="1" num="2" result="Pass" start="2023-01-05T00:39:35.217" end="2023-01-05T00:39:35.217" displayTime="0s">
+    <Variables>
+      <Variable name="daysBefore" scope="Output" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Date" value="2023-01-05 09:39:35" />
+      <Variable name="today" scope="Normal" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.today : '2023-01-05'" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2023-01-05'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sbffe035fb3fd4428aa0f3ed069f17edb" taskName="P_Init" type="Flow" name="CustomLibrary" displayName="DateTime_AddDays" callDepth="2" depth="1" num="3" result="Pass" start="2023-01-05T00:39:35.233" end="2023-01-05T00:39:35.373" displayTime="0.1s">
+    <Variables>
+      <Variable name="daysBefore" scope="Output" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Date" value="2023-01-05 09:39:35" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Global" runtimeType="String" key="Conditions_LibraryScope" displayKey="LibraryScope" visible="false" required="false" />
+      <Property value="DataConverter" runtimeType="String" key="Conditions_LibraryNamespace" displayKey="LibraryNamespace" visible="false" required="false" />
+      <Property value="DateTime_AddDays" runtimeType="String" key="Conditions_LibraryName" displayKey="Library" visible="false" required="false" />
+      <Property value="DotNetDll" runtimeType="String" key="Conditions_LibraryType" displayKey="LibraryType" visible="false" required="false" />
+      <Property value="this.daysBefore : 2022-12-11 09:39:35" runtimeType="Date" key="Conditions_Result" displayKey="Result" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Options_Instance" displayKey="Instance" visible="false" required="false" />
+      <Property value="2023-01-05 09:39:35" runtimeType="Date" key="Arguments_date" displayKey="date" visible="true" required="true" />
+      <Property value="-25" runtimeType="Integer" key="Arguments_dayValue" displayKey="dayValue" visible="true" required="true" />
+      <Property value="IPA.Custom.ExtendLibrary.dll" runtimeType="String" key="Conditions_TargetAssembly" displayKey="TargetAssembly" visible="false" required="false" />
+      <Property value="RPAGO.Custom.ExtendLibrary.DataConverter_DateTime" runtimeType="String" key="Conditions_TargetClass" displayKey="TargetClass" visible="false" required="false" />
+      <Property value="System.Object AddDays(System.Object, Int32)" runtimeType="String" key="Conditions_TargetMethod" displayKey="TargetMethod" visible="false" required="false" />
+      <Property value="IPA.Custom.ExtendLibrary.dll" runtimeType="String" key="Conditions_ExternLibrary" displayKey="ExternLibrary" visible="false" required="false" />
+      <Property value="RPAGO.Custom.ExtendLibrary.DataConverter_DateTime" runtimeType="String" key="Conditions_ExternLibraryModule" displayKey="ExternLibraryModule" visible="false" required="false" />
+      <Property value="System.Object AddDays(System.Object, Int32)" runtimeType="String" key="Conditions_ExternLibraryMethodFullName" displayKey="ExternLibraryMethodFullName" visible="false" required="false" />
+      <Property value="Static_Method" runtimeType="String" key="Conditions_TargetMethodType" displayKey="TargetMethodType" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Seeffd6cf3ca6468490dc7a24d763bb21" taskName="P_Init" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="1" num="4" result="Pass" start="2023-01-05T00:39:35.389" end="2023-01-05T00:39:35.389" displayTime="0s">
+    <Variables>
+      <Variable name="daysBefore" scope="Output" owner="P_Init" declareType="Any" isChanged="false" isChangable="true" runtimeType="Date" value="2022-12-11 09:39:35" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.daysBefore : '2022/12/11'" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2022/12/11'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S0845891b678d4c058c8ece8d99749f99" taskName="P_Init" type="Desktop" name="CopyFile" displayName="CopyFile" callDepth="2" depth="1" num="5" result="Pass" start="2023-01-05T00:39:35.405" end="2023-01-05T00:39:35.436" displayTime="0s">
+    <Variables>
+      <Variable name="today" scope="Normal" owner="P_Init" declareType="Any" isChanged="false" isChangable="false" runtimeType="String" value="'2023-01-05'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\g2bSearcher_test\\Resources\\나라장터 RPA공고 ...6" runtimeType="String" key="Command_SrcFilePath" displayKey="SrcFilePath" visible="true" required="true" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\g2bSearcher_test\\Report\\2023-01-05 나라 ...13" runtimeType="String" key="Command_DescFilePath" displayKey="DescFilePath" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Command_Overwrite" displayKey="Overwrite" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S0726ec41b36d48cc9aca8bc4f42f5eca" taskName="P_Init" type="Excel" name="OpenExcel" displayName="OpenExcel" callDepth="2" depth="1" num="6" result="Pass" start="2023-01-05T00:39:35.452" end="2023-01-05T00:39:40.274" displayTime="4.8s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+      <Variable name="today" scope="Normal" owner="P_Init" declareType="Any" isChanged="false" isChangable="false" runtimeType="String" value="'2023-01-05'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : Workbook" runtimeType="Any" key="Output_OutputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\g2bSearcher_test\\Report\\2023-01-05 나라 ...13" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_Invisible" displayKey="Invisible" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ReadOnly" displayKey="ReadOnly" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="File_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="File_ExecuteShell" displayKey="Execute Shell" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="File_Timeout" displayKey="Timeout" visible="false" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_UsePassword" displayKey="UsePassword" visible="true" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_OpenPassword" displayKey="OpenPassword" visible="false" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_WritePassword" displayKey="WritePassword" visible="false" required="false" />
+      <Property value="Comma(,)" runtimeType="String" key="File_TextDelimiter" displayKey="Text Delimiter" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Se8fac003eb134301892fa2c221d4b9a4" taskName="P_Init" type="Flow" name="InternalData" displayName="End-RunTask (P_Init) / Return To P_웹_표_정보_추출하기" callDepth="2" depth="1" num="7" result="Pass" start="2023-01-05T00:39:40.274" end="2023-01-05T00:39:40.274" displayTime="0s" />
+  <Step id="S86aa4d5df6b54389a6a614b229c29cce" taskName="P_웹_표_정보_추출하기" type="Flow" name="RunTask" displayName="RunTask (P_Search)" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-05T00:39:40.321" end="2023-01-05T00:39:40.321" displayTime="0s">
+    <Variables>
+      <Variable name="daysBefore" scope="Normal" owner="P_웹_표_정보_추출하기" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'2022/12/11'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="P_Search" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+      <Property value="'2022/12/11'" runtimeType="String" key="Input_daysBefore" displayKey="daysBefore" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S8292b7a71de349098782e9b91f28d48b" taskName="P_Search" type="Chrome" name="ChromeOpen" displayName="ChromeOpen" callDepth="2" depth="1" num="1" result="Pass" start="2023-01-05T00:39:40.336" end="2023-01-05T00:39:42.986" displayTime="2.6s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="Workbook" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : &lt;object:ChromeBrowserObject&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="Chrome" runtimeType="String" key="CHROME_TypeOfBrowser" displayKey="Browser Type" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_BrowserType" displayKey="Headless Mode" visible="true" required="false" />
+      <Property value="'https://www.g2b.go.kr/'" runtimeType="String" key="CHROME_URL" displayKey="URL" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="CHROME_ChromePath" displayKey="Browser Path" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_ExtensionList" displayKey="Included Extensions" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_DownloadPath" displayKey="Download Path" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S35e9161cd4914b5ebd74b02d54079a08" taskName="P_Search" type="Chrome" name="ChromeClick" displayName="ChromeClick" callDepth="2" depth="1" num="2" result="Pass" start="2023-01-05T00:39:42.993" end="2023-01-05T00:39:46.607" displayTime="3.6s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://www.g2b.go.kr/index.jsp'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/index.jsp" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[1]/div[1]/div[1]/div[1]/dl/dd[1]/form/div/fieldset[1]/ul/li[2]/dl/dd[1]/select'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//select[@id=\'taskClCds\']'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAO1dbXPbRpL+fPkVOG7VSa5S+AKQlORI3nLsZMu1m8QbZ+/26upKBZKQhIgEGBCUrP2Qkm06pdi+jb0rxbJD+ZSN ...11608" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;SELECT&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;id&quot;,&quot;Value&quot;:&quot;t ...1720" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/index.jsp" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="SELECT" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="1164" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'나라장터: 국가종합전자조달 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|107302912|Chrome/Group||wrap|Ch ...207" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="ComboBox" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="438,316,60,25" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="'업무구분'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'전체'" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'전체'" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="taskClCds" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.266028.4.-5107" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="30,15" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Invoke;Value;ExpandCollapse;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="541,320" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="487,328" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'49, 12'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sbf5ff5725d7e406f9c910437f313b074" taskName="P_Search" type="Win" name="KeyInput" displayName="KeyInput" callDepth="2" depth="1" num="3" result="Pass" start="2023-01-05T00:39:46.619" end="2023-01-05T00:39:49.309" displayTime="2.7s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="onError" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Down,,Down,,Down,,Return," runtimeType="StringBuilder" key="Keyboard_KeyInput" displayKey="KeyInput" visible="true" required="true" />
+      <Property value="1000" runtimeType="Integer" key="Options_BeforeDelay" displayKey="Before Delay(ms)" visible="true" required="false" />
+      <Property value="500" runtimeType="Integer" key="Options_AfterDelay" displayKey="After Delay(ms)" visible="true" required="false" />
+      <Property value="100" runtimeType="Integer" key="Options_Interval" displayKey="Interval(ms)" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Keyboard_ClearKeyState" displayKey="Restore KeyState" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Se0bc86fe5fcc48d5bbdad1fa65a3f630" taskName="P_Search" type="Chrome" name="ChromeSetText" displayName="ChromeSetText" callDepth="2" depth="1" num="4" result="Pass" start="2023-01-05T00:39:49.325" end="2023-01-05T00:40:01.765" displayTime="12.4s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://www.g2b.go.kr/gov/koneps/pt/main/html/banner.html'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/gov/koneps/pt/main/html/banner.html" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[1]/div[1]/div[1]/div[1]/dl/dd[1]/form/div/fieldset[1]/ul/li[2]/dl/dd[2]/input'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//input[@id=\'bidNm\']'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAO1dbXPbRpL+fPkVOG7VSa5S+AKQlORI3nLsZMu1m8QbZ+/26upKBZKQhIgEGBCUrP2Qkm06pdi+jb0rxbJD+ZSN ...11608" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Keyboard_ClearAll" displayKey="ClearAll" visible="true" required="false" />
+      <Property value="'RPA'" runtimeType="String" key="Keyboard_NewText" displayKey="Input Text" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="Keyboard_UseDone" displayKey="Done(Enter)" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_Invoke" displayKey="Invoke" visible="true" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;INPUT&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;type&quot;,&quot;Value&quot;:&quot; ...1807" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/gov/koneps/pt/main/html/banner.html" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="INPUT" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsPassword" displayKey="IsPassword" visible="false" required="false" />
+      <Property value="1164" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'나라장터: 국가종합전자조달 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|246197888|Chrome/Group||wrap|Ch ...199" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Edit" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="554,316,484,23" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="'공고명'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="bidNm" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.17041666.4.-29611" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="968,15" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Invoke;Value;Text;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABn4SURBVHhe7Z3pcxTX1cbnf8qXlPMplQ+pLG9eh6pUOVVJKqm4bMcYG2/YYJzYLMYx3ogNmH0VQhtCCBACraAVtCEQEkJCgIQWEAKzCRvwSf/OzB3d6enpHsjwweg+VadG03373nuW55xzW8KOiYODQ0Y4gjg4hMARxMEhBI4gDg4hcARxcAiBI4iDQwgcQRwcQuAI4uAQAiXI7dvT0tNzSQ4e7JTx8Rt648GDh3L37vfyww8/6Hc/zpwZkcbGs/pp49tv78jp05dk3762pFRUdMrx4wMyNXVLHj4Mng/w7NDQFTl79nJG4T7jcok7d76T0dGp5Bo1Naf1MxtMTt6U9vZBOXz4pExPf5+4Grdpb++INDf3y4ULV3QNcP/+AxkcHH+kNRh35Ei32vX77x8krqbDbz90Yt0g/wbhu+/uy9Wr38rw8DUZGBhT/7a2nkvcDQdr9PePysWLV724iesahGzWuHRpUmpre5Lxg32xc7Z6ROHmzbsyNnZdbRU0H37En6wdO378nLfhmxrES5eWSF9f3Gnnz0/IqlUH5euvKzw5pLJxY7WOY4IjR05Kfn5DinLj49dl//52+eyzcvnPfypkx46jsnVrnaxeXSlffLFfNm2qUeUxUhC6uy/qmH//e29G4T7jAPtgP+zL7NEvO3celc7OIS+w7nsBdFeNXVrampTq6m6PvOc0ANljQ0OfPkcA20C3ysouKS5uUeOSQAB2Kixslk8+KVPDg1OnLsnmzbXy8celatOVK/epsYeHJ+Xevfu6xpdfHtA10IFAyaRDW1ucfOh99OgZ7/kZEvrhtx9rErDojZ8++mhP0r/oYNvhwIEO3U9dXY8UFDTqJ7ZDwgAZurouSF7eMVmzplI6Os57dpj2iHnPI+loyhrY79ix3tA1eGbXrgaNIeJn3boj+nNFRYecOzfq+euULFs2E6eZQCK+du2W1Nf3JNcvKzuh39nDgQPt+p2fly+fsQtApz17WlVilZUnlT04+dVXN8vJkxd0EIG8ZUttUpYvL5F33snTgL99+54uuGlTtTQ1ndXxACd8+mm5LFq0SwOJ7ImUlLSqw956a7tUVXVrJQkCa2I0HMvmMBwkLC09rvMtWpSvQUyQA4IFpzLG3quRpUuL5f33dyez+9TUbTUI9whIdPrqqwo1Fmu8/vpWDV4Cqby8TdcwINDQFz2oAFQCQKbesKFaFizYIdev31GS7N17XP75zwL55psjUlTUnAjYMjl0qCuZndgXa+AMMu/q1YfUUdjotde2JInV0tKv+4Ms/iplg/2xLntfuDBPheRGUFJ58A36Gf9S3d57L1+JTRASsMbukJcEuGFDla4bBDoLdIW069fHx1VUdHk+vKp+uXVr2lvrYtIXK1eWeb4rl+3b60LXIJ4+/XSffPBBoafPCdm2rc6Lu506B9me+Jg/f0aPTHj48KFMTHyrtuNZyIu/v/nmsPqEa8Qy/jZ2odqeOzem+1uxolR9FiNgggiCI0ZGrqnArq1ba+XDD4uSToYgLIqTaSHu33/oOWHAqxwHleEYG3LQWjHmiy8OyOLFu9UoMDsMsJ9gbm4+q0YmI5EF2TRB2tMznBzHXLQSZq+2kNUIVLIOeyYYBwcnNFjq6894+yxOZqeDBzvkjTe2KfkIaD9B0BFSRREEkm/eXKM2ILPeunVPHf2vfxUqYfwEYR4SRnv7ed0DAYuduIf90K229rSsXXs4lCDoREJZteqA56dCFX7mGvqjF/oZ//I5d+5G9RfzstcTJwY1OLBJFEHoAqgWBDNEJlFxzXTkkIS9sy+ERERFxTaGIJCLQLXXOHXqokeiet1XeXm7xuVHH5XK7t2NSmoShk30TIDAkJRYYX3ikVhg3oKCJl13x476FLvcuHFHY44kwxr/+McGieGYIIIAlKXnpUVBQYxBoNBeQJClS4s8xxd4zqvUNo0gpndkAeayheyP4gT09PR3yQAzINiZl+sEAVnVGJTsyHMEDopBWP9Zhu/sFcdgHOaihELqxsY+7/pMW4deGINqR0Y5dKhTnRZGkNOnh9WR7Iksk4kg2Ic2Bxtgy+vXb2vbSTUjU/sJYoN5GcMa6G/WoE+PJ6N27cVJRn7wbHX1ac3mL7ywToWfIUdHx1AgQfALfjf9N59U+2XL9iixIEoQQbAvulKhyPTox3cI4vcL4JppwbAzQixVVnZ6ezyiazAnviOOWlrOaXbHDyRWkgNrkGxJ0FRYO06jwNy9vZc1aUE0EhY+ItkeO3YmWZGInytXvvUSxYDng71KkhiZNhNBeIDMwlkEQ1CaTO9tE4RssGdPi54HcCJGZj5baJHYGCUfZf09JASACGRngoPsQnDDeLJGX9+ItkFVVac0WP1ViCxMD05lwND02JRnf7ABziME8oIFO+WVVzapwdE9jCCQjOu0PiQVc47yE4QyjX5vv71DhUBgHapfTU28kmUiCBmcoPSTGoKgB9dpxdi7H+jHvmhBDUH4mexJq5EtQfAxATNv3mZ5+eWNgQThfMHz6Ex2pzIWFjapn0iSJkYA5CAZEUMQtqGhV9cg+LA79mcNfIbvaGu4N2/eJl2fKjd37iZ5881tmnQIbJ6x4zQKdA60bm++uV3XwP6ff75f50HXF19cr/MxjipFEmZvJIoYG/MThPaGqoHSOJZMS+DTPhjYLRaTkhUIYEpZlBQXN2tfbIPDE5mCIDTBwH5QasmSYt0HJZLrGJTxNvyHZYiPonzncGw7DfLs3t2kc0NAqghrhBEEp9ILI5x5CBLgJwgBQWtBr0xLxkEzP79R2yVIDbFwFhWZMTZKSlrk3XfzdB/r1h3WFgFAEPT45JO9Oh+6GZhWgsQDGcmStA5kSp75/PNyPZtkSxASGe0gvmWuIIKQ5TnUE0QLF+7SFgsCYLdt2+pT9kdC4GzywQdFasOz3iE8fp7cpQHPJ2twZiB7kzghEZ0DRMFWPId/IC1J56WX4gGdLage+Ii90mJzrMD+5gwGEZkvHkNNuldITyXR17x+glDGmQSleQNFf3n58rWUIIMgBCAZiuyFYhCE8RAqSOKVplXfGpHVbEAyDvA4kwCELGRAnuPTHHhpmxjHeBv+QOU+TmZNCEMgAV6FcjDDCBiJrEfw0P4FEYQqCpkJvsWL87VVwlkYj3n96wKcTSAYvVln585jOif6ocuSJUWqBzD2I5hZg2rNIZsqwn4hCESmTeENmSEOQC8yH2/jaIuMQJB41T6ulSuMIPE3XXd0zwQIAc95iMQRRJDR0ev6pomAxW7ECrpgbwiOTamk7Au9aFfI2FwfGZnSDoOEV1TUpOck/xoE8Yw/zmtnQvWhumAbzgbZEgQy07nwAoRzNNWMfcRfLFSoT0zLRkziVzoAKhXtXCBByI60JWVlbXqgIdhMxjTg7QBKkBkNONjRItA++IU2w5+x/CBQyO5Uh6KiFs28BAWCsyEj5LWJauAPVA5nOJHnDMjg7BfjYGh+piVgzqBDOg7GDjie6kXPSvUj6xGwVFkc6CcIIDCC7EDWIrDmz9+iDiCQGEu1YU+sQSXhvAUp0ZkAyXRIp2KxLq0wr4RpQcnMvIBg/vgeB5Uk9tsfPmld0I35OatAJjI3RA06QBtQIfPyjqoezM8e6DpIpKyBLYeGJpTMVDx0oeLwqhzfkyQzHdIBehBHVGsqEsHKmYSWmWRJ2xVFEGKE9Xh9z1r4i5gg4WFT1vUf0g1IQJwFaWcDCQJYYGzshpY0MhIK22CRfftO6KdBd/clNQTBbQ5jRgjK11/fpgGbiSAEME596aUN2v5gJLIvfS5KwHTaEtPnEsD88giFCBCC6K23dnjVbkqJRnBzeGUMY8nIGJhAZO9cA5kIwi+zcA7XeRFBJWFunI5d+ETfIIIQRNgUfW07kHBYnzV4Y0L2pupiG7MGjjUtHTpxkM1EEFo2zi5Ub7I/jofA9OxkaYIDR/NGyu7dOcehlxHsDYHjVXtfKEFohSDTq69u0WqM/cnUkJC5Dh/u0tYI0hs7YTeQDUFosWiz/UL1tlssqicBT/ImHhJNggI78fKFao8+VDmDKIIQFyRCfJWRIIA3MGyIksNvP23gGCYyh1VAUOF8yiwGsIWsRJnlTYv/gG3A2xbeWvDGq79/TAMO4+MQ3mCgyGef7ddxBBFtHsSjFeA9OwFFdvnqq4OaGQkMhDGMPXNmWLMTlYO9m7YrE0EmJ29pVqSCDQyMqzNwBPvisMdvYiFmEEHInhCaoGNvxg4EIN/J1LzSZA1s4l+DJIAjL1y4qlUhiiA4nLmxM301OhCYBCPkwdm2f2k10NUIyYS/ioCYzBNGEM6tVGxIxX1sBDlopWgN0Z35sTd7Jo7QCWRDEOKNc4FfaK0gBy8g0IMWF/vTTpKQePliwHrECGuQdNizQRRB2DutLmeWCILcUcfTXhDcKOIXlDEgCDEQ2RDW+gWj8LaLjQeBVoNMR2ARMFQLlOH3AChEBsQY/DKKjIXxcTxnFqocY8haPMs1I4xhLFUFoxJ8NpiPeTkUQh4qFgQhWCEzxrcD07Q1GN0cAP0EwY44E9LS8vhtQcnnLJZpDcjLXiEAWTqqxUIHCGaLeUPJ4ROS2S0WAURlNYIu7MEELy0XtsTHfrAmiYusjM3RBfn660p9Dn2Yn8zOz4w3sAmSaQ1sTyxSMTivYd8ZqdKkhx6cmZiLJAQRIKIBuQ/CcM1/PDAEoWXD3/g9KO6pwkoQXpESjCiJYQ0wAtnZHDaDhOxkgMHI1szDBvxCP8nZxX9AN6CP5QBFy8ELAozBc3wyJ30h2ckcAGlPMBLZLFzC/0aI/VDWIVZn53k9W3Ewzga82SNJYCfsZYAdaRFxJkHgtwVC/54NGAfJcaZdsbMFRCNT0q7a/vWDgzrj+OsKDqu0UbZ/bRgCx1+t92j8UNkhBGfJTMhmDfNSggDmgO1/CwopqE687ubtHUmZPdgECYN5k8Weg+xi4p7rShCyEhmI9sNeBAbiHBiXSQg+A16nUvKCxiEYhIOSHUh+cA8ScBbBOFSl+O9PTupa/myQC5A9SRJkXITf3tuvKsNAkGBc7GSXeOwYZANbsl2DccwPyU2r8ijI5F8/CGwCmOpMNeHljO3fXCCbNdA3yF628Cy6kPkJ5oGBsbTqmgkkSpLxxMSNyLhXgjg4/BjB2ZFzHGewx6ms2cARxMEhBI4gDg4hcARxcAiBI4iDQwgcQRwcQuAI4uAQAkcQB4cQOII4OITAEcTBIQSOIA4OIXAEcXAIgSOIg0MIHosgDQc+deJkVshjEwS0Tu1z4uSpFkcQJ05C5H8iyOXps06cPNXyPxHkYX2BEydPtWQkyM2bN6WtrU0OHz4sfX19iatxOII4mS0Smz9/vhh59913Ze3atXLr1i0ZHx+XDRs2yNtvv60kseEI4mS2SOz999+X5cuXy8svvyy//e1v5Xe/+52sWrVKVq5cKX/605/kueeek5KSEiWEQRBBHByeRsS6u7tlZGRECgoK5M9//rP89Kc/lb/+9a/yl7/8RX75y186gjjMasSuXIn/p/Srqqrk+eefl1/84hdSW1srlZWV8sYbbziCOMxqpBHkZz/7mbz33nvyzjvvyJw5cxxBHGY1YmvWrJFt27bJ4sWL5Te/+Y0888wzWjlee+01PY84gjjMZsR4S7Vw4UJ55ZVX5O9//7uSY//+/Xom4eDuCOIwmxGjeqxevVo+/vhjWbFihWzcuFG6uvj/SnTqdSpLXV1dYngcjiAOswWxu3fvSktLi7ZZkGTRokVaUSBHcXGxNDc3y+TkzP96DTiCOMwWxMrLy+Vvf/ubPPvsszJ37lxZtmyZkuT3v/+9/OpXv5IPP/zQEcRh1iLGmYPDOcRob2+X/v5+6e3tlb179+q5hDdbVBgbjiAOswWxBQsWyK9//WutFBDkwoULMjAwIKWlpfLiiy9qdeG6DUcQh9mCWFlZmbZWkIE/OeFvsfhTE95uvfDCC/onJ1evXk0Mj8MRxGG2IDY9PS2QZN68efLzn/9cfvKTn6j88Y9/1Ddag4ODiaEzcARxmC3I2b8HcXB4GuEI4uAQgscmSFFJuUyWrU8K3504edrksQgiU/X64SqIw9MORxAHhxA4gjg4hCBnBHHi5GkURxAnTkLEEcSJkxB5fII4cTIL5PEI4uAwS+AI4uAQAkcQB4cQOII4OITAEcTBIQSOIA4OIXAEcXAIgSOIg0MIHEEcHEIQC/pHIrNJfqwI0sVJbsTGrK4gfmNkwg8//CBDQ0PS1NQkjY2N+h+yePDgQeJuHHznOvcZx3iee1LIdu8OjwZHEAtRQTZx/Ya0nR2Uus7Tsi6vUApLy6S4bJ+s3ZEvNW0npb6rJyl85zr3Gcd4nuN55sk1HEGeDBxBLEQFWffgRdm0v0rWlx+RNz75j2wr3CN5JWUyf8WXsnbvIVnPvYTwnevcZxzjeY7nmSfXcAR5MnAEsRAVZC09Z2VV0X4pbWqXf63fLivXbZLP1m2WxWu3SkF9i5Q0tCWF71znPuMYz3M8zzy5hiPIk4EjiIWoIGvsPiMrd5VKfl2LvPn5Gvn/F+bJ/z0/V17zqsOWynrZUd2YFL5znfuMYzzP8Tzz5BqOIE8GjiAWooLsaOcpWbYlX3bWeIdzL8gPHmuWwsO1cqCxVZq7e6SgtlE2HqxR2XCgWj7bXSYfrN8hH27YKV8WlitxeJ55cg1HkCeDNIIsa078lMDYrjkSi8WSMmfXWOKOheE8mfOHPPHf0WeXNCW+zaBpycx8iH9NRcqcY5L3B+uZtLV89xMSuNcQRAVZbVuXvL9um2w+VC/bD9XKlv3emaL8sGzms+yQfOPJmrLKuHhnkK/2VMiXXkuFrPa+b/Ke43nmyTXsvUfaF9ta99Ps5Lufbm8Pzctm7sfmSN5w4roF/D8zd5QPZ5ApbgC6JfWJ0sOGjg3eZxjSCMKCZgNxciyTma02ybKAjaQaIo74s97GfYqq82zjJJQMIqaZM/WZhKFT5o3vK5Boj4AogjS2d8qq7fnS0jsgVSe6VGrau6W67aRUtrTrW6pj3b2B0nCqT5/jeebJNczeo+3r86H/foA/0uZUcljBpt/tOAH4aWZMtA/jyBQ3cbB3s06EHikw5MwBQVQR3Vx80sDAt42l4+yFZzYzJ8tAnlnTwJpTFfcp5r8WNOYxEEWQjs4uKSndq7/PmLp2Ta5MTMjE+HhSxsfGVMZGR1VGL19OypUrE/oczzNPKFKy80zgYafgADB7j7Zvuv9SrwXd99uX+VLjIu7zlHV5xsyTjQ8TcwTHTQLYJUs9bMSve/M+RoyEECQY6ZuwWe0BJRL3o+YySB9nzZkxO1kOCRzz6IgiSFtHhxSWlMj977+Xo3Xe2WNfmcr+sr2yt6RYyvaU6GdJYYEU7MqTwvxd+pm/c4ccKN+nz/E882SGlRyATZYA5xuE7d22b6BPNFhD7BcU4CmI+yOFNFYwZ+3DiLgh9swaWeth1o7UIRhpBEkpW2lIsNzemG0IHzIpmgpfqQTWnMFZIdUhOsYEUUIy65AZUQQ50d4uuwuL5Lt79+RobY00HTsq3Z0d0n68VfaV7pHGo/VyoqVZ6muqpWh3vn421NfJQY8cEOne9LQ+zzy5Rua92/YNCGQQETxx+2YmUNB9fG+CPxsf2giOG8abPWarh1VRc0WQsCylGw8xhB/RBIkr6l/zUY2bvq8A0mWBKIIcb2uTXbt3y/Tdu9JzqlsuDp2X61NTXns1psQYvnhRrk1O6vUGjyyXh4flqtda9Z3pkZamRrl7544+zzy5RvDe/fbNNrAsaAbO4OPEvfSEZHUAHnJCEPb4iHqkzJMrgmQK53gQ+hdgo5kXDVQ0iYTz0jJT6pyPalyDoKwWhSiCtB4/ITvy8uTOrVsycPasDA0OeCS45BFiSE51dcr5gXNy6cKQnOvrk7bWFhnoP+tdG5DT3Sels71NbnvP8Tzz5Brpew+ybwa7ZQqeBAHC7BxHYi07GC2f5YQgKZ1KFnro3i3dc0WQxGcKgsnhwWcIPzITJMh5Cfjn9CuqiD+fqXIpAp8LRxRBWlpbZev27XLzxg2PIH1KkgvnB2XwXL8SpL+3V0nRe/qUEoRPqsfJjnbpbDuhz/E88+QaqXvPbN9An2jw+MZmTY4ELHtDiJTnHtGHQXvkmj02Sg+9n6hufslaJw+RBIkvlG5okGYIHwKVMM7LQKy0OYOYn3ItPp9/H8FZKxxRBGlqaZFNW7bKDa+tokqMXLoUf5s1Pi6nT3bJ6Miwtli0WpxLxi5flsmrVzzS9EuHR5AbU9f0eebJNWb2Hm1f/720awlyBCegYHvPkID7Yf5KIOhaAulxk9qygaz0sBGyXhhCCaILZiAHaFoSvmAQQfRaJiU8BM2Z+kwiAKx50/apxoioMAGIIkhjU7Os37hJpiavegTplR6vdYIYVA8O61SKjhPHtXpwJmn1zh0tjQ3S3HBMr/MczzNPrmH2HmVfb0Tq+cxvqyxsF7e37Sd7Tu/ngPWjfGgjLW7YU9rYCD380Ps5IIiWIVUkvgFTllKFYOR+ZvKAQEUD5/MkuWbQnAmDpoxNRdxpM2MelRwgiiBHGxpl7br1cvP6lFz1DuYTo5dl/PJIiox5VcTIqHc+McI9nuN55sk1dO+R9k3AN86uBuoz654ttk399k7OQSUJDPxoHxr444a17D0mEaJHGnJFkMTnrEQYQW7fvi0HKipk6UcrpLqmVqqqq+VIVVXWwnie43nmYb5cIorcDo8HRxALYUE2OjoqRcXF8s7CRRrkjys8zzzMl0s4gjwZOIJYiCJIbV2dbPDOEJ9+/uVjC88zjyPIjwNpBOHCbJYfK4J0cZIbsTGrK4iDQxQcQRwcQuAI4uAQAkcQB4eMEPkvXL9dEdYhpvMAAAAASUVORK5CYII=" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="696,324" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="642,332" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'88, 16'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50f4b710ca6f478faa4ed5ac1b6b8598" taskName="P_Search" type="Chrome" name="ChromeSetText" displayName="ChromeSetText" callDepth="2" depth="1" num="5" result="Pass" start="2023-01-05T00:40:01.774" end="2023-01-05T00:40:14.099" displayTime="12.3s">
+    <Variables>
+      <Variable name="daysBefore" scope="Input" owner="P_Search" declareType="Any" isChanged="false" isChangable="false" runtimeType="String" value="'2022/12/11'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://www.g2b.go.kr/gov/koneps/pt/main/html/banner.html'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/gov/koneps/pt/main/html/banner.html" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[1]/div[1]/div[1]/div[1]/dl/dd[1]/form/div/fieldset[1]/ul/li[3]/dl/dd/div[1]/input[1] ...1" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//input[@id=\'fromBidDt\']'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAO1dbXPbRpL+fPkVOG7VSa5S+AKQlORI3nLsZMu1m8QbZ+/26upKBZKQhIgEGBCUrP2Qkm06pdi+jb0rxbJD+ZSN ...11608" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Keyboard_ClearAll" displayKey="ClearAll" visible="true" required="false" />
+      <Property value="'2022/12/11'" runtimeType="String" key="Keyboard_NewText" displayKey="Input Text" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="Keyboard_UseDone" displayKey="Done(Enter)" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_Invoke" displayKey="Invoke" visible="true" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;INPUT&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;1&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;id&quot;,&quot;Value&quot;:&quot;f ...1950" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/gov/koneps/pt/main/html/banner.html" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="INPUT" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsPassword" displayKey="IsPassword" visible="false" required="false" />
+      <Property value="1164" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'나라장터: 국가종합전자조달 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|246197888|Chrome/Group||wrap|Ch ...228" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Edit" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="517,354,88,24" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="'공고게시시작일'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'2022/12/05'" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'2022/12/05'" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="fromBidDt" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.17041666.4.-29617" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="30,15" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Invoke;Value;Text;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="643,363" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="589,371" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'72, 17'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9ed6b3c5eb814979b3c9e0be563f3066" taskName="P_Search" type="Chrome" name="ChromeClick" displayName="ChromeClick" callDepth="2" depth="1" num="6" result="Pass" start="2023-01-05T00:40:14.113" end="2023-01-05T00:40:26.480" displayTime="12.4s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://www.g2b.go.kr/gov/koneps/pt/main/html/banner.html'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/gov/koneps/pt/main/html/banner.html" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[1]/div[1]/div[1]/div[1]/dl/dd[1]/form/div/fieldset[1]/ul/li[4]/dl/dd[3]/a/strong'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//form[@id=\'searchForm\']/div/fieldset[1]/ul/li[4]/dl/dd[3]/a/strong'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAO1dbXPbRpL+fPkVOG7VSa5S+AKQlORI3nLsZMu1m8QbZ+/26upKBZKQhIgEGBCUrP2Qkm06pdi+jb0rxbJD+ZSN ...11608" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;STRONG&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsUse&quot;:false}],&quot;IsUse&quot;:true},{&quot;Index&quot; ...1907" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/gov/koneps/pt/main/html/banner.html" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="STRONG" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="1164" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'나라장터: 국가종합전자조달 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|246197888|Chrome/Group||wrap|Ch ...199" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Hyperlink" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="1100,391,63,28" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="'검색'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'javascript:search1();'" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'javascript:search1();'" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.17041666.4.-29868" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="30,15" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Invoke;Value;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="1179,388" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="1125,396" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'25, 5'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sdcee021671d3402891f97b9b013ba738" taskName="P_Search" type="Chrome" name="ChromeWaitAppear" displayName="ChromeWaitAppear" callDepth="2" depth="1" num="7" result="Pass" start="2023-01-05T00:40:26.494" end="2023-01-05T00:40:37.099" displayTime="10.6s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:ChromeBrowserObject&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://www.g2b.go.kr/pt/menu/selectSubFrame.do'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/pt/menu/selectSubFrame.do?framesrc=/pt/menu/frameTgong.do?url=https://www.g2b. ...196" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="'https://www.g2b.go.kr:8101/ep/tbid/tbidList.do'" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="'frame[1]/frame[1]'" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[2]/div[1]/h2'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//div[@id=\'content_header\']/h2'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAO1c/1PbRhb/2fwVW80cmAEsyXwJX2xnCCQzTNskk9B2OpkMI1troyBLqiTzpZ3MQGN6JOQu9C5cIIEcuSaXL0fm ...4916" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="RESULT : False" runtimeType="Boolean" key="CHROME_Result" displayKey="Result" visible="true" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;H2&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsUse&quot;:false}],&quot;IsUse&quot;:true},{&quot;Index&quot;:1,&quot; ...450" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://www.g2b.go.kr/pt/menu/selectSubFrame.do?framesrc=/pt/menu/frameTgong.do?url=https://www.g2b. ...196" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="'https://www.g2b.go.kr:8101/ep/tbid/tbidList.do?taskClCds=&amp;bidNm=rpa&amp;searchDtType=1&amp;fromBidDt=2022/1 ...114" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="'?taskClCds=&amp;bidNm=rpa&amp;searchDtType=1&amp;fromBidDt=2022/12/05&amp;toBidDt=2023/01/04&amp;fromOpenBidDt=&amp;toOpenB ...68" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="H2" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="1164" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'나라장터: 국가종합전자조달 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|246197888|Chrome/Pane||sub|Chro ...53" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Document" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="232,234,1627,847" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="'입찰공고 목록'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'https://www.g2b.go.kr:8101/ep/tbid/tbidList.do?taskClCds=&amp;bidNm=rpa&amp;searchDtType=1&amp;fromBidDt=2022/1 ...114" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'https://www.g2b.go.kr:8101/ep/tbid/tbidList.do?taskClCds=&amp;bidNm=rpa&amp;searchDtType=1&amp;fromBidDt=2022/1 ...114" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.17041666.4.-44998" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="488,127" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Value;Text;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="421,256" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="367,264" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'135, 30'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+    <SearchResult tryCount="0" appCount="0" candidateCount="0">
+      <chromeResult>
+        <RecommendQuery query="//div[@id='content_header']/h2" count="1" />
+      </chromeResult>
+    </SearchResult>
+  </Step>
+  <Step id="Saeaf2ae91fe740beb1df49d612788790" taskName="P_Search" type="Flow" name="InternalData" displayName="End-RunTask (P_Search) / Return To P_웹_표_정보_추출하기" callDepth="2" depth="1" num="8" result="Pass" start="2023-01-05T00:40:37.099" end="2023-01-05T00:40:37.099" displayTime="0s" />
+  <Step id="S0ed2214ff03d4f89b27638e580954ac3" taskName="P_웹_표_정보_추출하기" type="Flow" name="RunTask" displayName="RunTask (P_DataScraper)" callDepth="1" depth="1" num="3" result="Pass" start="2023-01-05T00:40:37.114" end="2023-01-05T00:40:37.114" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray2D" scope="Normal" owner="P_웹_표_정보_추출하기" declareType="Any" isChanged="false" isChangable="false" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="P_DataScraper" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+      <Property value="this.dataArray2D : &lt;undefined&gt;" runtimeType="Undefined" key="Output_dataArray2D" displayKey="dataArray2D" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S95173256d76448d89f572d87433f2c15" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="1" num="1" result="Pass" start="2023-01-05T00:40:37.130" end="2023-01-05T00:40:37.130" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+      <Variable name="dataArray2D" scope="Output" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray2D : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S56855770b85b4c3ca18fd81e47e60222" taskName="P_DataScraper" type="Win" name="GetGridItems" displayName="GetGridItems" callDepth="2" depth="1" num="2" result="Pass" start="2023-01-05T00:40:37.161" end="2023-01-05T00:40:40.598" displayTime="3.4s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="onError" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="10" runtimeType="Integer" key="Target_Timeout" displayKey="Timeout(Sec)" visible="true" required="true" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Target_TargetNo" displayKey="Index (1번부터 시작)" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseName" displayKey="Check Name" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseValue" displayKey="Check Value" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseLegacyValue" displayKey="Check Legacy Value" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseBounds" displayKey="Check Size" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseAppTitle" displayKey="Check Title" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseSetFocus" displayKey="Focus Before" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_DrawBounds" displayKey="Draw Bounds" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseObjectPath" displayKey="Check Path" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="Search Around" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="Use Image Match" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="Image Index Method" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="Select Image Index" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_SearchBounds" displayKey="Search Bounds" visible="false" required="false" />
+      <Property value="1164" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="Application" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="Remote App Name" visible="false" required="false" />
+      <Property value="'나라장터: 국가종합전자조달 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="App Class Name" visible="false" required="false" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="앱 객체 타입" visible="false" required="false" />
+      <Property value="527600" runtimeType="Integer" key="Application_WindowHandle" displayKey="WindowHandle" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Invoke;Value;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="Supported Patterns" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.17041666.4.-45115" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="Class Name" visible="false" required="false" />
+      <Property value="Hyperlink" runtimeType="String" key="Target_ClassType" displayKey="Type" visible="true" required="false" />
+      <Property value="'RPA 확대 구축 및 운영 모니터링 용역'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|246197888|Chrome/Pane||sub|Chro ...227" runtimeType="String" key="Target_ObjectPath" displayKey="Object Path" visible="true" required="true" />
+      <Property value="467,440,204,35" runtimeType="Rect" key="Target_Bounds" displayKey="Size" visible="true" required="false" />
+      <Property value="637,438" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="583,446" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'116, 6'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+      <Property value="'https://www.g2b.go.kr:8101/ep/tbid/serviceBidDtl.do?tbidno=20230102298&amp;bidseq=00'" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'https://www.g2b.go.kr:8101/ep/tbid/serviceBidDtl.do?tbidno=20230102298&amp;bidseq=00'" runtimeType="String" key="Target_LegacyValue" displayKey="Legacy Value" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsReadOnly" displayKey="IsReadOnly" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_IsEditable" displayKey="IsEditable" visible="false" required="false" />
+      <Property value="408,15" runtimeType="Size" key="Target_SizeTolerance" displayKey="Size Tolerance" visible="false" required="false" />
+      <Property value="2023-01-04 14:55:28.081" runtimeType="String" key="Target_TimeStamp" displayKey="TimeStamp" visible="false" required="false" />
+      <Property value="Center" runtimeType="String" key="Target_RelativeOrigin" displayKey="Relative Origin" visible="true" required="false" />
+      <Property value="'0, 0'" runtimeType="String" key="Target_RelativePoint" displayKey="Relative Point" visible="true" required="false" />
+      <Property value="this.dataTable : &lt;object:System.Object[][]&gt;" runtimeType="Array2D" key="Conditions_Result" displayKey="Result" visible="true" required="false" />
+      <Property value="Name" runtimeType="String" key="Target_DataType" displayKey="Data Type" visible="true" required="false" />
+      <Property value="';'" runtimeType="String" key="Target_Delimiter" displayKey="SubItem Delimiter" visible="true" required="false" />
+      <Property value="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPXSURBVHhe7dhRihwxDEXR7Gn2lNVmB4H8ZwHJbwc3CBS1/CSXq6Yr5BacMG1LsnuoB0O+fPvx+wHg1XgICDBBQACBgAACAQEEAgIIBAQQCAggEBBAICCAQEAAgYAAAgEBBAICCAQEEJ4Bef7Lw8OTPgSEh0c8X379/P4A8IqAAAIBAQQCAggEBBAICCAQEEAgIIBAQACBgAACAQEEAgIIBAQQCAggEBBAICCAQEAAgYAAAgEBBAICCAQEEAgIIBAQQCAggEBAAIGAAAIBAQQCAggEBBAICCBcGpCPj69/yfbjWtdO7w71fc5yZLa/V5TVd+32n2nnLkd7nwGxX6QaUu0fsTrP1x/prWR9Z8vOHWKN/1yp6tW+nW+y/bimxHmZWV+27qneTKzxn7ueAfELs0HZoTNWO+PrfJ+tRX4v+/kMap7dQ8n6MlltXFuZN1T1s/3ZXaJYo1T1s/3OOVf0Vl4CMsRh/vPKQVVfd81U83aszNs5O+uNa0fmj56ZrH7I9uKa6s9U9bP9zjlX9FYuC0hWl801sxqvW3dEZ96osTr/84qsJ64dmXvE7C5RrFGq+tl+55wreisvAckG+bWVg0atl+131oyfpeqOmM2rzqv2I1/vxRr/+SrZObt3qepn+51zVG+Urce+jmdA1JDumjKrX53t91bvoJw56wzd+4y6VdWMbD+uKXFeZtaXrXtX9FaeAck2TDa4OmzsV6wu641rxu+pOm/UrTqjd8funLPuMXzWXTp1s5qd3korIJms9gyz2fHc3Tvs9O+e7dn3MlnNqjPvt6t7l1md/72ommzd69RkZEDU0O6lKt0e2/N19vMRK/12ByXr+yzx/NX7+O8RZfUrujPiuSbW+M/VutepyVwakMrqDF+/e/4Z9zdHZo0eJeuZWa33qt6d2cNuvzebNdZnfI3v6SIgJzjjLjszruztzrbvsCKboxzpMUd7ZUCu9o4vbHb7vdVZo96r1iuxL5P1mazeZPXvsnOfo71vDQhwdwQEEAgIIBAQQCAggEBAAGEpIP6//6Ksvmu3H7hKOyDVS6z2LUQm249rwB1cHpBZIKJYA9xBOyBD9mKbrH7I9uKa6gfeaSkgw+rLTUDwL3tbQKJYA9xBGZDsZa5UM7L9uAbcQRmQz0BAcFe3CAhwV0sB8X8mRVm9yeqjrA94t3ZAqpd45yUnILgrAgII7YAM40Weyeq7dvuBqywFBPjfEBBAICCAQEAAgYAAAgEBBAICCAQEEAgIIBAQQCAggEBAAIGAAAIBAQQCAggEBBAICCAQEEAgIIBAQACBgADC4/F4/AFOHLxEzyPCGgAAAABJRU5ErkJggg==" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="0,0,200,100" runtimeType="Rect" key="Target_ImageCompareBounds" displayKey="Image Comp. Bounds" visible="false" required="false" />
+      <Property value="'100, 50'" runtimeType="String" key="Target_PointOnImage" displayKey="Point on Image" visible="false" required="false" />
+    </Properties>
+    <SearchResult result="Found" tryCount="1" appFilter="Single" appCount="1" searchMethod="TopDown" candidateCount="21" targetFilter="Name" extraFilter="" targetImage="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPXSURBVHhe7dhRqhRBDIVht+S63Kpr8NEViPgiIzUQiJnUSaqr+06Lf8Mnd6qSVM2lD1z89PXbzweAV+MhIMAEAQEEAgIIBAQQCAggEBBAICCAQEAAgYAAAgEBBAICCAQEEAgIIBAQQHgG5PkvDw9P+hAQHh7xfPrx6/cDwCsCAggEBBAICCAQEEAgIIBAQACBgAACAQEEAgIIBAQQCAggEBBAICCAQEAAgYAAAgEBBAICCAQEEAgIIBAQQCAggEBAAIGAAAIBAQQCAggEBBAICCAQEEAgIIBwaUA+f/n+l2w/rnXt9O5Q3+csR2b7e0VZfddu/5l27nK09xkQ+0WqIdX+EavzfP2R3krWd7bs3CHW+M+Vql7t2/km249rSpyXmfVl657qzcQa/7nrGRC/MBuUHTpjtTO+zvfZWuT3sp/PoObZPZSsL5PVxrWVeUNVP9uf3SWKNUpVP9vvnHNFb+UlIEMc5j+vHFT1dddMNW/Hyryds7PeuHZk/uiZyeqHbC+uqf5MVT/b75xzRW/lsoBkddlcM6vxunVHdOaNGqvzP6/IeuLakblHzO4SxRqlqp/td865orfyEpBskF9bOWjUetl+Z834WaruiNm86rxqP/L1Xqzxn6+SnbN7l6p+tt85R/VG2Xrs63gGRA3primz+tXZfm/1DsqZs87Qvc+oW1XNyPbjmhLnZWZ92bp3RW/lGZBsw2SDq8PGfsXqst64ZvyeqvNG3aozenfszjnrHsNH3aVTN6vZ6a20ApLJas8wmx3P3b3DTv/u2Z59L5PVrDrzfru6d5nV+d+LqsnWvU5NRgZEDe1eqtLtsT1fZz8fsdJvd1Cyvo8Sz1+9j/8eUVa/ojsjnmtijf9crXudmsylAamszvD1u+efcX9zZNboUbKemdV6r+rdmT3s9nuzWWN9xtf4ni4CcoIz7rIz48re7mz7DiuyOcqRHnO0Vwbkau/4wma331udNeq9ar0S+zJZn8nqTVb/Ljv3Odr71oAAd0dAAIGAAAIBAQQCAggEBBCWAuL/+y/K6rt2+4GrtANSvcRq30Jksv24BtzB5QGZBSKKNcAdtAMyZC+2yeqHbC+uqX7gnZYCMqy+3AQE/7K3BSSKNcAdlAHJXuZKNSPbj2vAHZQB+QgEBHd1i4AAd7UUEP9nUpTVm6w+yvqAd2sHpHqJd15yAoK7IiCA0A7IMF7kmay+a7cfuMpSQID/DQEBBAICCAQEEAgIIBAQQCAggEBAAIGAAAIBAQQCAggEBBAICCAQEEAgIIBAQACBgAACAQEEAgIIBAQQCAggPB6Pxx8WXPypUi3aJwAAAABJRU5ErkJggg==" />
+  </Step>
+  <Step id="Sbcf3bc3d17894df29a06780ea1f03e4f" taskName="P_DataScraper" type="Flow" name="Loop" displayName="For" callDepth="2" depth="1" num="3" result="Pass" start="2023-01-05T00:40:40.613" end="2023-01-05T00:40:40.629" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="1" runtimeType="Integer" key="Conditions_InitializeIndex" displayKey="Initialize" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Conditions_LoopCondition" displayKey="Condition" visible="true" required="true" />
+      <Property value="1" runtimeType="Integer" key="Conditions_UpdateIndex" displayKey="Update" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb5bf2c32a178492e8891f461462e696e" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="4" result="Pass" start="2023-01-05T00:40:40.644" end="2023-01-05T00:40:40.644" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc7ee418967c541dca47f4bf4a0913ace" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="5" result="Pass" start="2023-01-05T00:40:40.660" end="2023-01-05T00:40:40.660" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2300006-00'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S0065539a43b2416786badd074c1b04c8" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="6" result="Pass" start="2023-01-05T00:40:40.676" end="2023-01-05T00:40:40.676" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2300006-00']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'RPA 확대 구축 및 운영 모니터링 용역'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S5a3c8620f2104abf8c372dc0532a950a" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="7" result="Pass" start="2023-01-05T00:40:40.691" end="2023-01-05T00:40:40.691" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[2] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'한국토지주택공사'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S72f266e65b844d69bc87d1a6538111a4" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="8" result="Pass" start="2023-01-05T00:40:40.707" end="2023-01-05T00:40:40.707" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[3] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2023/01/03 18:05 (2023/01/16 16:00)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc38772c53a0c401481d8d06d6903348f" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="9" result="Pass" start="2023-01-05T00:40:40.723" end="2023-01-05T00:40:40.723" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)']" />
+      <Variable name="dataArray2D" scope="Output" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray2D[this.i-1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)']" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb5bf2c32a178492e8891f461462e696e" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="4" result="Pass" start="2023-01-05T00:40:40.738" end="2023-01-05T00:40:40.738" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc7ee418967c541dca47f4bf4a0913ace" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="5" result="Pass" start="2023-01-05T00:40:40.754" end="2023-01-05T00:40:40.754" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'P202A149-01'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S0065539a43b2416786badd074c1b04c8" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="6" result="Pass" start="2023-01-05T00:40:40.769" end="2023-01-05T00:40:40.769" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['P202A149-01']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'서부발전 RPA시스템 유지보수 용역'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S5a3c8620f2104abf8c372dc0532a950a" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="7" result="Pass" start="2023-01-05T00:40:40.785" end="2023-01-05T00:40:40.785" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['P202A149-01', '서부발전 RPA시스템 유지보수 용역']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[2] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'한전KDN(주)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S72f266e65b844d69bc87d1a6538111a4" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="8" result="Pass" start="2023-01-05T00:40:40.801" end="2023-01-05T00:40:40.801" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['P202A149-01', '서부발전 RPA시스템 유지보수 용역', '한전KDN(주)']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[3] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2022/12/30 10:59 (2022/12/30 13:00)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc38772c53a0c401481d8d06d6903348f" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="9" result="Pass" start="2023-01-05T00:40:40.816" end="2023-01-05T00:40:40.879" displayTime="0.1s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['P202A149-01', '서부발전 RPA시스템 유지보수 용역', '한전KDN(주)', '2022/12/30 10:59 (2022/12/30 13:00)']" />
+      <Variable name="dataArray2D" scope="Output" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)']]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray2D[this.i-1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="['P202A149-01', '서부발전 RPA시스템 유지보수 용역', '한전KDN(주)', '2022/12/30 10:59 (2022/12/30 13:00)']" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb5bf2c32a178492e8891f461462e696e" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="4" result="Pass" start="2023-01-05T00:40:40.894" end="2023-01-05T00:40:40.894" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['P202A149-01', '서부발전 RPA시스템 유지보수 용역', '한전KDN(주)', '2022/12/30 10:59 (2022/12/30 13:00)']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc7ee418967c541dca47f4bf4a0913ace" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="5" result="Pass" start="2023-01-05T00:40:40.910" end="2023-01-05T00:40:40.910" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'20221242861-00'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S0065539a43b2416786badd074c1b04c8" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="6" result="Pass" start="2023-01-05T00:40:40.926" end="2023-01-05T00:40:40.926" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20221242861-00']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2023년도 KEITI 로봇자동화(RPA) 운영'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S5a3c8620f2104abf8c372dc0532a950a" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="7" result="Pass" start="2023-01-05T00:40:40.941" end="2023-01-05T00:40:40.941" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20221242861-00', '2023년도 KEITI 로봇자동화(RPA) 운영']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[2] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'한국환경산업기술원'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S72f266e65b844d69bc87d1a6538111a4" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="8" result="Pass" start="2023-01-05T00:40:40.957" end="2023-01-05T00:40:40.957" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20221242861-00', '2023년도 KEITI 로봇자동화(RPA) 운영', '한국환경산업기술원']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[3] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2022/12/27 10:03 (2023/01/10 10:00)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc38772c53a0c401481d8d06d6903348f" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="9" result="Pass" start="2023-01-05T00:40:40.972" end="2023-01-05T00:40:40.972" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20221242861-00', '2023년도 KEITI 로봇자동화(RPA) 운영', '한국환경산업기술원', '2022/12/27 10:03 (2023/01/10 10:00)']" />
+      <Variable name="dataArray2D" scope="Output" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)'], ['P202 ...84" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray2D[this.i-1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="['20221242861-00', '2023년도 KEITI 로봇자동화(RPA) 운영', '한국환경산업기술원', '2022/12/27 10:03 (2023/01/10 10:00)']" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb5bf2c32a178492e8891f461462e696e" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="4" result="Pass" start="2023-01-05T00:40:40.988" end="2023-01-05T00:40:40.988" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20221242861-00', '2023년도 KEITI 로봇자동화(RPA) 운영', '한국환경산업기술원', '2022/12/27 10:03 (2023/01/10 10:00)']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc7ee418967c541dca47f4bf4a0913ace" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="5" result="Pass" start="2023-01-05T00:40:41.004" end="2023-01-05T00:40:41.004" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'20220864-01'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S0065539a43b2416786badd074c1b04c8" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="6" result="Pass" start="2023-01-05T00:40:41.020" end="2023-01-05T00:40:41.020" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220864-01']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S5a3c8620f2104abf8c372dc0532a950a" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="7" result="Pass" start="2023-01-05T00:40:41.035" end="2023-01-05T00:40:41.035" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220864-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[2] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'한전KDN(주)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S72f266e65b844d69bc87d1a6538111a4" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="8" result="Pass" start="2023-01-05T00:40:41.051" end="2023-01-05T00:40:41.051" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220864-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화', '한전KDN(주)']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[3] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2022/12/23 10:13 (2023/01/03 11:00)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc38772c53a0c401481d8d06d6903348f" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="9" result="Pass" start="2023-01-05T00:40:41.066" end="2023-01-05T00:40:41.082" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220864-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화', '한전KDN(주)', '2022/12/23 10:13 (2023/01/03 11:00)' ...1" />
+      <Variable name="dataArray2D" scope="Output" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)'], ['P202 ...207" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray2D[this.i-1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="['20220864-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화', '한전KDN(주)', '2022/12/23 10:13 (2023/01/03 11:00)' ...1" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb5bf2c32a178492e8891f461462e696e" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="4" result="Pass" start="2023-01-05T00:40:41.097" end="2023-01-05T00:40:41.097" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220864-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화', '한전KDN(주)', '2022/12/23 10:13 (2023/01/03 11:00)' ...1" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc7ee418967c541dca47f4bf4a0913ace" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="5" result="Pass" start="2023-01-05T00:40:41.113" end="2023-01-05T00:40:41.113" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'20220860-01'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S0065539a43b2416786badd074c1b04c8" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="6" result="Pass" start="2023-01-05T00:40:41.129" end="2023-01-05T00:40:41.129" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220860-01']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S5a3c8620f2104abf8c372dc0532a950a" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="7" result="Pass" start="2023-01-05T00:40:41.145" end="2023-01-05T00:40:41.145" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220860-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[2] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'한전KDN(주)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S72f266e65b844d69bc87d1a6538111a4" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="8" result="Pass" start="2023-01-05T00:40:41.160" end="2023-01-05T00:40:41.160" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220860-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화', '한전KDN(주)']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[3] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2022/12/22 14:53 (2023/01/03 11:00)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc38772c53a0c401481d8d06d6903348f" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="9" result="Pass" start="2023-01-05T00:40:41.176" end="2023-01-05T00:40:41.176" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220860-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화', '한전KDN(주)', '2022/12/22 14:53 (2023/01/03 11:00)' ...1" />
+      <Variable name="dataArray2D" scope="Output" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)'], ['P202 ...207" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray2D[this.i-1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="['20220860-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화', '한전KDN(주)', '2022/12/22 14:53 (2023/01/03 11:00)' ...1" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb5bf2c32a178492e8891f461462e696e" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="4" result="Pass" start="2023-01-05T00:40:41.191" end="2023-01-05T00:40:41.191" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220860-01', '[긴급]RPA기반 ICT설비 예방점검 자동화시스템 고도화', '한전KDN(주)', '2022/12/22 14:53 (2023/01/03 11:00)' ...1" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc7ee418967c541dca47f4bf4a0913ace" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="5" result="Pass" start="2023-01-05T00:40:41.207" end="2023-01-05T00:40:41.207" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'20220855-01'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S0065539a43b2416786badd074c1b04c8" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="6" result="Pass" start="2023-01-05T00:40:41.223" end="2023-01-05T00:40:41.223" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220855-01']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'[재공고]서부발전 RPA시스템 유지보수 용역'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S5a3c8620f2104abf8c372dc0532a950a" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="7" result="Pass" start="2023-01-05T00:40:41.237" end="2023-01-05T00:40:41.237" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220855-01', '[재공고]서부발전 RPA시스템 유지보수 용역']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[2] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'한전KDN(주)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S72f266e65b844d69bc87d1a6538111a4" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="8" result="Pass" start="2023-01-05T00:40:41.253" end="2023-01-05T00:40:41.253" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220855-01', '[재공고]서부발전 RPA시스템 유지보수 용역', '한전KDN(주)']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[3] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2022/12/21 10:23 (2022/12/27 11:00)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc38772c53a0c401481d8d06d6903348f" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="9" result="Pass" start="2023-01-05T00:40:41.269" end="2023-01-05T00:40:41.269" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220855-01', '[재공고]서부발전 RPA시스템 유지보수 용역', '한전KDN(주)', '2022/12/21 10:23 (2022/12/27 11:00)']" />
+      <Variable name="dataArray2D" scope="Output" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)'], ['P202 ...207" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray2D[this.i-1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="['20220855-01', '[재공고]서부발전 RPA시스템 유지보수 용역', '한전KDN(주)', '2022/12/21 10:23 (2022/12/27 11:00)']" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb5bf2c32a178492e8891f461462e696e" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="4" result="Pass" start="2023-01-05T00:40:41.300" end="2023-01-05T00:40:41.300" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220855-01', '[재공고]서부발전 RPA시스템 유지보수 용역', '한전KDN(주)', '2022/12/21 10:23 (2022/12/27 11:00)']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc7ee418967c541dca47f4bf4a0913ace" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="5" result="Pass" start="2023-01-05T00:40:41.316" end="2023-01-05T00:40:41.316" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'20220817-01'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S0065539a43b2416786badd074c1b04c8" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="6" result="Pass" start="2023-01-05T00:40:41.331" end="2023-01-05T00:40:41.331" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220817-01']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'[긴급]서부발전 RPA시스템 유지보수 용역'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S5a3c8620f2104abf8c372dc0532a950a" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="7" result="Pass" start="2023-01-05T00:40:41.347" end="2023-01-05T00:40:41.347" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220817-01', '[긴급]서부발전 RPA시스템 유지보수 용역']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[2] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'한전KDN(주)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S72f266e65b844d69bc87d1a6538111a4" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="8" result="Pass" start="2023-01-05T00:40:41.363" end="2023-01-05T00:40:41.363" displayTime="0s">
+    <Variables>
+      <Variable name="dataTable" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;object:System.Object[][]&gt;" />
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220817-01', '[긴급]서부발전 RPA시스템 유지보수 용역', '한전KDN(주)']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray[3] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'2022/12/14 13:55 (2022/12/20 11:00)'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc38772c53a0c401481d8d06d6903348f" taskName="P_DataScraper" type="Flow" name="Assign" displayName="Assign" callDepth="2" depth="2" num="9" result="Pass" start="2023-01-05T00:40:41.378" end="2023-01-05T00:40:41.378" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray" scope="Normal" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['20220817-01', '[긴급]서부발전 RPA시스템 유지보수 용역', '한전KDN(주)', '2022/12/14 13:55 (2022/12/20 11:00)']" />
+      <Variable name="dataArray2D" scope="Output" owner="P_DataScraper" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)'], ['P202 ...207" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.dataArray2D[this.i-1] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="['20220817-01', '[긴급]서부발전 RPA시스템 유지보수 용역', '한전KDN(주)', '2022/12/14 13:55 (2022/12/20 11:00)']" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S9aa69a24dbf743d4a4a8f84db14d3a79" taskName="P_DataScraper" type="Flow" name="EndLoop" displayName="End-For" callDepth="2" depth="2" num="10" result="Pass" start="2023-01-05T00:40:41.394" end="2023-01-05T00:40:41.394" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sff5c1b01b1264bbba094543bbd6ce397" taskName="P_DataScraper" type="Flow" name="InternalData" displayName="End-RunTask (P_DataScraper) / Return To P_웹_표_정보_추출하기" callDepth="2" depth="2" num="11" result="Pass" start="2023-01-05T00:40:41.394" end="2023-01-05T00:40:41.394" displayTime="0s" />
+  <Step id="S10b10cdd3f9c46d599ef965a8908d7b7" taskName="P_웹_표_정보_추출하기" type="Flow" name="RunTask" displayName="RunTask (P_ExcelRecord)" callDepth="1" depth="1" num="4" result="Pass" start="2023-01-05T00:40:41.410" end="2023-01-05T00:40:41.425" displayTime="0s">
+    <Variables>
+      <Variable name="dataArray2D" scope="Normal" owner="P_웹_표_정보_추출하기" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)'], ['P202 ...207" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="P_ExcelRecord" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+      <Property value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)'], ['P202 ...207" runtimeType="Array2D" key="Input_dataArray2D" displayKey="dataArray2D" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S8875a3ec80c7456ca266b7e9d3e3d57d" taskName="P_ExcelRecord" type="Excel" name="WriteRange" displayName="WriteRange" callDepth="2" depth="1" num="1" result="Pass" start="2023-01-05T00:40:41.441" end="2023-01-05T00:40:41.771" displayTime="0.3s">
+    <Variables>
+      <Variable name="dataArray2D" scope="Input" owner="P_ExcelRecord" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array2D" value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)'], ['P202 ...207" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="[['2300006-00', 'RPA 확대 구축 및 운영 모니터링 용역', '한국토지주택공사', '2023/01/03 18:05 (2023/01/16 16:00)'], ['P202 ...207" runtimeType="Array2D" key="Input_DataArray" displayKey="DataArray" visible="true" required="true" />
+      <Property value="&lt;ActiveSheet&gt;" runtimeType="Any" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A2'" runtimeType="String" key="Sheet_StartCell" displayKey="StartCell" visible="true" required="true" />
+      <Property value="False" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S940b51c93d0d4490a82c4f5ae8bac9aa" taskName="P_ExcelRecord" type="Excel" name="SaveExcel" displayName="SaveExcel" callDepth="2" depth="1" num="2" result="Pass" start="2023-01-05T00:40:41.787" end="2023-01-05T00:40:41.979" displayTime="0.2s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;ActiveExcel&gt;" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="File_SaveAs" displayKey="SaveAs" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sfd34e2d45d444108a5318c77e21e890a" taskName="P_ExcelRecord" type="Flow" name="InternalData" displayName="End-RunTask (P_ExcelRecord) / Return To P_웹_표_정보_추출하기" callDepth="2" depth="1" num="3" result="Pass" start="2023-01-05T00:40:41.980" end="2023-01-05T00:40:41.980" displayTime="0s" />
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

@@ -1,0 +1,26 @@
+﻿/**
+*
+* @libraryType JavaScript
+* @id f2b2eea4-4186-4329-b96e-31355ae88e5e
+* @createdDate 2023-01-04 14:48:41
+* @lastModifiedDate 2023-01-04 14:48:41
+* @createdBy 
+* @lastModifiedBy 
+*
+* @designerVersion 2.5.000.00921
+* @brief 
+*  @brf 
+*
+*/
+
+if(Script.JavaScript == undefined || Script.JavaScript == null) {
+	Script.JavaScript = new Object();
+}
+
+if(Script.JavaScript.C_dateBefore == null || Script.JavaScript.C_dateBefore == undefined) {
+	Script.JavaScript.C_dateBefore = function () {
+	//Body Begin
+		const today = new Date.now()
+	//Body End
+	}
+}

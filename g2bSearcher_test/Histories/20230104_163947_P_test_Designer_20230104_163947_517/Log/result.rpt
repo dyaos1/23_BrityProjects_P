@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="58e571c0-9bb3-45a0-b650-8f8bc8363c22" name="P_test" result="Pass" start="2023-01-04T07:39:49.534" end="2023-01-04T07:39:54.542" jobId="Designer_20230104_163947_517">
+  <Step id="S84ce4ee6b59b46aeb77439893ad10e0c" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-04T07:39:49.601" end="2023-01-04T07:39:49.763" displayTime="0.2s">
+    <Variables>
+      <Variable name="var1" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.var1 : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sfaecce8d12144fa6ab6afb8145967f77" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-04T07:39:49.777" end="2023-01-04T07:39:49.778" displayTime="0s">
+    <Variables>
+      <Variable name="var2" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.var2 : []" runtimeType="Array2D" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[]" runtimeType="Array2D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sc6da91895d15478baec6d33b72b44a1d" taskName="P_test" type="Flow" name="Loop" displayName="For" callDepth="1" depth="1" num="3" result="Pass" start="2023-01-04T07:39:49.793" end="2023-01-04T07:39:49.795" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Conditions_InitializeIndex" displayKey="Initialize" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Conditions_LoopCondition" displayKey="Condition" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_UpdateIndex" displayKey="Update" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb3d33ed4626c4845b8e2447dd70e292a" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="2" num="4" result="Pass" start="2023-01-04T07:39:49.808" end="2023-01-04T07:39:49.811" displayTime="0s">
+    <Variables>
+      <Variable name="var1" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.var1[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S56fd499521e34893bb59bf7913e5e631" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-04T07:39:49.823" end="2023-01-04T07:39:49.838" displayTime="0s">
+    <Variables>
+      <Variable name="var1" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="[0]" />
+      <Variable name="var2" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.var2[this.i] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[0]" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S32c32bcac5ec4cdbb2cb1b951888787b" taskName="P_test" type="Desktop" name="MessageBox" displayName="MessageBox" callDepth="1" depth="2" num="6" result="Pass" start="2023-01-04T07:39:49.855" end="2023-01-04T07:39:51.566" displayTime="1.7s">
+    <Variables>
+      <Variable name="var2" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[[0]]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="[[0]]" runtimeType="Array2D" key="Conditions_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Command_Timeout" displayKey="Timeout (Sec)" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sb3d33ed4626c4845b8e2447dd70e292a" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="2" num="4" result="Pass" start="2023-01-04T07:39:51.587" end="2023-01-04T07:39:51.600" displayTime="0s">
+    <Variables>
+      <Variable name="var1" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="[0]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.var1[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="1" runtimeType="Integer" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S56fd499521e34893bb59bf7913e5e631" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-04T07:39:51.614" end="2023-01-04T07:39:51.617" displayTime="0s">
+    <Variables>
+      <Variable name="var1" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="[1]" />
+      <Variable name="var2" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[[1]]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.var2[this.i] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[1]" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S32c32bcac5ec4cdbb2cb1b951888787b" taskName="P_test" type="Desktop" name="MessageBox" displayName="MessageBox" callDepth="1" depth="2" num="6" result="Pass" start="2023-01-04T07:39:51.630" end="2023-01-04T07:39:52.578" displayTime="0.9s">
+    <Variables>
+      <Variable name="var2" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[[1], [1]]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="[[1], [1]]" runtimeType="Array2D" key="Conditions_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Command_Timeout" displayKey="Timeout (Sec)" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sb3d33ed4626c4845b8e2447dd70e292a" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="2" num="4" result="Pass" start="2023-01-04T07:39:52.594" end="2023-01-04T07:39:52.596" displayTime="0s">
+    <Variables>
+      <Variable name="var1" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="[1]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.var1[0] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="2" runtimeType="Integer" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S56fd499521e34893bb59bf7913e5e631" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-04T07:39:52.610" end="2023-01-04T07:39:52.612" displayTime="0s">
+    <Variables>
+      <Variable name="var1" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="[2]" />
+      <Variable name="var2" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[[2], [2]]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.var2[this.i] : &lt;undefined&gt;" runtimeType="Undefined" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="[2]" runtimeType="Array1D" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S32c32bcac5ec4cdbb2cb1b951888787b" taskName="P_test" type="Desktop" name="MessageBox" displayName="MessageBox" callDepth="1" depth="2" num="6" result="Pass" start="2023-01-04T07:39:52.626" end="2023-01-04T07:39:53.668" displayTime="1s">
+    <Variables>
+      <Variable name="var2" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[[2], [2], [2]]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="[[2], [2], [2]]" runtimeType="Array2D" key="Conditions_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Command_Timeout" displayKey="Timeout (Sec)" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S77958f7ae337479e8781008517deda3d" taskName="P_test" type="Flow" name="EndLoop" displayName="End-For" callDepth="1" depth="2" num="7" result="Pass" start="2023-01-04T07:39:53.684" end="2023-01-04T07:39:53.687" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S8deff9b31dae4f849d6588f29e7f5a32" taskName="P_test" type="Desktop" name="MessageBox" displayName="MessageBox" callDepth="1" depth="1" num="8" result="Pass" start="2023-01-04T07:39:53.715" end="2023-01-04T07:39:54.541" displayTime="0.8s">
+    <Variables>
+      <Variable name="var2" scope="Normal" owner="P_test" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[[2], [2], [2]]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="[[2], [2], [2]]" runtimeType="Array2D" key="Conditions_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Command_Timeout" displayKey="Timeout (Sec)" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

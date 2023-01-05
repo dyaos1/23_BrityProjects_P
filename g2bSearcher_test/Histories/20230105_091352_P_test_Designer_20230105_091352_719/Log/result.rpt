@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="58e571c0-9bb3-45a0-b650-8f8bc8363c22" name="P_test" result="Pass" start="2023-01-05T00:13:54.638" end="2023-01-05T00:14:01.698" jobId="Designer_20230105_091352_719">
+  <Step id="S76adf4fec70b494aa8f567fd63023a76" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="1" num="11" result="Pass" start="2023-01-05T00:13:54.701" end="2023-01-05T00:13:54.841" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : 'C:\\Users\\k\\Documents\\Brity RPA Projects\\g2bSearcher_test\\'" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\g2bSearcher_test\\'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S45a015e0a2aa4756a6b69b5e24f1f090" taskName="P_test" type="Desktop" name="MessageBox" displayName="MessageBox" callDepth="1" depth="1" num="12" result="Pass" start="2023-01-05T00:13:54.873" end="2023-01-05T00:14:01.698" displayTime="6.8s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\g2bSearcher_test\\'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\g2bSearcher_test\\'" runtimeType="String" key="Conditions_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Command_Timeout" displayKey="Timeout (Sec)" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

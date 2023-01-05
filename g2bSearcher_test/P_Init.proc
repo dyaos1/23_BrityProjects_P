@@ -1,0 +1,167 @@
+<Process id="71b471c1-62fd-4545-af5d-38a43de76303" type="process" workType="foreground" name="P_Init" version="" designerVersion="2.5.000.00921" lastPublishedServer="" readonly="false" isValid="true" DesignedBy="Designer" Template="">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="13" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Pro64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="1920x1080" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-04 15:00:04" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-05 09:36:25" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables>
+    <Variable name="daysBefore" scope="Output" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="today" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+  </Variables>
+  <Steps>
+    <Step id="S26d7ba761d5148d5bef9931636a10e09" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.daysBefore" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="9d3f2a32-be4a-4315-ba26-d5289bcfdd91" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.daysBefore" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="new Date()" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.daysBefore = new Date();]]></Script>
+    </Step>
+    <Step id="Sc783b1915d254486a2ab24e5a814f371" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.today" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="cf71e196-c0fd-4564-8319-07d82cb18a4f" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.today" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.daysBefore.toString().split(&quot; &quot;)[0]" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.today = this.daysBefore.toString().split(" ")[0];]]></Script>
+    </Step>
+    <Step id="Sbffe035fb3fd4428aa0f3ed069f17edb" ver="250220822" createVer="250220822" type="Flow" name="CustomLibrary" dpName="DateTime_AddDays" dpValue="this.daysBefore" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="94712659-297c-4377-8807-8eba877d022d" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_LibraryScope" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="Global" />
+        <Property type="Flow" key="Conditions_LibraryNamespace" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="DataConverter" />
+        <Property type="Flow" key="Conditions_LibraryName" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="True" encrypted="False" isChanged="N" value="DateTime_AddDays" />
+        <Property type="Flow" key="Conditions_LibraryType" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="True" encrypted="False" isChanged="N" value="DotNetDll" />
+        <Property type="Flow" key="Conditions_Result" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.daysBefore" />
+        <Property type="Flow" key="Options_Instance" controlType="InputControlType" valueType="System.Object" formatType="Variable" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Arguments_date" controlType="String" valueType="System.String" formatType="String_DateTime" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.daysBefore" order="1" />
+        <Property type="Flow" key="Arguments_dayValue" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="-25" order="2" />
+        <Property type="Flow" key="Conditions_TargetAssembly" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="True" encrypted="False" isChanged="N" value="IPA.Custom.ExtendLibrary.dll" />
+        <Property type="Flow" key="Conditions_TargetClass" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="True" encrypted="False" isChanged="N" value="RPAGO.Custom.ExtendLibrary.DataConverter_DateTime" />
+        <Property type="Flow" key="Conditions_TargetMethod" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="True" encrypted="False" isChanged="N" value="System.Object AddDays(System.Object, Int32)" />
+        <Property type="Flow" key="Conditions_ExternLibrary" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="IPA.Custom.ExtendLibrary.dll" />
+        <Property type="Flow" key="Conditions_ExternLibraryModule" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="RPAGO.Custom.ExtendLibrary.DataConverter_DateTime" />
+        <Property type="Flow" key="Conditions_ExternLibraryMethodFullName" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="System.Object AddDays(System.Object, Int32)" />
+        <Property type="Flow" key="Conditions_TargetMethodType" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="Static_Method" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.daysBefore = Script.DataConverter.DateTime_AddDays(null, this.daysBefore, -25);]]></Script>
+    </Step>
+    <Step id="Seeffd6cf3ca6468490dc7a24d763bb21" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.daysBefore" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="036b1ac8-572d-4e3b-96d3-44d85c06a0a9" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.daysBefore" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.daysBefore.toString().split(&quot; &quot;)[0].replace('-', '/').replace('-', '/')" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.daysBefore = this.daysBefore.toString().split(" ")[0].replace('-', '/').replace('-', '/');]]></Script>
+    </Step>
+    <Step id="S0845891b678d4c058c8ece8d99749f99" ver="250220822" createVer="250220822" type="Desktop" name="CopyFile" dpName="CopyFile" dpValue="from Global.ProjectDir+'Resources\나라장터 RPA공고.xlsx' &#xA;to Global.ProjectDir+'Report'+this.today+' 나라장터RPA공고.xlsx'" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="e856b614-1695-48d0-9159-4259bbbb2f73" type="Desktop">
+        <Property type="Desktop" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Command_SrcFilePath" controlType="File" valueType="System.String" formatType="String_FilePath" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Global.ProjectDir+'Resources\\나라장터 RPA공고.xlsx'" />
+        <Property type="Desktop" key="Command_DescFilePath" controlType="File" valueType="System.String" formatType="String_FilePath" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Global.ProjectDir+'Report\\'+this.today+' 나라장터RPA공고.xlsx'" />
+        <Property type="Desktop" key="Command_Overwrite" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[StepPlayer.Run('Desktop.CopyFile', this.copyfile_info_5);]]></Script>
+    </Step>
+    <Step id="S0726ec41b36d48cc9aca8bc4f42f5eca" ver="250220822" createVer="250220822" type="Excel" name="OpenExcel" dpName="OpenExcel" dpValue="Global.ProjectDir+'Report'+this.today.toString()+' 나라장터RPA공고.xlsx'" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="3aed8cb5-81b6-4f21-ae76-167b63528272" type="Excel">
+        <Property type="Excel" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Excel" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Excel" key="Output_OutputExcel" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Excel" key="File_Path" controlType="Excel" valueType="System.String" formatType="String_FilePath" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Global.ProjectDir+'Report\\'+this.today.toString()+' 나라장터RPA공고.xlsx'" order="11" />
+        <Property type="Excel" key="File_Invisible" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" order="12" />
+        <Property type="Excel" key="File_ReadOnly" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" order="16" />
+        <Property type="Excel" key="File_Maximize" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" order="13" />
+        <Property type="Excel" key="File_ExecuteShell" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" order="14" />
+        <Property type="Excel" key="File_Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="False" readonly="False" encrypted="False" isChanged="N" value="60" order="15" />
+        <Property type="Excel" key="File_UsePassword" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" order="17" />
+        <Property type="Excel" key="File_OpenPassword" controlType="PropertyItemPasswordView" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="Y" value="" order="18" />
+        <Property type="Excel" key="File_WritePassword" controlType="PropertyItemPasswordView" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="Y" value="" order="19" />
+        <Property type="Excel" key="File_TextDelimiter" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Comma(,)" valuelist="Comma(,);Colon(:);Semicolon(;;);Caret(^);Pipe(|);Tab(&#x9;);Space( );Ampersand(&amp;);Ampersat(@);Asterisk(*);Backslash(\);Dollar($);Dot(.);Equals(=);Exclamation(!);Hyphen(-);Percent(%);Plus(+);Question(?);Sharp(#);Slash(/);Tilde(~);Underscore(_)" order="20" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RESULT = StepPlayer.Run('Excel.OpenExcel', this.openexcel_info_6);]]></Script>
+    </Step>
+  </Steps>
+  <Libraries>
+    <string>FlowControl</string>
+    <string>DataConverter</string>
+    <string>System</string>
+    <string>Excel</string>
+  </Libraries>
+  <JScript><![CDATA[function P_Init() {
+
+    this.daysBefore;
+    this.today;
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('S26d7ba761d5148d5bef9931636a10e09', '[1] Assign');
+        this.daysBefore = new Date();
+
+        //------------------------------------------------
+        STEP('Sc783b1915d254486a2ab24e5a814f371', '[2] Assign');
+        this.today = this.daysBefore.toString().split(" ")[0];
+
+        //------------------------------------------------
+        STEP('Sbffe035fb3fd4428aa0f3ed069f17edb', '[3] DateTime_AddDays');
+        this.daysBefore = Script.DataConverter.DateTime_AddDays(null, this.daysBefore, -25);
+
+        //------------------------------------------------
+        STEP('Seeffd6cf3ca6468490dc7a24d763bb21', '[4] Assign');
+        this.daysBefore = this.daysBefore.toString().split(" ")[0].replace('-', '/').replace('-', '/');
+
+        //------------------------------------------------
+        STEP('S0845891b678d4c058c8ece8d99749f99', '[5] CopyFile');
+        StepPlayer.Run('Desktop.CopyFile', this.copyfile_info_5);
+
+        //------------------------------------------------
+        STEP('S0726ec41b36d48cc9aca8bc4f42f5eca', '[6] OpenExcel');
+        RESULT = StepPlayer.Run('Excel.OpenExcel', this.openexcel_info_6);
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+        return {'daysBefore':this.daysBefore};
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="S26d7ba761d5148d5bef9931636a10e09" group_name="80df407d-5305-4cb1-8615-f733d04696db_Untitled" folded="False" />
+      <StepNode step_id="Sc783b1915d254486a2ab24e5a814f371" group_name="80df407d-5305-4cb1-8615-f733d04696db_Untitled" folded="False" />
+      <StepNode step_id="Sbffe035fb3fd4428aa0f3ed069f17edb" group_name="80df407d-5305-4cb1-8615-f733d04696db_Untitled" folded="False" />
+      <StepNode step_id="Seeffd6cf3ca6468490dc7a24d763bb21" group_name="80df407d-5305-4cb1-8615-f733d04696db_Untitled" folded="False" />
+      <StepNode step_id="S0845891b678d4c058c8ece8d99749f99" group_name="af011bf2-ab2a-4832-b9e7-e680226e7ed1_Untitled" folded="False" />
+      <StepNode step_id="S0726ec41b36d48cc9aca8bc4f42f5eca" group_name="af011bf2-ab2a-4832-b9e7-e680226e7ed1_Untitled" folded="False" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>N9yDqhBuY2avCn8tkFqJ/8pAiWM=</DigestValue></Reference></SignedInfo><SignatureValue>mr276+cug7nr7jLntsXPQPj5XjzXe+DYe/NWtEd48wFtFi+A8W8BDz74tYcnOt+sgTc3gEDP2hP5A9H7StwCbBVjgVH3rPRVCdZKOTj4zutojhYV+NXIXTQCytJ775eIKq9fxu+PUzlhy5MWqUHFLh6t5MWy2BYseKBBHEasDPoDU3W4zHtki+V9dRpY53HTzEs+w1kZcpVgBGM9sDMI6UjruRvwfxXQ0SMWgHdEBDDfl6DVSTEv8h9k306Qhdk+tP5OSH3PN5UKqqyVMxe9eFVF3sWu1EPI36zDtKpoOIgX1FjQN5Q/nwT2A0Gy8msSoTJkYYXaUUvlYYMbQTOZ4A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

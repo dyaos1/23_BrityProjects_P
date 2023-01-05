@@ -1,0 +1,826 @@
+﻿2023-01-05 09:00:50,312 [T1] INFO  EngineStarter
+BOT Engine Start - v2.5.000.00921
+BOT ID: D_20230105_090049_203
+BOT PID: 10924
+BOT PPID: 12044
+BOT Working Directory: C:\Users\k\AppData\Roaming\Brity RPA Designer
+
+2023-01-05 09:00:50,609 [T1] INFO  Config
+Initialize Config
+
+2023-01-05 09:00:50,656 [T1] DEBUG Config
+Config Loaded
+
+2023-01-05 09:00:50,656 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2023-01-05 09:00:50,656 [T1] INFO  Config
+Initialize Resource Config
+
+2023-01-05 09:00:50,687 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-05 09:00:50,797 [T1] INFO  Config
+All Config Initialized.
+
+2023-01-05 09:00:50,797 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2023-01-05 09:00:50,859 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2023-01-05 09:00:50,906 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2023-01-05 09:00:50,922 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2023-01-05 09:00:50,937 [T4] DEBUG JobService
+Connect to agent service
+
+2023-01-05 09:00:50,953 [T4] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2023-01-05 09:00:50,953 [T4] DEBUG JobService
+Open connection
+
+2023-01-05 09:00:50,968 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2023-01-05 09:00:50,984 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2023-01-05 09:00:50,984 [T4] DEBUG JobService
+Register engine to agent
+
+2023-01-05 09:00:50,984 [T4] DEBUG JobService
+Engine is connected to agent service.
+
+2023-01-05 09:00:50,984 [T4] DEBUG JobService
+Owner Process PID: 12044
+
+2023-01-05 09:00:51,000 [T4] INFO  JobService
+Start monitoring owner process is terminated.
+
+2023-01-05 09:00:51,562 [T13] INFO  JobService
+Start Job: P_웹_표_정보_추출하기 (Foreground)
+{
+  "UsePIP": false,
+  "UserID": null,
+  "UserPWD": null,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "JobWorkDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\g2bSearcher_test\\Histories\\20230105_090048_P_웹_표_정보_추출하기_Designer_20230105_090048_688",
+  "JobLogDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\g2bSearcher_test\\Histories\\20230105_090048_P_웹_표_정보_추출하기_Designer_20230105_090048_688\\Log",
+  "JobScreenshotDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\g2bSearcher_test\\Histories\\20230105_090048_P_웹_표_정보_추출하기_Designer_20230105_090048_688\\Log\\Screenshot",
+  "TotalProcessStepCount": 0,
+  "CurrentStepNo": 0,
+  "CurrentStepName": null,
+  "StartTime": "2023-01-05 09:00:49",
+  "EndTime": null,
+  "EngineID": "D_20230105_090049_203",
+  "EnginePID": 0,
+  "JobId": "Designer_20230105_090048_688",
+  "JobType": 1,
+  "UserAuthentication": null,
+  "ProcessPath": "C:\\Users\\k\\Documents\\Brity RPA Projects\\g2bSearcher_test\\P_웹_표_정보_추출하기.proc",
+  "ProcessId": "332fa756-cb3b-4ebe-a4bb-87951ca99d20",
+  "ProcessVer": "1.0",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 12044,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "State": 0
+}
+
+2023-01-05 09:00:51,796 [T8] DEBUG JobService
+Waiting library loading...
+
+2023-01-05 09:00:53,155 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,1920,1080
+
+2023-01-05 09:00:53,890 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2023-01-05 09:00:54,077 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2023-01-05 09:00:54,077 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-05 09:00:54,077 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2023-01-05 09:00:54,093 [T8] DEBUG Config
+Reload User Settings
+
+2023-01-05 09:00:54,093 [T8] INFO  JobService
+Config Loading Completed.
+
+2023-01-05 09:00:54,093 [T8] DEBUG JobService
+Config Loading Time: 2296 ms.
+
+2023-01-05 09:00:54,108 [T8] INFO  JobManager
+Create JobManager instance for job P_웹_표_정보_추출하기(Designer_20230105_090048_688)
+
+2023-01-05 09:00:54,124 [T12] INFO  JobRequest
+Start Callback Sender
+
+2023-01-05 09:00:54,124 [T12] DEBUG JobRequest
+Step Callback Interval: 500
+
+2023-01-05 09:00:54,124 [T8] INFO  JobRequest
+Job ID : Designer_20230105_090048_688
+Project Path  : C:\Users\k\Documents\Brity RPA Projects\g2bSearcher_test\g2bSearcher_test.proj
+Process Name  : P_웹_표_정보_추출하기
+Engine Mode   : Designer
+Requester Type: DesignerRequester PID : 12044
+
+2023-01-05 09:00:54,186 [T8] DEBUG ProjectManager
+Set Project Information
+
+2023-01-05 09:00:54,218 [T8] INFO  JobRunner
+Initialize Script Engine
+
+2023-01-05 09:00:54,233 [T11] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2023-01-05 09:00:54,264 [T12] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtNumber, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtInteger, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtDouble, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtPoint, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtRect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtDate, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtDateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtArray1D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtArray2D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtXml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtJson, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtString, Type:RPAGO.Custom.ExtendLibrary.DataConverter_String, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtString_DateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Point, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Rect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-05 09:00:54,499 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Xml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-05 09:00:54,514 [T11] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Json, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-05 09:00:55,217 [T11] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2023-01-05 09:00:55,233 [T12] DEBUG JobRequest
+Callback - State: Ready
+
+
+2023-01-05 09:00:55,264 [T8] INFO  JobRunnerHook
+HotKey Hook Started
+
+2023-01-05 09:00:55,264 [T8] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2023-01-05 09:00:55,280 [T11] INFO  JobRunner
+RunProcess start
+
+2023-01-05 09:00:55,280 [T11] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2023-01-05 09:00:55,280 [T11] INFO  JobRequest
+Last job life cycle state: Running
+
+2023-01-05 09:00:55,296 [T12] DEBUG JobRequest
+Callback - State: Starting
+
+
+2023-01-05 09:00:55,311 [T12] DEBUG JobRequest
+Callback - State: Running
+
+
+2023-01-05 09:00:55,436 [T11] WARN  ProcessDataValidator
+"현재 시스템 환경(OS, 해상도 등)이 프로세스(또는 작업)를 작성했을 때와 달라서
+P_웹_표_정보_추출하기을(를) Play하는데 정확한 동작이 안될 수 있습니다."
+
+2023-01-05 09:00:55,577 [T11] INFO  ScreenCapture
+Initialize DirectX Screen Capture.
+
+2023-01-05 09:00:55,655 [T1] INFO  DirectXScreenCapturePlayer
+DirextX Target Screen Bounds: {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-05 09:00:55,702 [T1] INFO  DirectXScreenCapturePlayer
+Screen 0 Bounds : {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-05 09:00:55,717 [T8] DEBUG DirectXScreenCapturePlayer
+try capture screen to check DirectX screen.
+
+2023-01-05 09:00:55,749 [T11] INFO  ScreenCapture
+DirectX Screen Capture Initialized.
+
+2023-01-05 09:00:55,764 [T11] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2023-01-05 09:00:55,795 [T11] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - P_웹_표_정보_추출하기
+##############################################################
+332fa756-cb3b-4ebe-a4bb-87951ca99d20
+P_웹_표_정보_추출하기
+
+
+2023-01-05 09:00:55,858 [T11] INFO  JobRequest
+**************************************************************
+*** TASK: P_웹_표_정보_추출하기
+**************************************************************
+ - STEP 1: Se013ce049a8b4f12ba23daa7d5ec6497 (1/4) - (1/29)
+ - [1] RunTask
+
+
+2023-01-05 09:00:55,983 [T11] INFO  JobRequest
+##############################################################
+### STATE: StartTask - P_Init
+##############################################################
+71b471c1-62fd-4545-af5d-38a43de76303
+P_Init
+
+
+2023-01-05 09:00:56,014 [T11] INFO  JobRequest
+**************************************************************
+*** TASK: P_Init
+**************************************************************
+ - STEP 2: S26d7ba761d5148d5bef9931636a10e09 (1/6) - (2/29)
+ - [1] Assign
+
+
+2023-01-05 09:00:56,061 [T11] INFO  JobRequest
+ - STEP 3: Sc783b1915d254486a2ab24e5a814f371 (2/6) - (3/29)
+ - [2] Assign
+
+
+2023-01-05 09:00:56,077 [T11] INFO  JobRequest
+ - STEP 4: Sbffe035fb3fd4428aa0f3ed069f17edb (3/6) - (4/29)
+ - [3] DateTime_AddDays
+
+
+2023-01-05 09:00:56,077 [T11] DEBUG ScriptSupport
+AddHostType (Name:RPAGO_Custom_ExtendLibrary_DataConverter_DateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: C:\Users\k\AppData\Roaming\Brity RPA Designer\IPA.Custom.ExtendLibrary.dll)
+
+2023-01-05 09:00:56,217 [T11] INFO  JobRequest
+ - STEP 5: Seeffd6cf3ca6468490dc7a24d763bb21 (4/6) - (5/29)
+ - [4] Assign
+
+
+2023-01-05 09:00:56,233 [T11] INFO  JobRequest
+ - STEP 6: S0845891b678d4c058c8ece8d99749f99 (5/6) - (6/29)
+ - [5] CopyFile
+
+
+2023-01-05 09:00:56,280 [T11] INFO  JobRequest
+ - STEP 7: S0726ec41b36d48cc9aca8bc4f42f5eca (6/6) - (7/29)
+ - [6] OpenExcel
+
+
+2023-01-05 09:01:02,383 [T11] INFO  JobRunner
+[PASS] TASK: P_Init => Microsoft.ClearScript.V8.V8ScriptItem
+
+2023-01-05 09:01:02,399 [T11] INFO  JobRequest
+##############################################################
+### STATE: EndTask - P_Init
+##############################################################
+71b471c1-62fd-4545-af5d-38a43de76303
+P_Init
+
+
+2023-01-05 09:01:02,430 [T11] INFO  JobRequest
+**************************************************************
+*** TASK: P_웹_표_정보_추출하기
+**************************************************************
+ - STEP 8: S86aa4d5df6b54389a6a614b229c29cce (2/4) - (8/29)
+ - [2] RunTask
+
+
+2023-01-05 09:01:02,430 [T11] INFO  JobRequest
+##############################################################
+### STATE: StartTask - P_Search
+##############################################################
+302db89f-587c-4560-ab5a-edecc9f14c7c
+P_Search
+
+
+2023-01-05 09:01:02,446 [T11] INFO  JobRequest
+**************************************************************
+*** TASK: P_Search
+**************************************************************
+ - STEP 9: S8292b7a71de349098782e9b91f28d48b (1/7) - (9/29)
+ - [1] ChromeOpen
+
+
+2023-01-05 09:01:02,696 [T5] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-05 09:01:02,743 [T5] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-05 09:01:02,977 [T5] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-05 09:01:02,977 [T5] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-05 09:01:06,120 [T11] INFO  JobRequest
+ - STEP 10: S35e9161cd4914b5ebd74b02d54079a08 (2/7) - (10/29)
+ - [2] ChromeClick
+
+
+2023-01-05 09:01:09,721 [T11] INFO  JobRequest
+ - STEP 11: Sbf5ff5725d7e406f9c910437f313b074 (3/7) - (11/29)
+ - [3] KeyInput
+
+
+2023-01-05 09:01:12,457 [T11] INFO  JobRequest
+ - STEP 12: Se0bc86fe5fcc48d5bbdad1fa65a3f630 (4/7) - (12/29)
+ - [4] ChromeSetText
+
+
+2023-01-05 09:01:24,860 [T11] INFO  JobRequest
+ - STEP 13: S50f4b710ca6f478faa4ed5ac1b6b8598 (5/7) - (13/29)
+ - [5] ChromeSetText
+
+
+2023-01-05 09:01:37,181 [T11] INFO  JobRequest
+ - STEP 14: S9ed6b3c5eb814979b3c9e0be563f3066 (6/7) - (14/29)
+ - [6] ChromeClick
+
+
+2023-01-05 09:01:49,574 [T11] INFO  JobRequest
+ - STEP 15: Sdcee021671d3402891f97b9b013ba738 (7/7) - (15/29)
+ - [7] ChromeWaitAppear
+
+
+2023-01-05 09:02:00,060 [T11] DEBUG ChromeFind
+Chrome Find Wrapper : 객체를 찾지 못하였습니다.
+객체를 다시 지정해 주시기 바랍니다.
+
+2023-01-05 09:02:00,138 [T11] DEBUG FrameManager
+fail to find frame url : 3
+
+2023-01-05 09:02:00,200 [T11] INFO  JobRunner
+[PASS] TASK: P_Search
+
+2023-01-05 09:02:00,200 [T11] INFO  JobRequest
+##############################################################
+### STATE: EndTask - P_Search
+##############################################################
+302db89f-587c-4560-ab5a-edecc9f14c7c
+P_Search
+
+
+2023-01-05 09:02:00,216 [T11] INFO  JobRequest
+**************************************************************
+*** TASK: P_웹_표_정보_추출하기
+**************************************************************
+ - STEP 16: S0ed2214ff03d4f89b27638e580954ac3 (3/4) - (16/29)
+ - [3] RunTask
+
+
+2023-01-05 09:02:00,216 [T11] INFO  JobRequest
+##############################################################
+### STATE: StartTask - P_DataScraper
+##############################################################
+893a610f-8cd1-4388-bf29-1c41ea6689a6
+P_DataScraper
+
+
+2023-01-05 09:02:00,232 [T11] INFO  JobRequest
+**************************************************************
+*** TASK: P_DataScraper
+**************************************************************
+ - STEP 17: S95173256d76448d89f572d87433f2c15 (1/10) - (17/29)
+ - [1] Assign
+
+
+2023-01-05 09:02:00,263 [T11] INFO  JobRequest
+ - STEP 18: S56855770b85b4c3ca18fd81e47e60222 (2/10) - (18/29)
+ - [2] GetGridItems
+
+
+2023-01-05 09:02:00,419 [T3] INFO  UIAEventHandler
+Start UIA event handler
+
+2023-01-05 09:02:02,431 [T3] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-01-05 09:02:02,431 [T3] INFO  UIAEventHandler
+waiting for 863 msec during the screen structure is changing.
+
+2023-01-05 09:02:03,314 [T3] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-01-05 09:02:03,314 [T3] INFO  UIAEventHandler
+waiting for 83 msec during the screen structure is changing.
+
+2023-01-05 09:02:03,812 [T11] INFO  JobRequest
+ - STEP 19: Sbcf3bc3d17894df29a06780ea1f03e4f (3/10) - (19/29)
+ - [3] For
+
+
+2023-01-05 09:02:03,844 [T11] INFO  JobRequest
+ - STEP 20: Sb5bf2c32a178492e8891f461462e696e (4/10) - (20/29)
+ - [4] Assign
+
+
+2023-01-05 09:02:03,859 [T11] INFO  JobRequest
+ - STEP 21: Sc7ee418967c541dca47f4bf4a0913ace (5/10) - (21/29)
+ - [5] Assign
+
+
+2023-01-05 09:02:03,875 [T11] INFO  JobRequest
+ - STEP 22: S0065539a43b2416786badd074c1b04c8 (6/10) - (22/29)
+ - [6] Assign
+
+
+2023-01-05 09:02:03,891 [T11] INFO  JobRequest
+ - STEP 23: S5a3c8620f2104abf8c372dc0532a950a (7/10) - (23/29)
+ - [7] Assign
+
+
+2023-01-05 09:02:03,906 [T11] INFO  JobRequest
+ - STEP 24: S72f266e65b844d69bc87d1a6538111a4 (8/10) - (24/29)
+ - [8] Assign
+
+
+2023-01-05 09:02:03,922 [T11] INFO  JobRequest
+ - STEP 25: Sc38772c53a0c401481d8d06d6903348f (9/10) - (25/29)
+ - [9] Assign
+
+
+2023-01-05 09:02:03,937 [T11] INFO  JobRequest
+ - STEP 26: Sb5bf2c32a178492e8891f461462e696e (4/10) - (25/29)
+ - [4] Assign
+
+
+2023-01-05 09:02:03,944 [T11] INFO  JobRequest
+ - STEP 27: Sc7ee418967c541dca47f4bf4a0913ace (5/10) - (25/29)
+ - [5] Assign
+
+
+2023-01-05 09:02:03,960 [T11] INFO  JobRequest
+ - STEP 28: S0065539a43b2416786badd074c1b04c8 (6/10) - (25/29)
+ - [6] Assign
+
+
+2023-01-05 09:02:03,976 [T11] INFO  JobRequest
+ - STEP 29: S5a3c8620f2104abf8c372dc0532a950a (7/10) - (25/29)
+ - [7] Assign
+
+
+2023-01-05 09:02:03,991 [T11] INFO  JobRequest
+ - STEP 30: S72f266e65b844d69bc87d1a6538111a4 (8/10) - (25/29)
+ - [8] Assign
+
+
+2023-01-05 09:02:04,007 [T11] INFO  JobRequest
+ - STEP 31: Sc38772c53a0c401481d8d06d6903348f (9/10) - (25/29)
+ - [9] Assign
+
+
+2023-01-05 09:02:04,054 [T11] INFO  JobRequest
+ - STEP 32: Sb5bf2c32a178492e8891f461462e696e (4/10) - (25/29)
+ - [4] Assign
+
+
+2023-01-05 09:02:04,069 [T11] INFO  JobRequest
+ - STEP 33: Sc7ee418967c541dca47f4bf4a0913ace (5/10) - (25/29)
+ - [5] Assign
+
+
+2023-01-05 09:02:04,085 [T11] INFO  JobRequest
+ - STEP 34: S0065539a43b2416786badd074c1b04c8 (6/10) - (25/29)
+ - [6] Assign
+
+
+2023-01-05 09:02:04,101 [T11] INFO  JobRequest
+ - STEP 35: S5a3c8620f2104abf8c372dc0532a950a (7/10) - (25/29)
+ - [7] Assign
+
+
+2023-01-05 09:02:04,116 [T11] INFO  JobRequest
+ - STEP 36: S72f266e65b844d69bc87d1a6538111a4 (8/10) - (25/29)
+ - [8] Assign
+
+
+2023-01-05 09:02:04,132 [T11] INFO  JobRequest
+ - STEP 37: Sc38772c53a0c401481d8d06d6903348f (9/10) - (25/29)
+ - [9] Assign
+
+
+2023-01-05 09:02:04,147 [T11] INFO  JobRequest
+ - STEP 38: Sb5bf2c32a178492e8891f461462e696e (4/10) - (25/29)
+ - [4] Assign
+
+
+2023-01-05 09:02:04,163 [T11] INFO  JobRequest
+ - STEP 39: Sc7ee418967c541dca47f4bf4a0913ace (5/10) - (25/29)
+ - [5] Assign
+
+
+2023-01-05 09:02:04,179 [T11] INFO  JobRequest
+ - STEP 40: S0065539a43b2416786badd074c1b04c8 (6/10) - (25/29)
+ - [6] Assign
+
+
+2023-01-05 09:02:04,194 [T11] INFO  JobRequest
+ - STEP 41: S5a3c8620f2104abf8c372dc0532a950a (7/10) - (25/29)
+ - [7] Assign
+
+
+2023-01-05 09:02:04,203 [T11] INFO  JobRequest
+ - STEP 42: S72f266e65b844d69bc87d1a6538111a4 (8/10) - (25/29)
+ - [8] Assign
+
+
+2023-01-05 09:02:04,218 [T11] INFO  JobRequest
+ - STEP 43: Sc38772c53a0c401481d8d06d6903348f (9/10) - (25/29)
+ - [9] Assign
+
+
+2023-01-05 09:02:04,250 [T11] INFO  JobRequest
+ - STEP 44: Sb5bf2c32a178492e8891f461462e696e (4/10) - (25/29)
+ - [4] Assign
+
+
+2023-01-05 09:02:04,265 [T11] INFO  JobRequest
+ - STEP 45: Sc7ee418967c541dca47f4bf4a0913ace (5/10) - (25/29)
+ - [5] Assign
+
+
+2023-01-05 09:02:04,281 [T11] INFO  JobRequest
+ - STEP 46: S0065539a43b2416786badd074c1b04c8 (6/10) - (25/29)
+ - [6] Assign
+
+
+2023-01-05 09:02:04,297 [T11] INFO  JobRequest
+ - STEP 47: S5a3c8620f2104abf8c372dc0532a950a (7/10) - (25/29)
+ - [7] Assign
+
+
+2023-01-05 09:02:04,312 [T11] INFO  JobRequest
+ - STEP 48: S72f266e65b844d69bc87d1a6538111a4 (8/10) - (25/29)
+ - [8] Assign
+
+
+2023-01-05 09:02:04,328 [T11] INFO  JobRequest
+ - STEP 49: Sc38772c53a0c401481d8d06d6903348f (9/10) - (25/29)
+ - [9] Assign
+
+
+2023-01-05 09:02:04,343 [T11] INFO  JobRequest
+ - STEP 50: Sb5bf2c32a178492e8891f461462e696e (4/10) - (25/29)
+ - [4] Assign
+
+
+2023-01-05 09:02:04,359 [T11] INFO  JobRequest
+ - STEP 51: Sc7ee418967c541dca47f4bf4a0913ace (5/10) - (25/29)
+ - [5] Assign
+
+
+2023-01-05 09:02:04,375 [T11] INFO  JobRequest
+ - STEP 52: S0065539a43b2416786badd074c1b04c8 (6/10) - (25/29)
+ - [6] Assign
+
+
+2023-01-05 09:02:04,390 [T11] INFO  JobRequest
+ - STEP 53: S5a3c8620f2104abf8c372dc0532a950a (7/10) - (25/29)
+ - [7] Assign
+
+
+2023-01-05 09:02:04,406 [T11] INFO  JobRequest
+ - STEP 54: S72f266e65b844d69bc87d1a6538111a4 (8/10) - (25/29)
+ - [8] Assign
+
+
+2023-01-05 09:02:04,422 [T11] INFO  JobRequest
+ - STEP 55: Sc38772c53a0c401481d8d06d6903348f (9/10) - (25/29)
+ - [9] Assign
+
+
+2023-01-05 09:02:04,437 [T11] INFO  JobRequest
+ - STEP 56: Sb5bf2c32a178492e8891f461462e696e (4/10) - (25/29)
+ - [4] Assign
+
+
+2023-01-05 09:02:04,453 [T11] INFO  JobRequest
+ - STEP 57: Sc7ee418967c541dca47f4bf4a0913ace (5/10) - (25/29)
+ - [5] Assign
+
+
+2023-01-05 09:02:04,469 [T11] INFO  JobRequest
+ - STEP 58: S0065539a43b2416786badd074c1b04c8 (6/10) - (25/29)
+ - [6] Assign
+
+
+2023-01-05 09:02:04,484 [T11] INFO  JobRequest
+ - STEP 59: S5a3c8620f2104abf8c372dc0532a950a (7/10) - (25/29)
+ - [7] Assign
+
+
+2023-01-05 09:02:04,500 [T11] INFO  JobRequest
+ - STEP 60: S72f266e65b844d69bc87d1a6538111a4 (8/10) - (25/29)
+ - [8] Assign
+
+
+2023-01-05 09:02:04,515 [T11] INFO  JobRequest
+ - STEP 61: Sc38772c53a0c401481d8d06d6903348f (9/10) - (25/29)
+ - [9] Assign
+
+
+2023-01-05 09:02:04,531 [T11] INFO  JobRequest
+ - STEP 62: S9aa69a24dbf743d4a4a8f84db14d3a79 (10/10) - (26/29)
+ - [10] End-For
+
+
+2023-01-05 09:02:04,531 [T11] INFO  JobRunner
+[PASS] TASK: P_DataScraper => Microsoft.ClearScript.V8.V8ScriptItem
+
+2023-01-05 09:02:04,531 [T11] INFO  JobRequest
+##############################################################
+### STATE: EndTask - P_DataScraper
+##############################################################
+893a610f-8cd1-4388-bf29-1c41ea6689a6
+P_DataScraper
+
+
+2023-01-05 09:02:04,547 [T11] INFO  JobRequest
+**************************************************************
+*** TASK: P_웹_표_정보_추출하기
+**************************************************************
+ - STEP 63: S10b10cdd3f9c46d599ef965a8908d7b7 (4/4) - (27/29)
+ - [4] RunTask
+
+
+2023-01-05 09:02:04,547 [T11] INFO  JobRequest
+##############################################################
+### STATE: StartTask - P_ExcelRecord
+##############################################################
+0bc2dc1f-ade4-40fc-9120-a6f8320f9946
+P_ExcelRecord
+
+
+2023-01-05 09:02:04,562 [T11] INFO  JobRequest
+**************************************************************
+*** TASK: P_ExcelRecord
+**************************************************************
+ - STEP 64: S8875a3ec80c7456ca266b7e9d3e3d57d (1/2) - (28/29)
+ - [1] WriteRange
+
+
+2023-01-05 09:02:04,986 [T11] INFO  JobRequest
+ - STEP 65: S940b51c93d0d4490a82c4f5ae8bac9aa (2/2) - (29/29)
+ - [2] SaveExcel
+
+
+2023-01-05 09:02:05,154 [T11] INFO  JobRunner
+[PASS] TASK: P_ExcelRecord
+
+2023-01-05 09:02:05,160 [T11] INFO  JobRequest
+##############################################################
+### STATE: EndTask - P_ExcelRecord
+##############################################################
+0bc2dc1f-ade4-40fc-9120-a6f8320f9946
+P_ExcelRecord
+
+
+2023-01-05 09:02:05,160 [T11] INFO  JobRunner
+[PASS] TASK: P_웹_표_정보_추출하기
+
+2023-01-05 09:02:05,160 [T11] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - P_웹_표_정보_추출하기
+##############################################################
+332fa756-cb3b-4ebe-a4bb-87951ca99d20
+P_웹_표_정보_추출하기
+
+
+2023-01-05 09:02:05,196 [T11] INFO  JobRunner
+RunProcess - Job Result: {}
+
+2023-01-05 09:02:05,196 [T11] DEBUG JobManager
+Set Result State: Completed
+
+2023-01-05 09:02:05,196 [T11] DEBUG JobRunner
+OnProcessCompleted
+
+2023-01-05 09:02:05,196 [T3] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2023-01-05 09:02:05,196 [T11] DEBUG ExcelBase
+DisposeExcel
+
+2023-01-05 09:02:05,211 [T11] INFO  JobRunner
+Start to clean up resources.
+
+2023-01-05 09:02:05,211 [T11] DEBUG JobRunner
+Remove all libraries
+
+2023-01-05 09:02:05,211 [T11] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2023-01-05 09:02:05,227 [T11] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2023-01-05 09:02:05,227 [T11] DEBUG UIAEventHandler
+Stop UIA event handler
+
+2023-01-05 09:02:05,243 [T11] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2023-01-05 09:02:05,243 [T11] INFO  JobRunner
+All Resources Clear
+
+2023-01-05 09:02:05,243 [T11] INFO  JobRunner
+Make report.
+
+2023-01-05 09:02:05,305 [T11] DEBUG JobRunner
+OnCompleted
+
+2023-01-05 09:02:05,305 [T11] DEBUG JobRunner
+SendJobResult: Completed
+
+2023-01-05 09:02:05,305 [T11] INFO  JobRequest
+##############################################################
+### STATE: Completed
+##############################################################
+{}
+
+
+2023-01-05 09:02:05,305 [T11] INFO  JobRequest
+Last job life cycle state: Completed
+
+2023-01-05 09:02:05,305 [T11] INFO  JobRequest
+Update skipped current step informations.
+
+2023-01-05 09:02:05,321 [T11] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2023-01-05 09:02:05,336 [T12] DEBUG JobRequest
+Callback - State: Completed
+{}
+
+2023-01-05 09:02:05,336 [T12] INFO  JobRequest
+Callback - JobCompleted
+
+2023-01-05 09:02:05,336 [T12] DEBUG JobRequest
+End of Callback Sender
+
+2023-01-05 09:02:05,352 [T11] INFO  JobRunner
+RunProcess end
+

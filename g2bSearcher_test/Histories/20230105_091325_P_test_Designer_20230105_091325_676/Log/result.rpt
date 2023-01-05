@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="58e571c0-9bb3-45a0-b650-8f8bc8363c22" name="P_test" result="Fail" detail="ReferenceError: window is not defined&#xA;&#xA;Recent Warning Messages =&gt;&#xA;[CATCH_STEP_EXCEPTION] Process: P_test&#xA;Step: Assign (11/12)&#xA;&#xA;ReferenceError: window is not defined" start="2023-01-05T00:13:27.665" end="2023-01-05T00:13:35.347" jobId="Designer_20230105_091325_676">
+  <Step id="S76adf4fec70b494aa8f567fd63023a76" taskName="P_test" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="1" num="11" result="Fail" detail="[CATCH_STEP_EXCEPTION] Process: P_test&#xA;Step: Assign (11/12)&#xA;&#xA;ReferenceError: window is not defined&#xA;ReferenceError: window is not defined" start="2023-01-05T00:13:27.728" end="2023-01-05T00:13:35.347" displayTime="7.6s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : " runtimeType="Any" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="window.location.pathname" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

@@ -1,0 +1,53 @@
+<Project id="23e34b5f-a8c2-4364-8587-06b7febbb2cd" namespace="" name="g2bSearcher_test" desc="조달시스템에서 rpa를 검색하는 연습입니다" category="project" workType="foreground" version="1.00" lastPublishedDate="" lastPublishedBy="" createdDate="2023-01-04 14:35:41" createdBy="" lastPublishedServer="" latestProcess="P_Init" designerVersion="2.5.000.00921">
+  <SharedTask isExpended="false" />
+  <NormalTask isExpended="false" />
+  <Event isExpended="false" />
+  <Process isExpended="true">
+    <LinkItem id="893a610f-8cd1-4388-bf29-1c41ea6689a6" category="Process" isChanged="Y" desc="" stepCount="10" name="P_DataScraper">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="0bc2dc1f-ade4-40fc-9120-a6f8320f9946" category="Process" isChanged="Y" desc="" stepCount="2" name="P_ExcelRecord">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="71b471c1-62fd-4545-af5d-38a43de76303" category="Process" isChanged="Y" desc="" stepCount="6" name="P_Init">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="302db89f-587c-4560-ab5a-edecc9f14c7c" category="Process" isChanged="Y" desc="" stepCount="7" name="P_Search">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="58e571c0-9bb3-45a0-b650-8f8bc8363c22" category="Process" isChanged="Y" desc="동적변수 여부 테스트" stepCount="12" name="P_test">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="332fa756-cb3b-4ebe-a4bb-87951ca99d20" category="Process" isChanged="Y" desc="" hash="GkBxRjg6jEdlMEiaMXryQOAbr66A6yaXHIKf9izGjl8=" updatedDate="2023-01-04T05:35:41.786Z" stepCount="4" name="P_웹_표_정보_추출하기">
+      <Properties />
+    </LinkItem>
+  </Process>
+  <CustomLibraries isExpended="true">
+    <LinkItem id="f2b2eea4-4186-4329-b96e-31355ae88e5e" category="CustomLibrary" subCategory="JavaScript" externalLibrary="" isChanged="Y" desc="" stepCount="" name="C_dateBefore">
+      <Properties />
+    </LinkItem>
+  </CustomLibraries>
+  <LibraryTemplate isExpended="false" />
+  <Resources isExpended="false" />
+  <RemoteProcess isExpended="false" />
+  <Asset />
+  <Library />
+  <Variables />
+  <Properties />
+  <Libraries>
+    <string>FlowControl</string>
+    <string>App</string>
+    <string>Excel</string>
+    <string>DataConverter</string>
+    <string>System</string>
+    <string>Chrome</string>
+  </Libraries>
+  <DisplayLibraries>
+    <string>Flow</string>
+    <string>Desktop</string>
+    <string>Chrome</string>
+    <string>Win</string>
+    <string>DataConverter</string>
+    <string>Excel</string>
+  </DisplayLibraries>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>XqWb4BaNpDOaLghMfBr1go2KsXw=</DigestValue></Reference></SignedInfo><SignatureValue>NLFb0gxTaS6A7gUEw2JlnyYf7hHGPXLIT6HE4/1zTlhCkaJcE8usbATJJaHzPzPRNQgmweAnvcZICxSDfwTQ3enbugLUEEbbjmB79vY+/kp+u1yrP1cNRQ25CPwonCoabNNUk4NC/nV+YPL0veeTTJxkbhL7SSEilysQQWIiQIYPiCzWnnzFzLs0YKbsBS/q8v5BX1DByOMqTNEscaLW6khAjfWmZ75FYmH+//EdxFdu8FHT7y7zbg0hM5S/Daqxn8ZfnSd/iWeGsIY/pWgPSjJa4RP2Ick6MqHcAUfsUqv3tMT/CcqMq6hvOKZmENi/pBCq8Pu3VK41mgUhEnd4lg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Project>
