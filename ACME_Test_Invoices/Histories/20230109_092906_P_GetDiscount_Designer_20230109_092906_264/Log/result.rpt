@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="40bf6d10-ecdb-4d86-8be4-1fb508dde341" name="P_GetDiscount" result="Stop" start="2023-01-09T00:29:07.938" end="2023-01-09T00:29:12.532" jobId="Designer_20230109_092906_264">
+  <Step id="Sba43022aa4c1446babf15cf55ae41622" taskName="P_GetDiscount" type="Chrome" name="ChromeSetText" displayName="ChromeSetText" callDepth="1" depth="1" num="1" result="Stop" start="2023-01-09T00:29:08.001" end="2023-01-09T00:29:12.532" displayTime="4.5s">
+    <Variables>
+      <Variable name="clientCode" scope="Input" owner="P_GetDiscount" declareType="Any" isChanged="false" isChangable="false" runtimeType="Any" value="&lt;null&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://acme-test.uipath.com/first-automation/vendor'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://acme-test.uipath.com/first-automation/vendor" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'/html/body/div[1]/div/div[2]/div/div/div[1]/div[2]/input'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//input[@id=\'vendor\']'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="H4sIAAAAAAAEAL1Y/W7bNhD/P0/BqkVjA5NlO0s3JLKBNl2xAu2woQWG/UlLJ4kJRQok5dQo+kB7jT3ZjtSHJVlO3HZYgEAS7/vu ...1752" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Keyboard_ClearAll" displayKey="ClearAll" visible="true" required="false" />
+      <Property runtimeType="String" key="Keyboard_NewText" displayKey="Input Text" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Keyboard_UseDone" displayKey="Done(Enter)" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_Invoke" displayKey="Invoke" visible="true" required="false" />
+      <Property value="[{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;INPUT&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;class&quot;,&quot;Value&quot;: ...1373" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://acme-test.uipath.com/first-automation/vendor" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="INPUT" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsPassword" displayKey="IsPassword" visible="false" required="false" />
+      <Property value="10356" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="false" />
+      <Property value="'ACME System 1 - Dashboard - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="54,-8,1874,1096" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|82965760|Chrome/Group||second|C ...41" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Edit" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="false" />
+      <Property value="311,413,229,54" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="'Type the client code'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'564'" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'564'" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="vendor" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.8587610.4.-1286" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="68,15" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="Invoke;Value;Text;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="507,422" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="453,430" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'142, 17'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

@@ -1,0 +1,151 @@
+<Process id="f9824632-2c47-4fc3-b561-8a4a7b2b60fb" type="process" workType="foreground" name="P_GetFiles" version="" designerVersion="2.5.000.00921" lastPublishedServer="" readonly="false" isValid="true" DesignedBy="Designer" Template="">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="0" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Pro64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="1920x1080" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-06 15:18:14" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-06 16:22:38" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables>
+    <Variable name="Email" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="invoicesList" scope="Output" valueType="Any" formatType="Any" initValue="" desc="" />
+  </Variables>
+  <Steps>
+    <Step id="S73674b9cc3044fd88004cce50933af44" ver="250220822" createVer="250220822" type="Net" name="ReceiveMail" dpName="ReceiveMail" dpValue="Invoice" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="07e35ce3-4407-4404-a47c-473b74a2ea6a" type="Net">
+        <Property type="Net" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Net" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Net" key="Mail_Mails" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Net" key="Mail_Protocol" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="IMAP" valuelist="POP3;IMAP" />
+        <Property type="Net" key="Mail_HostName" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'imap.gmail.com'" />
+        <Property type="Net" key="Mail_Port" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="993" />
+        <Property type="Net" key="Mail_UseSSL" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Net" key="Mail_ID" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'spark3840'" />
+        <Property type="Net" key="Mail_Password" controlType="PropertyItemPasswordView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="True" isChanged="Y" encryptedFrom="" value="jgEWZzC8XchuHiuLfY/XJbMAfei60OQWsipO6MWJb/o=" secureType="Secure" />
+        <Property type="Net" key="Mail_BeginTime" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="'2023-01-05 00:00:00'" />
+        <Property type="Net" key="Mail_EndTime" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Net" key="Mail_Sender" controlType="String" valueType="System.String" formatType="String_Email" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Net" key="Mail_Subject" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="'Invoice'" />
+        <Property type="Net" key="Mail_SubjectIMAP" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="'Invoices'" />
+        <Property type="Net" key="Mail_Body" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Net" key="Mail_Attachments" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Net" key="Mail_MaxCount" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="4" />
+        <Property type="Net" key="Mail_MaxCountIMAP" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="4" />
+        <Property type="Net" key="Mail_WithContents" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Net" key="Mail_IgnoreHtmlTag" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Net" key="Mail_IgnoreBodyAttachemt" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Net" key="Mail_RecentFirst" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Net" key="Mail_CheckUnorderedList" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Net" key="Mail_StartNumber" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RESULT = StepPlayer.Run('Net.ReceiveMail', this.receivemail_info_1);]]></Script>
+    </Step>
+    <Step id="S2e9cea2486514414988a6deceba05182" ver="250220822" createVer="250220822" type="Flow" name="Foreach" dpName="Foreach" dpValue="this.Email" dpValue2="" dpImage="" tag="" depth="1" stmttype="OpenBlock" enabled="True" mainSet="0">
+      <Properties id="5e3fa36b-ae4e-4031-82c7-e454a95325b1" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_ForList" controlType="Object" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Flow" key="Conditions_EachItem" controlType="Object" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.Email" />
+        <Property type="Flow" key="Conditions_ForOfOrIn" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" toggle="for-of;for-in" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S277fe1086c71428c8cc9fa5e5899c94a" type="Flow" name="EndLoop" />
+      </RelatedSteps>
+      <Script><![CDATA[for(this.Email of RESULT) {]]></Script>
+    </Step>
+    <Step id="S68ecc3d3e26a43e4a3b757160ef8f366" ver="250220822" createVer="250220822" type="Net" name="DownloadMailAttachment" dpName="DownloadMailAttachment" dpValue="this.Email.Number" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="3c6afdbe-6592-4ec9-a8da-134326e6d125" type="Net">
+        <Property type="Net" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Net" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Net" key="Mail_Number" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.Email.Number" />
+        <Property type="Net" key="Mail_Download" controlType="Folder" valueType="System.String" formatType="String_DirectoryPath" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Global.ProjectDir+'Invoices'" />
+        <Property type="Net" key="Mail_Attachments" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Net" key="Mail_IgnoreBodyAttachemt" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[StepPlayer.Run('Net.DownloadMailAttachment', this.downloadmailattachment_info_3);]]></Script>
+    </Step>
+    <Step id="S277fe1086c71428c8cc9fa5e5899c94a" ver="250220822" createVer="250220822" type="Flow" name="EndLoop" dpName="End-Foreach" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseBlock" enabled="True" mainSet="0">
+      <Properties id="05914a37-0036-4d9a-9635-b43d577aee2e" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S2e9cea2486514414988a6deceba05182" type="Flow" name="Foreach" />
+      </RelatedSteps>
+      <Script><![CDATA[}]]></Script>
+    </Step>
+    <Step id="S4ca5c30a12594468a4d2a6eb234f1499" ver="250220822" createVer="250220822" type="Desktop" name="GetFileList" dpName="GetFileList" dpValue="this.invoicesList" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="bdf1bed9-f690-420c-812f-2857868b0002" type="Desktop">
+        <Property type="Desktop" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Command_Path" controlType="Folder" valueType="System.String" formatType="String_DirectoryPath" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Global.ProjectDir+'Invoices'" />
+        <Property type="Desktop" key="Command_Output" controlType="OutputControlType" valueType="System.Object[]" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.invoicesList" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.invoicesList = StepPlayer.Run('Desktop.GetFileList', this.getfilelist_info_5);]]></Script>
+    </Step>
+  </Steps>
+  <Libraries>
+    <string>Net</string>
+    <string>FlowControl</string>
+    <string>System</string>
+  </Libraries>
+  <JScript><![CDATA[function P_GetFiles() {
+
+    this.Email;
+    this.invoicesList;
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('S73674b9cc3044fd88004cce50933af44', '[1] ReceiveMail');
+        RESULT = StepPlayer.Run('Net.ReceiveMail', this.receivemail_info_1);
+
+        //------------------------------------------------
+        STEP('S2e9cea2486514414988a6deceba05182', '[2] Foreach');
+        for(this.Email of RESULT) {
+
+            //------------------------------------------------
+            STEP('S68ecc3d3e26a43e4a3b757160ef8f366', '[3] DownloadMailAttachment');
+            StepPlayer.Run('Net.DownloadMailAttachment', this.downloadmailattachment_info_3);
+
+        //------------------------------------------------
+        }
+        STEP('S277fe1086c71428c8cc9fa5e5899c94a', '[4] End-Foreach');
+
+        //------------------------------------------------
+        STEP('S4ca5c30a12594468a4d2a6eb234f1499', '[5] GetFileList');
+        this.invoicesList = StepPlayer.Run('Desktop.GetFileList', this.getfilelist_info_5);
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+        return {'invoicesList':this.invoicesList};
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="S73674b9cc3044fd88004cce50933af44" group_name="a802042e-61e8-4965-be01-94584d860a06_Untitled" folded="False" />
+      <StepNode step_id="S2e9cea2486514414988a6deceba05182" group_name="" folded="False" />
+      <StepNode step_id="S68ecc3d3e26a43e4a3b757160ef8f366" group_name="16f85056-ecf5-4bfa-99c3-c93da8bad3c4_Untitled" folded="False" />
+      <StepNode step_id="S277fe1086c71428c8cc9fa5e5899c94a" group_name="" folded="False" />
+      <StepNode step_id="S4ca5c30a12594468a4d2a6eb234f1499" group_name="2c23ca18-de06-492d-846f-f5b0a30dfdfb_Untitled" folded="False" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>CqqlCz41vuKdsW5FmFO5U2HEPhc=</DigestValue></Reference></SignedInfo><SignatureValue>VtQqUrslBdvot4f8ZbQlKgt7yhGT98+pDDsvUhPFDFpLHhYIYntUXSz+du59oCgKj11/B7jzjQjcfeMEOUsDcGXRlBVdeSnd9hZwnrUQaNyUyXRPmVMhKoZvmdhXh0IFngCGSkWJFTP5Zva3m0U3UqxOGTN/DQct5lliXDVRiMP91qP85BNqUwUS22gxweQs6OxLpn886hsOhW6LiOOvuMVeFo8KOTV2eLu+p0/A+XrDQhxE3RlOkrDy0nUpI3pdSbjs05MhR6eQX307Yhn1iOu+NgZMpxklCWK6efqYTZHxkbqVDHHPLod6JFlqONbI5NA5+Mp41ScL4Q05/EFqmw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

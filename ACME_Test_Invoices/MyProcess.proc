@@ -1,0 +1,170 @@
+<Process id="41d4be85-3547-433f-80f1-baf2d2a493e7" type="process" workType="foreground" name="MyProcess" version="" designerVersion="2.5.000.00921" lastPublishedServer="" readonly="false" isValid="true" DesignedBy="Designer" Template="">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="default process" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="60" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Pro64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="1920x1080" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-06 15:18:02" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-09 08:56:06" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables>
+    <Variable name="invoice" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="invoicesList" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="discount" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="clientCode" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+  </Variables>
+  <Steps>
+    <Step id="S2f449529084b476c91f010940f07cded" ver="250220822" createVer="250220822" type="Chrome" name="ChromeOpen" dpName="ChromeOpen" dpValue="https://acme-test.uipath.com/first-automation/vendor" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="d14e4e66-ea10-41b3-88ed-2648a067e9e9" type="Chrome">
+        <Property type="Chrome" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Chrome" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Chrome" key="CHROME_Browser" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Chrome" key="CHROME_TypeOfBrowser" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Chrome" valuelist="Chrome;Edge" />
+        <Property type="Chrome" key="CHROME_BrowserType" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Chrome" key="CHROME_URL" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'https://acme-test.uipath.com/first-automation/vendor'" />
+        <Property type="Chrome" key="CHROME_ChromePath" controlType="File" valueType="System.String" formatType="String_FilePath" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Chrome" key="CHROME_Maximize" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Chrome" key="CHROME_WaitTimeSec" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="60" />
+        <Property type="Chrome" key="CHROME_ExtensionList" controlType="PropertyItemChromeInstalledExtensionsView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Chrome" key="CHROME_DownloadPath" controlType="Folder" valueType="System.String" formatType="String_DirectoryPath" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RESULT = StepPlayer.Run('Chrome.ChromeOpen', this.chromeopen_info_1);]]></Script>
+    </Step>
+    <Step id="Sf721f4b79931464b84162bc2edf0c6b7" ver="250220822" createVer="250220822" type="Flow" name="RunTask" dpName="RunTask" dpValue="this.invoicesList" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="8c332103-6841-4e2a-930d-3a72749b0ea9" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_TaskName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="P_GetFiles" />
+        <Property type="Flow" key="Output_invoicesList" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.invoicesList" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RunTask(this, 'P_GetFiles', null);]]></Script>
+    </Step>
+    <Step id="S7155bc1c7d9641c9940a56e15d555307" ver="250220822" createVer="250220822" type="Flow" name="Foreach" dpName="Foreach" dpValue="this.invoice" dpValue2="" dpImage="" tag="" depth="1" stmttype="OpenBlock" enabled="True" mainSet="0">
+      <Properties id="93764f2b-62f8-4c3c-99ff-895b1bcc635f" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_ForList" controlType="Object" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.invoicesList" />
+        <Property type="Flow" key="Conditions_EachItem" controlType="Object" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.invoice" />
+        <Property type="Flow" key="Conditions_ForOfOrIn" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" toggle="for-of;for-in" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="Sc6b3e6b6515143ea9447f883d9cd47a1" type="Flow" name="EndLoop" />
+      </RelatedSteps>
+      <Script><![CDATA[for(this.invoice of this.invoicesList) {]]></Script>
+    </Step>
+    <Step id="Sf6089b5f574c4eb0a357a8b125f1b53c" ver="250220822" createVer="250220822" type="Flow" name="RunTask" dpName="RunTask" dpValue="this.clientCode" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="3acfbcbb-1ae9-43be-ba3b-e72b7dd7cbbb" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_TaskName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="P_GetDataFromExcel" />
+        <Property type="Flow" key="Input_invoice" controlType="InputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.invoice" order="1" />
+        <Property type="Flow" key="Output_clientCode" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.clientCode" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RunTask(this, 'P_GetDataFromExcel', {'invoice':this.invoice});]]></Script>
+    </Step>
+    <Step id="S3338e5e537cf420b9467ac105d2e4f2d" ver="250220822" createVer="250220822" type="Flow" name="RunTask" dpName="RunTask" dpValue="this.discount" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="6ec15b50-f7de-4931-9788-267104f4f761" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_TaskName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="P_GetDiscount" />
+        <Property type="Flow" key="Output_discount" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.discount" order="1" />
+        <Property type="Flow" key="Input_clientCode" controlType="InputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.clientCode" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RunTask(this, 'P_GetDiscount', {'clientCode':this.clientCode});]]></Script>
+    </Step>
+    <Step id="Sc6b3e6b6515143ea9447f883d9cd47a1" ver="250220822" createVer="250220822" type="Flow" name="EndLoop" dpName="End-Foreach" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseBlock" enabled="True" mainSet="0">
+      <Properties id="28dc10f6-1267-44a9-aaff-fbd85acee8e9" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S7155bc1c7d9641c9940a56e15d555307" type="Flow" name="Foreach" />
+      </RelatedSteps>
+      <Script><![CDATA[}]]></Script>
+    </Step>
+    <Step id="Sa887978d46634688b76421e377940ada" ver="250220822" createVer="250220822" type="Flow" name="RunTask" dpName="RunTask" dpValue="this.invoicesList" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="70994481-dd83-4ef5-967c-17acaa59badc" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_TaskName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="P_SendMail" />
+        <Property type="Flow" key="Input_invoicesList" controlType="InputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.invoicesList" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RunTask(this, 'P_SendMail', {'invoicesList':this.invoicesList});]]></Script>
+    </Step>
+  </Steps>
+  <Libraries>
+    <string>Chrome</string>
+    <string>FlowControl</string>
+  </Libraries>
+  <JScript><![CDATA[function MyProcess() {
+
+    this.invoice;
+    this.invoicesList;
+    this.discount;
+    this.clientCode;
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('S2f449529084b476c91f010940f07cded', '[1] ChromeOpen');
+        RESULT = StepPlayer.Run('Chrome.ChromeOpen', this.chromeopen_info_1);
+
+        //------------------------------------------------
+        STEP('Sf721f4b79931464b84162bc2edf0c6b7', '[2] RunTask');
+        RunTask(this, 'P_GetFiles', null);
+
+        //------------------------------------------------
+        STEP('S7155bc1c7d9641c9940a56e15d555307', '[3] Foreach');
+        for(this.invoice of this.invoicesList) {
+
+            //------------------------------------------------
+            STEP('Sf6089b5f574c4eb0a357a8b125f1b53c', '[4] RunTask');
+            RunTask(this, 'P_GetDataFromExcel', {'invoice':this.invoice});
+
+            //------------------------------------------------
+            STEP('S3338e5e537cf420b9467ac105d2e4f2d', '[5] RunTask');
+            RunTask(this, 'P_GetDiscount', {'clientCode':this.clientCode});
+
+        //------------------------------------------------
+        }
+        STEP('Sc6b3e6b6515143ea9447f883d9cd47a1', '[6] End-Foreach');
+
+        //------------------------------------------------
+        STEP('Sa887978d46634688b76421e377940ada', '[7] RunTask');
+        RunTask(this, 'P_SendMail', {'invoicesList':this.invoicesList});
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="S2f449529084b476c91f010940f07cded" group_name="d679722b-3626-48dd-9ca3-7afd76eefc7e_Untitled" folded="False" />
+      <StepNode step_id="Sf721f4b79931464b84162bc2edf0c6b7" group_name="" folded="False" />
+      <StepNode step_id="S7155bc1c7d9641c9940a56e15d555307" group_name="" folded="False" />
+      <StepNode step_id="Sf6089b5f574c4eb0a357a8b125f1b53c" group_name="" folded="False" />
+      <StepNode step_id="S3338e5e537cf420b9467ac105d2e4f2d" group_name="" folded="False" />
+      <StepNode step_id="Sc6b3e6b6515143ea9447f883d9cd47a1" group_name="" folded="False" />
+      <StepNode step_id="Sa887978d46634688b76421e377940ada" group_name="" folded="False" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mflE/s/lkiMtgLqiVZ4d1a1nKF4=</DigestValue></Reference></SignedInfo><SignatureValue>rTP8D0zAey7pgrw03tXgRk7KehX6vTZfdGOcAIH6BC+XMt0+y0doFjGdnsyeJKkJvylplK5IStX9TIFdZJg9I4JY1jbfJWR0Cfahao+hY69fLJbs++BV0DdQsQ5XCRnktQzb0pMEMzA6fb9H2sRATj/CiYip8J5Ytc8wutssyiOnmHjqdVQGAPcpns0dHiJR56JBRxWOi1u55GfMikqTuK4aDWLMeiewt3bNSulkHDtJbHZTiosat5xluL7Ui4E0mWNZeBVgoZdFg98JpUd25PWArB1JIiH4dyeWsY6mg7zuPMOriq1aGF26096qaP8wIXVRtrZ6z0yMG0gFPK9ArQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

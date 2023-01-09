@@ -1,0 +1,108 @@
+<Process id="4e0d6d9d-7955-46cf-9841-626ede514eb4" type="process" workType="foreground" name="P_GetDataFromExcel" version="" designerVersion="2.5.000.00921" lastPublishedServer="" readonly="false" isValid="true" DesignedBy="Designer" Template="">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="0" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Pro64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="1920x1080" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-06 16:04:39" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-06 17:13:09" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables>
+    <Variable name="invoice" scope="Input" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="clientCode" scope="Output" valueType="Any" formatType="Any" initValue="" desc="" />
+  </Variables>
+  <Steps>
+    <Step id="Sc126497e6f2546a69b4116c12b2fb9b7" ver="250220822" createVer="250220822" type="Excel" name="OpenExcel" dpName="OpenExcel" dpValue="this.invoice" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="095e47e1-b98b-4632-aae1-94392f50cd28" type="Excel">
+        <Property type="Excel" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Excel" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Excel" key="Output_OutputExcel" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Excel" key="File_Path" controlType="Excel" valueType="System.String" formatType="String_FilePath" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.invoice" order="11" />
+        <Property type="Excel" key="File_Invisible" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" order="12" />
+        <Property type="Excel" key="File_ReadOnly" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" order="16" />
+        <Property type="Excel" key="File_Maximize" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" order="13" />
+        <Property type="Excel" key="File_ExecuteShell" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" order="14" />
+        <Property type="Excel" key="File_Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="False" readonly="False" encrypted="False" isChanged="N" value="60" order="15" />
+        <Property type="Excel" key="File_UsePassword" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" order="17" />
+        <Property type="Excel" key="File_OpenPassword" controlType="PropertyItemPasswordView" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="Y" value="" order="18" />
+        <Property type="Excel" key="File_WritePassword" controlType="PropertyItemPasswordView" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="Y" value="" order="19" />
+        <Property type="Excel" key="File_TextDelimiter" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Comma(,)" valuelist="Comma(,);Colon(:);Semicolon(;;);Caret(^);Pipe(|);Tab(&#x9;);Space( );Ampersand(&amp;);Ampersat(@);Asterisk(*);Backslash(\);Dollar($);Dot(.);Equals(=);Exclamation(!);Hyphen(-);Percent(%);Plus(+);Question(?);Sharp(#);Slash(/);Tilde(~);Underscore(_)" order="20" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RESULT = StepPlayer.Run('Excel.OpenExcel', this.openexcel_info_1);]]></Script>
+    </Step>
+    <Step id="S419d949a89d94217a0fa3eba6a7050d6" ver="250220822" createVer="250220822" type="Excel" name="ReadString" dpName="ReadString" dpValue="E8" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="e6ff6e40-985f-41ee-aaf2-1ad37cef4b30" type="Excel">
+        <Property type="Excel" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Excel" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Excel" key="Output_ReadData" controlType="OutputControlType" valueType="System.String" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.clientCode" />
+        <Property type="Excel" key="Input_InputExcel" controlType="InputControlType" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="ACTIVE_EXCEL" />
+        <Property type="Excel" key="Sheet_SheetName" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'Invoice'" />
+        <Property type="Excel" key="Sheet_Cell" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'E8'" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.clientCode = StepPlayer.Run('Excel.ReadString', this.readstring_info_2);]]></Script>
+    </Step>
+    <Step id="Sed0bf2aefa644b4abbf9635f6b75a9b8" ver="250220822" createVer="250220822" type="Desktop" name="MessageBox" dpName="MessageBox" dpValue="this.clientCode" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="c7aeb702-5b6b-4e17-9d88-9ed854ade415" type="Desktop">
+        <Property type="Desktop" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Conditions_Arguments" controlType="Object" valueType="System.Object" formatType="Any" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.clientCode" />
+        <Property type="Desktop" key="Command_Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="3" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[MsgBox(this.clientCode, 3);]]></Script>
+    </Step>
+  </Steps>
+  <Libraries>
+    <string>Excel</string>
+    <string>System</string>
+  </Libraries>
+  <JScript><![CDATA[function P_GetDataFromExcel(args) {
+
+    this.invoice = (typeof args != 'undefined') ? args.invoice : null;
+    this.clientCode;
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('Sc126497e6f2546a69b4116c12b2fb9b7', '[1] OpenExcel');
+        RESULT = StepPlayer.Run('Excel.OpenExcel', this.openexcel_info_1);
+
+        //------------------------------------------------
+        STEP('S419d949a89d94217a0fa3eba6a7050d6', '[2] ReadString');
+        this.clientCode = StepPlayer.Run('Excel.ReadString', this.readstring_info_2);
+
+        //------------------------------------------------
+        STEP('Sed0bf2aefa644b4abbf9635f6b75a9b8', '[3] MessageBox');
+        MsgBox(this.clientCode, 3);
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+        return {'clientCode':this.clientCode};
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="Sc126497e6f2546a69b4116c12b2fb9b7" group_name="dc2e2954-039d-4ecf-be9b-a3cb32e6c2d2_Untitled" folded="False" />
+      <StepNode step_id="S419d949a89d94217a0fa3eba6a7050d6" group_name="dc2e2954-039d-4ecf-be9b-a3cb32e6c2d2_Untitled" folded="False" />
+      <StepNode step_id="Sed0bf2aefa644b4abbf9635f6b75a9b8" group_name="dc2e2954-039d-4ecf-be9b-a3cb32e6c2d2_Untitled" folded="False" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>2El/NEJKjooElojQMghqqApSpEQ=</DigestValue></Reference></SignedInfo><SignatureValue>rOnJB4tdNtMu3aylQrDNN9puqTPI0QYNCVRm2vDZNSByYDCRJua4D6tHvRWDyeEo2J/aStzO2nGxiqLTl+jnY0Z8EUwo94Yysgzw3gHr/nPexM6gKNuwrdxPDlA8gBAWjEbYinVzJzNJvMqEcw+yqBefyktEwhMhgOAfTHSf4zU0roKzAz7uu/nAnvFzEC825n+LN5pwHhSqg9VmMz0TMC7F90ujO9oWMROlgaJVXylKLDTMtQkH9KBEp0freZfK8flEuq5XmMkSnWPi+64yXCpRGfaYViaLXkL4zAQQBPQtZpeVZt7K8ygkJWpJnYUXIV+yUX3WzZDoTN6M/Zoa8A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

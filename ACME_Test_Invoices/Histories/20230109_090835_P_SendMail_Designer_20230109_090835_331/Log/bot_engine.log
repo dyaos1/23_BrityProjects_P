@@ -1,0 +1,524 @@
+﻿2023-01-09 09:05:01,322 [T1] INFO  EngineStarter
+BOT Engine Start - v2.5.000.00921
+BOT ID: D_20230109_090500_324
+BOT PID: 5964
+BOT PPID: 11048
+BOT Working Directory: C:\Users\k\AppData\Roaming\Brity RPA Designer
+
+2023-01-09 09:05:01,588 [T1] INFO  Config
+Initialize Config
+
+2023-01-09 09:05:01,619 [T1] DEBUG Config
+Config Loaded
+
+2023-01-09 09:05:01,635 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2023-01-09 09:05:01,635 [T1] INFO  Config
+Initialize Resource Config
+
+2023-01-09 09:05:01,666 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-09 09:05:01,761 [T1] INFO  Config
+All Config Initialized.
+
+2023-01-09 09:05:01,777 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2023-01-09 09:05:01,855 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2023-01-09 09:05:01,902 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2023-01-09 09:05:01,902 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2023-01-09 09:05:01,917 [T4] DEBUG JobService
+Connect to agent service
+
+2023-01-09 09:05:01,933 [T4] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2023-01-09 09:05:01,933 [T4] DEBUG JobService
+Open connection
+
+2023-01-09 09:05:01,948 [T4] DEBUG JobService
+Register engine to agent
+
+2023-01-09 09:05:01,948 [T4] DEBUG JobService
+Engine is connected to agent service.
+
+2023-01-09 09:05:01,948 [T4] DEBUG JobService
+Owner Process PID: 11048
+
+2023-01-09 09:05:01,964 [T4] INFO  JobService
+Start monitoring owner process is terminated.
+
+2023-01-09 09:05:01,964 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2023-01-09 09:05:01,964 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2023-01-09 09:05:04,093 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,1920,1080
+
+2023-01-09 09:05:04,861 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2023-01-09 09:05:05,079 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2023-01-09 09:05:05,095 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-09 09:05:05,095 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2023-01-09 09:08:35,581 [T14] INFO  JobService
+Start Job: P_SendMail (Foreground)
+{
+  "UsePIP": false,
+  "UserID": null,
+  "UserPWD": null,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "JobWorkDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\ACME_Test_Invoices\\Histories\\20230109_090835_P_SendMail_Designer_20230109_090835_331",
+  "JobLogDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\ACME_Test_Invoices\\Histories\\20230109_090835_P_SendMail_Designer_20230109_090835_331\\Log",
+  "JobScreenshotDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\ACME_Test_Invoices\\Histories\\20230109_090835_P_SendMail_Designer_20230109_090835_331\\Log\\Screenshot",
+  "TotalProcessStepCount": 0,
+  "CurrentStepNo": 0,
+  "CurrentStepName": null,
+  "StartTime": "2023-01-09 09:08:35",
+  "EndTime": null,
+  "EngineID": "D_20230109_090500_324",
+  "EnginePID": 0,
+  "JobId": "Designer_20230109_090835_331",
+  "JobType": 1,
+  "UserAuthentication": null,
+  "ProcessPath": "C:\\Users\\k\\Documents\\Brity RPA Projects\\23_projects_1\\ACME_Test_Invoices\\P_SendMail.proc",
+  "ProcessId": "ba6e0786-9db4-4209-ad27-7ca9923a327c",
+  "ProcessVer": "",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 11048,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "State": 0
+}
+
+2023-01-09 09:08:35,737 [T12] DEBUG JobService
+Waiting library loading...
+
+2023-01-09 09:08:35,753 [T12] DEBUG Config
+Reload User Settings
+
+2023-01-09 09:08:35,753 [T12] INFO  JobService
+Config Loading Completed.
+
+2023-01-09 09:08:35,753 [T12] DEBUG JobService
+Config Loading Time: 0 ms.
+
+2023-01-09 09:08:35,753 [T12] INFO  JobManager
+Create JobManager instance for job P_SendMail(Designer_20230109_090835_331)
+
+2023-01-09 09:08:35,769 [T12] INFO  JobRequest
+Job ID : Designer_20230109_090835_331
+Project Path  : C:\Users\k\Documents\Brity RPA Projects\23_projects_1\ACME_Test_Invoices\ACME_Test_Invoices.proj
+Process Name  : P_SendMail
+Engine Mode   : Designer
+Requester Type: DesignerRequester PID : 11048
+
+2023-01-09 09:08:35,769 [T3] INFO  JobRequest
+Start Callback Sender
+
+2023-01-09 09:08:35,769 [T3] DEBUG JobRequest
+Step Callback Interval: 500
+
+2023-01-09 09:08:35,831 [T12] DEBUG ProjectManager
+Set Project Information
+
+2023-01-09 09:08:35,867 [T12] INFO  JobRunner
+Initialize Script Engine
+
+2023-01-09 09:08:35,872 [T9] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2023-01-09 09:08:35,902 [T3] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtNumber, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtInteger, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtDouble, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtPoint, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtRect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtDate, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtDateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtArray1D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtArray2D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtXml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtJson, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString, Type:RPAGO.Custom.ExtendLibrary.DataConverter_String, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_DateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Point, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Rect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Xml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-09 09:08:36,102 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Json, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-09 09:08:36,524 [T9] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2023-01-09 09:08:36,539 [T3] DEBUG JobRequest
+Callback - State: Ready
+
+
+2023-01-09 09:08:36,539 [T12] INFO  JobRunnerHook
+HotKey Hook Started
+
+2023-01-09 09:08:36,539 [T12] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2023-01-09 09:08:36,539 [T9] INFO  JobRunner
+RunProcess start
+
+2023-01-09 09:08:36,539 [T9] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2023-01-09 09:08:36,539 [T9] INFO  JobRequest
+Last job life cycle state: Running
+
+2023-01-09 09:08:36,555 [T3] DEBUG JobRequest
+Callback - State: Starting
+
+
+2023-01-09 09:08:36,571 [T3] DEBUG JobRequest
+Callback - State: Running
+
+
+2023-01-09 09:08:36,940 [T9] INFO  ScreenCapture
+Initialize DirectX Screen Capture.
+
+2023-01-09 09:08:36,955 [T1] INFO  DirectXScreenCapturePlayer
+DirextX Target Screen Bounds: {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-09 09:08:37,002 [T1] INFO  DirectXScreenCapturePlayer
+Screen 0 Bounds : {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-09 09:08:37,018 [T11] DEBUG DirectXScreenCapturePlayer
+try capture screen to check DirectX screen.
+
+2023-01-09 09:08:37,051 [T9] INFO  ScreenCapture
+DirectX Screen Capture Initialized.
+
+2023-01-09 09:08:37,071 [T9] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2023-01-09 09:08:37,102 [T9] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - P_SendMail
+##############################################################
+ba6e0786-9db4-4209-ad27-7ca9923a327c
+P_SendMail
+
+
+2023-01-09 09:08:37,165 [T9] INFO  JobRequest
+**************************************************************
+*** TASK: P_SendMail
+**************************************************************
+ - STEP 1: S7b786ccc40bc46deb8ea50e4554ec1e9 (1/14) - (1/14)
+ - [1] GetFileList
+
+
+2023-01-09 09:08:37,367 [T9] INFO  JobRequest
+ - STEP 2: Sbc7a5e01a113487c8bc51b79f6277158 (2/14) - (2/14)
+ - [2] ChromeNavigate
+
+
+2023-01-09 09:08:37,882 [T9] INFO  JobRequest
+ - STEP 3: S50dfbec0be4844b9bcd91bc433539b7a (3/14) - (3/14)
+ - [3] ChromeClick
+
+
+2023-01-09 09:08:44,173 [T9] INFO  JobRequest
+ - STEP 4: S13465f910f9446068e18f6e50cf2f060 (4/14) - (4/14)
+ - [4] ChromeWaitAppear
+
+
+2023-01-09 09:08:46,558 [T9] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:47,638 [T9] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:48,752 [T9] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:49,875 [T9] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:50,958 [T9] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:52,058 [T9] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:53,143 [T9] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:54,171 [T9] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:55,311 [T9] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:55,702 [T9] DEBUG ChromeFind
+Chrome Find Wrapper : 객체를 찾지 못하였습니다.
+객체를 다시 지정해 주시기 바랍니다.
+
+2023-01-09 09:08:56,177 [T9] INFO  JobRequest
+ - STEP 5: S871a025261df44058c5169a8aa238803 (5/14) - (5/14)
+ - [5] ChromeSetText
+
+
+2023-01-09 09:08:57,513 [T12] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:58,687 [T12] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:08:59,737 [T12] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:09:00,815 [T12] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:09:01,908 [T12] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:09:02,974 [T12] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:09:04,068 [T12] DEBUG RestorePuppeteer
+Restore CDPSession Start
+
+2023-01-09 09:09:04,586 [T12] DEBUG ChromeFind
+Chrome Find Wrapper : 객체를 찾지 못하였습니다.
+객체를 다시 지정해 주시기 바랍니다.
+
+2023-01-09 09:09:04,859 [T9] DEBUG ChromeSetText
+객체를 찾지 못하였습니다.
+객체를 다시 지정해 주시기 바랍니다.
+
+2023-01-09 09:09:04,859 [T9] DEBUG ChromeCommon
+동작을 수행하는데 실패했습니다..
+객체를 찾지 못하였습니다.
+객체를 다시 지정해 주시기 바랍니다.
+
+2023-01-09 09:09:11,555 [T9] INFO  JobRunner
+Try Pause
+
+2023-01-09 09:09:11,555 [T9] INFO  JobRequest
+##############################################################
+### STATE: Paused
+##############################################################
+
+
+2023-01-09 09:09:11,555 [T9] INFO  JobRequest
+Last job life cycle state: Paused
+
+2023-01-09 09:09:11,586 [T3] DEBUG JobRequest
+Callback - State: Paused
+
+
+2023-01-09 09:09:28,579 [T14] INFO  JobService
+Stop Job
+
+2023-01-09 09:09:28,582 [T14] INFO  JobRunner
+Stop Job Runner - Cause: LocalUser / Message: stop by user
+
+2023-01-09 09:09:28,583 [T14] INFO  JobRequest
+##############################################################
+### STATE: Stopping
+##############################################################
+stop by user
+
+
+2023-01-09 09:09:28,594 [T9] FINE  JobRunner
+RunTask ExceptionOccured. TASK: P_SendMail => 동작을 수행하는데 실패했습니다..
+객체를 찾지 못하였습니다.
+객체를 다시 지정해 주시기 바랍니다.
+
+2023-01-09 09:09:28,598 [T3] DEBUG JobRequest
+Callback - State: Stopping
+stop by user
+
+2023-01-09 09:09:28,613 [T9] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - P_SendMail
+##############################################################
+ba6e0786-9db4-4209-ad27-7ca9923a327c
+P_SendMail
+
+
+2023-01-09 09:09:28,637 [T9] INFO  JobRunner
+Process: P_SendMail
+Step: ChromeSetText (5/14)
+
+동작을 수행하는데 실패했습니다..
+객체를 찾지 못하였습니다.
+객체를 다시 지정해 주시기 바랍니다.
+
+[CallStack]
+  - P_SendMail: [5] ChromeSetText
+
+[Global Variables]
+  - RESULT = False (Boolean)
+
+[P_SendMail Variables]
+  - invoicesList = System.Collections.Generic.List`1[System.String] (Any)
+  - invoice = <undefined> (Undefined)
+
+2023-01-09 09:09:28,638 [T9] DEBUG JobManager
+Set Result State: Stopped
+
+2023-01-09 09:09:28,640 [T9] DEBUG JobRunner
+OnProcessFailed
+
+2023-01-09 09:09:28,640 [T12] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2023-01-09 09:09:28,641 [T9] INFO  JobRunner
+Start to clean up resources.
+
+2023-01-09 09:09:28,643 [T9] DEBUG JobRunner
+Remove all libraries
+
+2023-01-09 09:09:28,673 [T9] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2023-01-09 09:09:28,676 [T9] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2023-01-09 09:09:28,679 [T9] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2023-01-09 09:09:28,680 [T9] INFO  JobRunner
+All Resources Clear
+
+2023-01-09 09:09:28,682 [T9] INFO  JobRunner
+Make report.
+
+2023-01-09 09:09:28,764 [T9] DEBUG JobRunner
+OnCompleted
+
+2023-01-09 09:09:28,764 [T9] DEBUG JobRunner
+SendJobResult: Stopped
+
+2023-01-09 09:09:28,765 [T9] INFO  JobRequest
+##############################################################
+### STATE: Stopped
+##############################################################
+Process: P_SendMail
+Step: ChromeSetText (5/14)
+
+동작을 수행하는데 실패했습니다..
+객체를 찾지 못하였습니다.
+객체를 다시 지정해 주시기 바랍니다.
+
+[CallStack]
+  - P_SendMail: [5] ChromeSetText
+
+[Global Variables]
+  - RESULT = False (Boolean)
+
+[P_SendMail Variables]
+  - invoicesList = System.Collections.Generic.List`1[System.String] (Any)
+  - invoice = <undefined> (Undefined)
+
+
+2023-01-09 09:09:28,765 [T9] INFO  JobRequest
+Last job life cycle state: Stopped
+
+2023-01-09 09:09:28,765 [T9] INFO  JobRequest
+Update skipped current step informations.
+
+2023-01-09 09:09:28,785 [T3] DEBUG JobRequest
+Callback - State: Stopped
+Process: P_SendMail
+Step: ChromeSetText (5/14)
+
+동작을 수행하는데 실패했습니다..
+객체를 찾지 못하였습니다.
+객체를 다시 지정해 주시기 바랍니다.
+
+[CallStack]
+  - P_SendMail: [5] ChromeSetText
+
+[Global Variables]
+  - RESULT = False (Boolean)
+
+[P_SendMail Variables]
+  - invoicesList = System.Collections.Generic.List`1[System.String] (Any)
+  - invoice = <undefined> (Undefined)
+
+2023-01-09 09:09:28,787 [T9] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2023-01-09 09:09:28,800 [T3] INFO  JobRequest
+Callback - JobCompleted
+
+2023-01-09 09:09:28,800 [T3] DEBUG JobRequest
+End of Callback Sender
+

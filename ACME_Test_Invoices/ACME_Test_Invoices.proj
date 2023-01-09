@@ -1,0 +1,49 @@
+<Project id="fffdacf4-e7bc-40da-9100-9b8cd79dc11b" namespace="" name="ACME_Test_Invoices" category="project" workType="foreground" version="1.00" lastPublishedDate="" lastPublishedBy="" createdDate="2023-01-06 15:18:01" createdBy="" latestProcess="P_GetDiscount" designerVersion="2.5.000.00921">
+  <SharedTask isExpended="false" />
+  <NormalTask isExpended="false" />
+  <Event isExpended="false" />
+  <Process isExpended="true">
+    <LinkItem id="41d4be85-3547-433f-80f1-baf2d2a493e7" category="Process" isChanged="Y" desc="default process" stepCount="7" name="MyProcess">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="4e0d6d9d-7955-46cf-9841-626ede514eb4" category="Process" isChanged="Y" desc="" stepCount="3" name="P_GetDataFromExcel">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="40bf6d10-ecdb-4d86-8be4-1fb508dde341" category="Process" isChanged="Y" desc="" stepCount="10" name="P_GetDiscount">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="f9824632-2c47-4fc3-b561-8a4a7b2b60fb" category="Process" isChanged="Y" desc="" stepCount="5" name="P_GetFiles">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="ba6e0786-9db4-4209-ad27-7ca9923a327c" category="Process" isChanged="Y" desc="" stepCount="15" name="P_SendMail">
+      <Properties />
+    </LinkItem>
+  </Process>
+  <CustomLibraries isExpended="false" />
+  <LibraryTemplate isExpended="false" />
+  <Resources isExpended="false" />
+  <RemoteProcess isExpended="false" />
+  <Asset />
+  <Library />
+  <Variables />
+  <Properties />
+  <Libraries>
+    <string>Chrome</string>
+    <string>FlowControl</string>
+    <string>Excel</string>
+    <string>System</string>
+    <string>Net</string>
+    <string>App</string>
+  </Libraries>
+  <DisplayLibraries>
+    <string>Flow</string>
+    <string>Desktop</string>
+    <string>Chrome</string>
+    <string>Win</string>
+    <string>DataConverter</string>
+    <string>Excel</string>
+    <string>Pdf</string>
+    <string>Outlook</string>
+    <string>Net</string>
+  </DisplayLibraries>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>I3bxrai7VIKftijAj8tSShVtvyQ=</DigestValue></Reference></SignedInfo><SignatureValue>WKXQ+Pm2t6HMlynLoR5+d8Xlo+jyB01m9WvoLmKnwKN/Xzse+QChWEZT+j0xY6uzle9xfWTSWLoeBing2NfLMdaEa4oh2MXsQ2rCKtwL1BisZs1/rCv8qiNyS/JZmeSQXNPc1CrPo+Vb0/Hc7NsSdoQ7IYtQletinmFDqIxkjz6P8gqM8R2H0NyEFamigDDh+W04Gs5lf1dWa8/Pb+x195jxFijx8dkSEmZahOR3ZypF+sTW4mVlhKpoSrnwbsM2VGqXA5/AUSjD6XaV7DtyLkb0kY89jl1Sh4smZ4GqtgU4M1OpGL/U8vt5wAvj3CkDdiuSV3rHFsSBq27BxCMUaw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Project>
