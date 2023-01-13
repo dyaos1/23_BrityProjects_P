@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="66e2e474-c95e-4be8-a99d-2421926f3c47" name="P_test3" result="Pass" start="2023-01-13T00:00:21.763" end="2023-01-13T00:00:23.260" jobId="Designer_20230113_090020_107">
+  <Step id="Sd46b5ad06f09422da36f41742f363d0b" taskName="P_test3" type="Python" name="ExecutePython" displayName="ExecutePythonFile" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-13T00:00:21.826" end="2023-01-13T00:00:23.260" displayTime="1.4s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\WriteFile.py'" runtimeType="String" key="Input_FilePath" displayKey="FilePath" visible="true" required="true" />
+      <Property value="'Hello'" runtimeType="String" key="Input_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="10000" runtimeType="Integer" key="Input_Timeout" displayKey="Timeout(ms)" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

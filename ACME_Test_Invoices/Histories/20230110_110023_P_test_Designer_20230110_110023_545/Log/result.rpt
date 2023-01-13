@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="d089f5a6-d926-42f1-885b-c9915f686f38" name="P_test" result="Pass" start="2023-01-10T02:00:25.308" end="2023-01-10T02:00:36.476" jobId="Designer_20230110_110023_545">
+  <Step id="S33fa45f511274a12ac6e0958b43e1ede" taskName="P_test" type="Win" name="TextInput" displayName="TextInput" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-10T02:00:25.379" end="2023-01-10T02:00:30.745" displayTime="5.4s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="onError" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="10" runtimeType="Integer" key="Target_Timeout" displayKey="Timeout(Sec)" visible="true" required="true" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Target_TargetNo" displayKey="Index (1번부터 시작)" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseName" displayKey="Check Name" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseValue" displayKey="Check Value" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseLegacyValue" displayKey="Check Legacy Value" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseBounds" displayKey="Check Size" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseAppTitle" displayKey="Check Title" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseSetFocus" displayKey="Focus Before" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_DrawBounds" displayKey="Draw Bounds" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseObjectPath" displayKey="Check Path" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="Search Around" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="Use Image Match" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="Image Index Method" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="Select Image Index" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_SearchBounds" displayKey="Search Bounds" visible="false" required="false" />
+      <Property value="8612" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="acad" runtimeType="String" key="Application_ProcessName" displayKey="Application" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="Remote App Name" visible="false" required="false" />
+      <Property value="'Autodesk AutoCAD 2016 - [Drawing1.dwg]'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="AfxMDIFrame110u" runtimeType="String" key="Application_ClassName" displayKey="App Class Name" visible="false" required="false" />
+      <Property value="Window" runtimeType="String" key="Application_ClassType" displayKey="앱 객체 타입" visible="false" required="false" />
+      <Property value="197932" runtimeType="Integer" key="Application_WindowHandle" displayKey="WindowHandle" visible="false" required="false" />
+      <Property value="68,13,1822,1077" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Value;Scroll;Text;SynchronizedInput" runtimeType="String" key="Target_SupportedPatterns" displayKey="Supported Patterns" visible="true" required="false" />
+      <Property value="local:AutoCompleteEdit_1" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="WPF" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="7.8612.9995873" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="TextBox" runtimeType="String" key="Target_ClassName" displayKey="Class Name" visible="false" required="false" />
+      <Property value="Edit" runtimeType="String" key="Target_ClassType" displayKey="Type" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'Window|AfxMDIFrame110u||Win32/Window|Window||WPF/Custom|CommandLineControl|Control_1|WPF/Edit|TextB ...32" runtimeType="String" key="Target_ObjectPath" displayKey="Object Path" visible="true" required="true" />
+      <Property value="426,1020,1040,15" runtimeType="Rect" key="Target_Bounds" displayKey="Size" visible="true" required="false" />
+      <Property value="752,1045" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="684,1032" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'258, 12'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_LegacyValue" displayKey="Legacy Value" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsReadOnly" displayKey="IsReadOnly" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_IsEditable" displayKey="IsEditable" visible="false" required="false" />
+      <Property value="2080,5" runtimeType="Size" key="Target_SizeTolerance" displayKey="Size Tolerance" visible="false" required="false" />
+      <Property value="2023-01-10 10:56:44.423" runtimeType="String" key="Target_TimeStamp" displayKey="TimeStamp" visible="false" required="false" />
+      <Property value="LeftTop" runtimeType="String" key="Mouse_OriginPoint" displayKey="Origin Point" visible="true" required="false" />
+      <Property value="'l'" runtimeType="String" key="Keyboard_NewText" displayKey="Input Text" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Keyboard_ClearAll" displayKey="Clear Before" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Keyboard_UseDone" displayKey="Done(Enter)" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Keyboard_UseRawEvent" displayKey="Raw Event" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_BeforeDelay" displayKey="Before Delay(ms)" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_AfterDelay" displayKey="After Delay(ms)" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_Interval" displayKey="Interval(ms)" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_RetryCount" displayKey="Retry Count" visible="true" required="false" />
+      <Property value="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVHhe7dzRahNbGEfxeRUVxIrF2kKbC73wouJVnqdvH7sT2O7Wna+bfomM29+CRXDG/JmZnGUqnHOWNx+uduN+2b2/vNu/9s+POMfG24vr3dXdj/1r7/yYY9dQ6B0/mH0W6/g88s/zPPchkFduCKQ1vyGQ6hwbAmnNbwikOseGQFrzGwKpzrEhkNb8hkCqc2wIpDW/IZDqHBsCac1vCKQ6x4ZAWvMbKw6k/GLMtxePA59u96+98yPOsvHu483u6vZ+/9o7P+LoNRwC6Z/L3kf2/cVTbGSf57nuYynFjLvZXXz+un/tnx9xno3rzc/u8XHHrqHQO34wex9r+Tyyz/M89+Eb5JUbvkF+e4qN1X6DPP0Z7CUfBx6rOry5d37EOTb8HaQ1v7Hiv4M8/02R63iYa9gQSGt+QyDVOTYE0prfEEh1jg2BtOY3BFKdY0MgrfkNgVTn2BBIa35DINU5NgTSmt8QSHWODYG05jcEUp1jQyCt+Q2BVOfYEEhrfkMg1Tk2BNKa3xBIdY4NgbTmNwRSnWNDIK35DYFU59gQSGt+Y7WBlAsatfyryGWgvPbOjzjLRnnf5c33v3INhd7x4ujGMbPvL55qI/M8T3UNzzeWUu2wt/f7/6ilvHbPjzjRxu23bff4sME1RDz5vdn7yL6/eIqNR1PP80z34RvklRvlfef8Bik8P9Y7Hm2MmH1/8VQbq/wGefoz2Euu4+fVNWyUh1f+hCmvvfNjHr+GwvNj/ePZZ7GOzyP/PM9zH/9FIP8qs99Lq0Cqc2zkP9Di8Ws49g/Vn8ezz2Idn8dqA3l4eNiR7Lvs/0gC0EUgQIBAgACBAAECAQIEAgQIBAgQCBAgECBAIECAQIAAgQABAgECBAIECAQIEAgQIBAgQCBAgECAAIEAAQIBAgQCBAgECBAIECAQIMD/WZEMXLbb7Y5k32Wz2exI9hUIGSgQMlAgZKBAyECBkIECIQMFQgYKhAwUCBkoEDJQIGSgQMhAgZCBAiEDBUIGCoQMFAgZKBAyUCBkoEDIQIGQgQIhAwVCBgqEDBQIGbgAAAAAAAAAAAAAAAAAAAAAALA2luUX6E7lHp4I47AAAAAASUVORK5CYII=" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="0,0,200,100" runtimeType="Rect" key="Target_ImageCompareBounds" displayKey="Image Comp. Bounds" visible="false" required="false" />
+      <Property value="'100, 50'" runtimeType="String" key="Target_PointOnImage" displayKey="Point on Image" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsPassword" displayKey="IsPassword" visible="false" required="false" />
+    </Properties>
+    <SearchResult result="Found" tryCount="1" appFilter="Single" appCount="1" searchMethod="TopDown" candidateCount="2" targetFilter="Name, Size, Path" extraFilter="" targetImage="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL3SURBVHhe7d3BahRrFIXRehUVxIhiVEh64FRxlEdQiTjwHVUSMvCxypz+wVG5HaX/grMOLJprD+r2hs/gpLM8fXGxPj57vT56dnr13JnPf/L87Xp+8f74uvX+Q5v9+Wc/v+x9g+Xs1bv16cvDvcsJDuvc51+ubw4fN//8NGZ//vn7730DP0H8BJn2/LL3DZaqZPzH+QT3/3MTn//47M16fvnh+Lr1/sOb+/nnP7/sewOBCOT4uv3+KQgkEEjn/QeBBALpvP8gkEAgnfcfBBIIpPP+g0ACgXTefxBIIJDO+w8CCQTSef9BIIFAOu8/CCQQSOf9B4EEAum8/yCQQCCd9x8EEgik8/6DQAKBdN5/EEggkM77DwIJBNJ5/0EggUA67z8IJBBI5/0HgQQC6bz/IJBAIJ33HwQSCKTz/oNAAoF03n8QSCCQzvsPAgkE0nn/QSCBQDrvPwgkEEjn/QeBBALpvP8gkEAgnfcf9h5I428X9+3uc59f9r6B3w/i94McX7ffPwW/H+SfZv/t4SeInyD/e75/g/g3yPF1+/1T2PcGy+frb+unL1/vXU/wdZ39/Otv34+v2+8/tPmff+7zy743WH7e3K0/ft3eu5ngdp39/Ju738fX7fcf2vzPP/f5Zd8bCEQgx9ft909BIIFAeu9fBBIIpPf+RSCBQHrvXwQSCKT3/kUggUB6718EEgik9/5FIIFAeu9fBBIIpPf+RSCBQHrvXwQSCKT3/kUggUB6718EEgik9/5FIIFAeu9fBBIIpPf+RSCBQHrvXwQSCKT3/kUggUB6718EEgik9/5FIIFAeu9fBBIIpPf+RSCBQHrvXwQSCKT3/kUggUB67192Hkjvb/bzzYpzn192/s2KV1dXK7BtORwOK7BNIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAszjnnnHPOOeecc84555xzzjnnnPt7y/IHlljjjkYHJIkAAAAASUVORK5CYII=" />
+  </Step>
+  <Step id="S480bc991c83b4985945efde07a1d372c" taskName="P_test" type="Win" name="TextInput" displayName="TextInput" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-10T02:00:30.758" end="2023-01-10T02:00:33.448" displayTime="2.7s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="onError" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="10" runtimeType="Integer" key="Target_Timeout" displayKey="Timeout(Sec)" visible="true" required="true" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Target_TargetNo" displayKey="Index (1번부터 시작)" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseName" displayKey="Check Name" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseValue" displayKey="Check Value" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseLegacyValue" displayKey="Check Legacy Value" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseBounds" displayKey="Check Size" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseAppTitle" displayKey="Check Title" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseSetFocus" displayKey="Focus Before" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_DrawBounds" displayKey="Draw Bounds" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseObjectPath" displayKey="Check Path" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="Search Around" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="Use Image Match" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="Image Index Method" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="Select Image Index" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_SearchBounds" displayKey="Search Bounds" visible="false" required="false" />
+      <Property value="8612" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="acad" runtimeType="String" key="Application_ProcessName" displayKey="Application" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="Remote App Name" visible="false" required="false" />
+      <Property value="'Autodesk AutoCAD 2016 - [Drawing1.dwg]'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="AfxMDIFrame110u" runtimeType="String" key="Application_ClassName" displayKey="App Class Name" visible="false" required="false" />
+      <Property value="Window" runtimeType="String" key="Application_ClassType" displayKey="앱 객체 타입" visible="false" required="false" />
+      <Property value="197932" runtimeType="Integer" key="Application_WindowHandle" displayKey="WindowHandle" visible="false" required="false" />
+      <Property value="68,13,1822,1077" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Value;Scroll;Text;SynchronizedInput" runtimeType="String" key="Target_SupportedPatterns" displayKey="Supported Patterns" visible="true" required="false" />
+      <Property value="local:AutoCompleteEdit_1" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="WPF" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="7.8612.9995873" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="TextBox" runtimeType="String" key="Target_ClassName" displayKey="Class Name" visible="false" required="false" />
+      <Property value="Edit" runtimeType="String" key="Target_ClassType" displayKey="Type" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'Window|AfxMDIFrame110u||Win32/Window|Window||WPF/Custom|CommandLineControl|Control_1|WPF/Edit|TextB ...32" runtimeType="String" key="Target_ObjectPath" displayKey="Object Path" visible="true" required="true" />
+      <Property value="611,1020,855,15" runtimeType="Rect" key="Target_Bounds" displayKey="Size" visible="true" required="false" />
+      <Property value="903,1040" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="835,1027" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'224, 7'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_LegacyValue" displayKey="Legacy Value" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsReadOnly" displayKey="IsReadOnly" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_IsEditable" displayKey="IsEditable" visible="false" required="false" />
+      <Property value="1710,5" runtimeType="Size" key="Target_SizeTolerance" displayKey="Size Tolerance" visible="false" required="false" />
+      <Property value="2023-01-10 10:59:50.673" runtimeType="String" key="Target_TimeStamp" displayKey="TimeStamp" visible="false" required="false" />
+      <Property value="LeftTop" runtimeType="String" key="Mouse_OriginPoint" displayKey="Origin Point" visible="true" required="false" />
+      <Property value="'0,0'" runtimeType="String" key="Keyboard_NewText" displayKey="Input Text" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Keyboard_ClearAll" displayKey="Clear Before" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Keyboard_UseDone" displayKey="Done(Enter)" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Keyboard_UseRawEvent" displayKey="Raw Event" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_BeforeDelay" displayKey="Before Delay(ms)" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_AfterDelay" displayKey="After Delay(ms)" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_Interval" displayKey="Interval(ms)" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_RetryCount" displayKey="Retry Count" visible="true" required="false" />
+      <Property value="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ3SURBVHhe7d3BattAFEZhvUpSCElpaZJC4kW3LV3lefL2aq4NXc39S0w9Q+l34KCgWcxY0pHijbxd3T7s7/XDx6/7/dP343Y0fmmv7x72m09Px+1ofIYz1lCM9perj8Hq+Wddg9vN5+f9HB8PP4f753jY7758O27H4zO8/BqK0f6Tq4/B+nMw4xr0BDnTGWsoRvvL1cdg9fzTniBXt/dvf7zP67vH/f75x3E7Gr+8byfnre7ThxiNz/DyazgFMh5bfwzWzj/rGhTI2QpEII0CKQUikEaBlAIRSKNASoEIpFEgpUAE0iiQUiACaRRIKRCBNAqkFIhAGgVSCkQgjQIpBSKQRoGUAhFIo0BKgQikUSClQATSKJBSIAJpFEgpEIE0CqQUiEAaBVIKRCCNAikFIpBGgZQCEUijQEqBCKRRIKVABNIokFIgAmkUSCkQgTQKpBSIQBoFUgpEII0CKQUikEaBlAIRSKNASoH8J4HUB3yf3u7u7e6r55/2dve6C5zjv/D7IFjP6Lz8Lf0+SOPqu1c5Yw3FaH+5+hisnn/aE2T0f9ef9B2kvPwaToGMx9Yfg7XzT/sO8vr6upMcux1vUwCGCAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQIeLMiGdxeXl52kmO3w+GwkxwrEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDIoEDK4AQAAAAAAAAAAAACA32zbLxgld3A+rmy/AAAAAElFTkSuQmCC" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="0,0,200,100" runtimeType="Rect" key="Target_ImageCompareBounds" displayKey="Image Comp. Bounds" visible="false" required="false" />
+      <Property value="'100, 50'" runtimeType="String" key="Target_PointOnImage" displayKey="Point on Image" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsPassword" displayKey="IsPassword" visible="false" required="false" />
+    </Properties>
+    <SearchResult result="Found" tryCount="1" appFilter="Single" appCount="1" searchMethod="TopDown" candidateCount="2" targetFilter="Name, Size, Path" extraFilter="" targetImage="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ2SURBVHhe7d3NSlsBFEXh+yq1ILW0VC1oBp22dOTz+Pa3ScSf40n3zCRwvgWLhEQ4sGERMonLpy8367MXVzfr5be7/ePb14/lqe/vnL7B568/1+u73/vHQ+9/tOe2/3L5/X59dbNe/fi1f6yvH8tT399pg9vN34OvH8fz2t8nyDunb+ATpN7fBnK9ffLs9s1tNU9//Pb1Y3nq+ztnb3Bxdbte3//ZPx56/+M9r/0F0py9gUDqfYE0Z28gkHpfIM3ZGwik3hdIc/YGAqn3BdKcvYFA6n2BNGdvIJB6XyDN2RsIpN4XSHP2BgKp9wXSnL2BQOp9gTRnbyCQel8gzdkbCKTeF0hz9gYCqfcF0py9gUDqfYE0Z28gkHpfIM3ZGwik3hdIc/YGAqn3BdKcvYFA6n2BNGdvIJB6XyDN2RsIpN4XSHP2BgKp9wXSnL2BQOp9gTRnbyCQel8gzdkbCKTeF0hz9gYCqfcF0py9gUDqfYE0Z28gkHpfIM3ZGwik3hdIc/YGAqn3t4Hsnjx5br+sfQqnb+DX3et9/x+kaQP/H+T1vk+Qd07fwCdIve87SHP2Br6D1PvL4+PjSvKwywrgvwgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECAgECPhlRTK4PDw8rCQPu2w2m5XkYQVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBgVCBhcAAAAAAAAAAAAAAPDCsvwDSqEu485s8VoAAAAASUVORK5CYII=" />
+  </Step>
+  <Step id="S2a321b0fa3404b888ee9b98c4e87c9c8" taskName="P_test" type="Win" name="TextInput" displayName="TextInput" callDepth="1" depth="1" num="3" result="Pass" start="2023-01-10T02:00:33.463" end="2023-01-10T02:00:36.476" displayTime="3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="onError" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="10" runtimeType="Integer" key="Target_Timeout" displayKey="Timeout(Sec)" visible="true" required="true" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Target_TargetNo" displayKey="Index (1번부터 시작)" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseName" displayKey="Check Name" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseValue" displayKey="Check Value" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseLegacyValue" displayKey="Check Legacy Value" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseBounds" displayKey="Check Size" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseAppTitle" displayKey="Check Title" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseSetFocus" displayKey="Focus Before" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_DrawBounds" displayKey="Draw Bounds" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_UseObjectPath" displayKey="Check Path" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="Search Around" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="Use Image Match" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="Image Index Method" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="Select Image Index" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_SearchBounds" displayKey="Search Bounds" visible="false" required="false" />
+      <Property value="8612" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="acad" runtimeType="String" key="Application_ProcessName" displayKey="Application" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="Remote App Name" visible="false" required="false" />
+      <Property value="'Autodesk AutoCAD 2016 - [Drawing1.dwg]'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="AfxMDIFrame110u" runtimeType="String" key="Application_ClassName" displayKey="App Class Name" visible="false" required="false" />
+      <Property value="Window" runtimeType="String" key="Application_ClassType" displayKey="앱 객체 타입" visible="false" required="false" />
+      <Property value="197932" runtimeType="Integer" key="Application_WindowHandle" displayKey="WindowHandle" visible="false" required="false" />
+      <Property value="68,13,1822,1077" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Value;Scroll;Text;SynchronizedInput" runtimeType="String" key="Target_SupportedPatterns" displayKey="Supported Patterns" visible="true" required="false" />
+      <Property value="local:AutoCompleteEdit_1" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="WPF" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="7.8612.9995873" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="TextBox" runtimeType="String" key="Target_ClassName" displayKey="Class Name" visible="false" required="false" />
+      <Property value="Edit" runtimeType="String" key="Target_ClassType" displayKey="Type" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="'Window|AfxMDIFrame110u||Win32/Window|Window||WPF/Custom|CommandLineControl|Control_1|WPF/Edit|TextB ...32" runtimeType="String" key="Target_ObjectPath" displayKey="Object Path" visible="true" required="true" />
+      <Property value="611,1020,855,15" runtimeType="Rect" key="Target_Bounds" displayKey="Size" visible="true" required="false" />
+      <Property value="966,1039" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="898,1026" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="'287, 6'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Target_LegacyValue" displayKey="Legacy Value" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsReadOnly" displayKey="IsReadOnly" visible="false" required="false" />
+      <Property value="True" runtimeType="Boolean" key="Target_IsEditable" displayKey="IsEditable" visible="false" required="false" />
+      <Property value="1710,5" runtimeType="Size" key="Target_SizeTolerance" displayKey="Size Tolerance" visible="false" required="false" />
+      <Property value="2023-01-10 11:00:04.733" runtimeType="String" key="Target_TimeStamp" displayKey="TimeStamp" visible="false" required="false" />
+      <Property value="LeftTop" runtimeType="String" key="Mouse_OriginPoint" displayKey="Origin Point" visible="true" required="false" />
+      <Property value="'2000,2000'" runtimeType="String" key="Keyboard_NewText" displayKey="Input Text" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Keyboard_ClearAll" displayKey="Clear Before" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Keyboard_UseDone" displayKey="Done(Enter)" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Keyboard_UseRawEvent" displayKey="Raw Event" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_BeforeDelay" displayKey="Before Delay(ms)" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_AfterDelay" displayKey="After Delay(ms)" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_Interval" displayKey="Interval(ms)" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Options_RetryCount" displayKey="Retry Count" visible="true" required="false" />
+      <Property value="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVHhe7d3NattAAABhvUpTKHVpaZpC7EOvLT3lefL2qn/oKcsQ7MgB6xsYFrSgFbLHsi7S9OHz/Xy+P+ZP37bHcTy/tOte/27zMN9v/xzH0fyB0fa38/bP/z6Qw87P826zP8Cvj8dxNL+0a1//45ef8/3j7+M4mj8F8nL7W7mG8z8dCjzf3bz5/us4jueXdu3rb+eH3d/h9oMHRtvfzts//64gF/je67uCXOEKMvrf9Xr3B7iv7LSz0fzSrnt99yDLry+QixSIQFKBCEQgoUAEIpBQIAIRSCgQgQgkFIhABBIKRCACCQUiEIGEAhGIQEKBCEQgoUAEIpBQIAIRSCgQgQgkFIhABBIKRCACCQUiEIGEAhGIQEKBCEQgoUAEIpBQIAIRSCgQgQgkFIhABBIKRCACCQUiEIGEAhGIQEKBCEQgoUAEIpBQIAK5+UAOOz/PW3+6N96f0efy32t8/7wf5CK9H8T7QcJrFFyufX3vB7nCFWT0v+v17g9wX9lpZ6P5pV33+u5Bll9/en5+nkmOnY4/MwCGCAQIBAIEAgECgQCBQIBAIEAgECAQCBAIBAgEAgQCAQKBAIFAgEAgQCAQIBAIEAgECAQCBAIBAoEAgUCAQCBAIBAgEAgQeLIiGU5PT08zybHTbrebSY4VCBkKhAwFQoYCIUOBkKFAyFAgZCgQMhQIGQqEDAVChgIhQ4GQoUDIUCBkKBAyFAgZCoQMBUKGAiFDgZChQMhQIGQoEDIUCBlOAAAAAAAAAAAAANbGNP0DzFagb8rksvwAAAAASUVORK5CYII=" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="0,0,200,100" runtimeType="Rect" key="Target_ImageCompareBounds" displayKey="Image Comp. Bounds" visible="false" required="false" />
+      <Property value="'100, 50'" runtimeType="String" key="Target_PointOnImage" displayKey="Point on Image" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Target_IsPassword" displayKey="IsPassword" visible="false" required="false" />
+    </Properties>
+    <SearchResult result="Found" tryCount="1" appFilter="Single" appCount="1" searchMethod="TopDown" candidateCount="2" targetFilter="Name, Size, Path" extraFilter="" targetImage="iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVHhe7d3BattQFEVR/UpTCE1pqZtCrEGnLR35e/z3r5EvdKScjuInuGvDRiQavPjAjvDEXh6/vIyHp+/jw6f7u5078/yPn3+M08uv23Xv/ns7+/XPPn/z6BssT99+jsev66vnCa5j7vnn8bz+2f39fZz9+ufvf/QNPEE8Qaadv3n0DZatkvrhNMHXP27i+Q9Pz+N0/n277t1/f+e+/vnnbx57A4EI5Hbdv38PBRIUSOf9S4EEBdJ5/1IgQYF03r8USFAgnfcvBRIUSOf9S4EEBdJ5/1IgQYF03r8USFAgnfcvBRIUSOf9S4EEBdJ5/1IgQYF03r8USFAgnfcvBRIUSOf9S4EEBdJ5/1IgQYF03r8USFAgnfcvBRIUSOf9S4EEBdJ5/1IgQYF03r8USFAgnfcvBRIUSOf9S4EEBdJ5/1IgQYF03r8USFAgnfcvBRIUSOf9S4EEBdJ5/1IgQYF03r88eiCNP13cp7vPPX/z6Bv4fhDfD3K77t+/h74f5E1n//fwBPEE+d/53oN4D3K77t+/h8feYLler4PkvssA8CYCAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQICAQI+WZEMLpfLZZDcd1nXdZDcVyBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkUCBkcAEAAAAAAAAAAAAAAP9Ylr9TWC67NnvaUgAAAABJRU5ErkJggg==" />
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

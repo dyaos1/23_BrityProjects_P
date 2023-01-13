@@ -1,0 +1,433 @@
+<Process id="e78f3652-990e-430b-9088-c14619727ed0" type="process" workType="foreground" name="MyProcess" version="" designerVersion="2.5.000.00921" lastPublishedServer="" readonly="false" isValid="true" DesignedBy="Designer" Template="">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="default process" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="37" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Pro64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="1920x1080" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-10 13:15:50" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-13 09:39:26" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables>
+    <Variable name="YES24_Browser" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="page" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="XPath_Titles" scope="Normal" valueType="Any" formatType="Any" initValue="&quot;&quot;" desc="" />
+    <Variable name="XPath_Date" scope="Normal" valueType="Any" formatType="Any" initValue="&quot;&quot;" desc="" />
+    <Variable name="titleElements" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="el" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="title" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="url" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="array_Titles" scope="Normal" valueType="Any" formatType="Any" initValue="[]" desc="" />
+    <Variable name="array_URLs" scope="Normal" valueType="Any" formatType="Any" initValue="[]" desc="" />
+    <Variable name="array_Dates" scope="Normal" valueType="Any" formatType="Any" initValue="[]" desc="" />
+    <Variable name="dateElement" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="date" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="resultText" scope="Normal" valueType="Any" formatType="Any" initValue="&quot;&quot;" desc="" />
+    <Variable name="FunctionAsync" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+  </Variables>
+  <Steps>
+    <Step id="S12dc8cb8ff544f39a59f349bca118cc1" ver="250220822" createVer="250220822" type="Chrome" name="ChromeOpen" dpName="ChromeOpen" dpValue="http://www.yes24.com/24/Category/NewProductList/001001003025?sumGb=04/" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="acba8238-cd72-48dd-903a-41cd976bdbd1" type="Chrome">
+        <Property type="Chrome" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Chrome" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Chrome" key="CHROME_Browser" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.YES24_Browser" />
+        <Property type="Chrome" key="CHROME_TypeOfBrowser" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Chrome" valuelist="Chrome;Edge" />
+        <Property type="Chrome" key="CHROME_BrowserType" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" />
+        <Property type="Chrome" key="CHROME_URL" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'http://www.yes24.com/24/Category/NewProductList/001001003025?sumGb=04/'" />
+        <Property type="Chrome" key="CHROME_ChromePath" controlType="File" valueType="System.String" formatType="String_FilePath" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Chrome" key="CHROME_Maximize" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+        <Property type="Chrome" key="CHROME_WaitTimeSec" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="60" />
+        <Property type="Chrome" key="CHROME_ExtensionList" controlType="PropertyItemChromeInstalledExtensionsView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Chrome" key="CHROME_DownloadPath" controlType="Folder" valueType="System.String" formatType="String_DirectoryPath" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.YES24_Browser = StepPlayer.Run('Chrome.ChromeOpen', this.chromeopen_info_1);]]></Script>
+    </Step>
+    <Step id="S25bb5ded5c144938ba4d2bb866a140c6" ver="250220822" createVer="250220822" type="Flow" name="ExecuteScript" dpName="ExecuteScript" dpValue="init_variables" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="53e98cb8-9eb7-4a01-a4ba-f81de1673ec0" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Title" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="init_variables" />
+        <Property type="Flow" key="Key_Script" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.page = this.YES24_Browser.Page;&#xD;&#xA;// 페이지 객체로 저장&#xD;&#xA;&#xD;&#xA;this.XPath_Titles ='//*[@id=&quot;category_layout&quot;]/tbody/tr/td[3]/p[1]/a[1]';&#xD;&#xA;this.XPath_Date = '//*[@id=&quot;infoset_specific&quot;]/div[2]/div/table/tbody/tr[1]/td';&#xD;&#xA;// XPath 변수 저장" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.page = this.YES24_Browser.Page;
+// 페이지 객체로 저장
+
+this.XPath_Titles ='//*[@id="category_layout"]/tbody/tr/td[3]/p[1]/a[1]';
+this.XPath_Date = '//*[@id="infoset_specific"]/div[2]/div/table/tbody/tr[1]/td';
+// XPath 변수 저장]]></Script>
+    </Step>
+    <Step id="Se4ac0757e55944f48f90dc3fbaf04224" ver="250220822" createVer="250220822" type="Flow" name="ExecuteScript" dpName="ExecuteScript" dpValue="Get_Titles&amp;URLs" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="007109ce-d358-4494-b7a9-b7940147da87" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Title" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Get_Titles&amp;URLs" />
+        <Property type="Flow" key="Key_Script" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.page.WaitForXPathAsync(this.XPath_Titles);&#xD;&#xA;// 페이지 뜰 때 까지 기다림&#xD;&#xA;&#xD;&#xA;this.titleElements=this.page.XPathAsync(this.XPath_Titles).Result;&#xD;&#xA;// 제목들 엘리먼트 객체들의 배열로 저장" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.page.WaitForXPathAsync(this.XPath_Titles);
+// 페이지 뜰 때 까지 기다림
+
+this.titleElements=this.page.XPathAsync(this.XPath_Titles).Result;
+// 제목들 엘리먼트 객체들의 배열로 저장]]></Script>
+    </Step>
+    <Step id="Sed9f5412651c4ef08f1d03b6017eb7c6" ver="250220822" createVer="250220822" type="Flow" name="Foreach" dpName="Foreach" dpValue="this.el" dpValue2="" dpImage="" tag="" depth="1" stmttype="OpenBlock" enabled="True" mainSet="0">
+      <Properties id="bd9ed8be-2aba-459c-924d-a67ce4c93ad6" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_ForList" controlType="Object" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.titleElements" />
+        <Property type="Flow" key="Conditions_EachItem" controlType="Object" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.el" />
+        <Property type="Flow" key="Conditions_ForOfOrIn" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" toggle="for-of;for-in" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S8d463776fd234355aead155aeb37272a" type="Flow" name="EndLoop" />
+      </RelatedSteps>
+      <Script><![CDATA[for(this.el of this.titleElements) {]]></Script>
+    </Step>
+    <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" ver="250220822" createVer="250220822" type="Flow" name="ExecuteScript" dpName="ExecuteScript" dpValue="EvaluateFunction" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="e663790c-55fe-4965-a1f3-3a380ba3f27b" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Title" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="EvaluateFunction" />
+        <Property type="Flow" key="Key_Script" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;// 엘리먼트에서 텍스트 추출&#xD;&#xA;&#xD;&#xA;this.title = this.title.toString();&#xD;&#xA;&#xD;&#xA;this.url = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.href&quot;, this.el).Result;&#xD;&#xA;// 엘리먼트에서 url 추출&#xD;&#xA;&#xD;&#xA;this.url=this.url.toString();&#xD;&#xA;&#xD;&#xA;if(this.title.includes(&quot;데이터&quot;)) { &#xD;&#xA;    this.array_Titles.push(this.title)&#xD;&#xA;    this.array_URLs.push(this.url)&#xD;&#xA;};&#xD;&#xA;// 데이터를 포함할 때만 배열에 저장" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.title = this.page.EvaluateFunctionAsync("e => e.innerText", this.el).Result;
+// 엘리먼트에서 텍스트 추출
+
+this.title = this.title.toString();
+
+this.url = this.page.EvaluateFunctionAsync("e => e.href", this.el).Result;
+// 엘리먼트에서 url 추출
+
+this.url=this.url.toString();
+
+if(this.title.includes("데이터")) { 
+    this.array_Titles.push(this.title)
+    this.array_URLs.push(this.url)
+};
+// 데이터를 포함할 때만 배열에 저장]]></Script>
+    </Step>
+    <Step id="S8d463776fd234355aead155aeb37272a" ver="250220822" createVer="250220822" type="Flow" name="EndLoop" dpName="End-Foreach" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseBlock" enabled="True" mainSet="0">
+      <Properties id="2dec6e5c-52e6-496e-a8f4-314f72bd48cb" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="Sed9f5412651c4ef08f1d03b6017eb7c6" type="Flow" name="Foreach" />
+      </RelatedSteps>
+      <Script><![CDATA[}]]></Script>
+    </Step>
+    <Step id="S9e13857b4e9f42edad17b61c901a8715" ver="250220822" createVer="250220822" type="Flow" name="ExecuteScript" dpName="ExecuteScript" dpValue="Get_Dates" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="False" mainSet="0">
+      <Properties id="19e4f408-ffeb-4b0e-9da6-c4ce5cc39a15" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Title" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Get_Dates" />
+        <Property type="Flow" key="Key_Script" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.page.WaitForNavigationAsync()&#xD;&#xA;    ])&#xD;&#xA;&#xD;&#xA;        this.dateElement = await this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;&#xD;&#xA;        this.date = await this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.dateElement[0]);&#xD;&#xA;&#xD;&#xA;        this.date = await this.date.toString();&#xD;&#xA;&#xD;&#xA;        await this.array_Dates.push(this.date);&#xD;&#xA;})();&#xD;&#xA;" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[(async () => {
+        await Promise.all([
+        this.page.GoToAsync(this.url),
+        this.page.WaitForNavigationAsync()
+    ])
+
+        this.dateElement = await this.page.XPathAsync(this.XPath_Date).Result;
+
+        this.date = await this.page.EvaluateFunctionAsync("e => e.innerText", this.dateElement[0]);
+
+        this.date = await this.date.toString();
+
+        await this.array_Dates.push(this.date);
+})();
+]]></Script>
+    </Step>
+    <Step id="Sbf85e2ff158a459d86cc0f05b9a583a6" ver="250220822" createVer="250220822" type="Flow" name="Foreach" dpName="Foreach" dpValue="this.url" dpValue2="" dpImage="" tag="" depth="1" stmttype="OpenBlock" enabled="True" mainSet="0">
+      <Properties id="7c7757be-e22b-4fa4-8fcd-b7ef1f014020" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_ForList" controlType="Object" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.array_URLs" />
+        <Property type="Flow" key="Conditions_EachItem" controlType="Object" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.url" />
+        <Property type="Flow" key="Conditions_ForOfOrIn" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" toggle="for-of;for-in" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S55375d09054c40509b79daa7e8c124a3" type="Flow" name="EndLoop" />
+      </RelatedSteps>
+      <Script><![CDATA[for(this.url of this.array_URLs) {]]></Script>
+    </Step>
+    <Step id="S4d4c3af43d134748b67cd9cdec7f2756" ver="250220822" createVer="250220822" type="Flow" name="ExecuteScript" dpName="ExecuteScript" dpValue="GoTo" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="00598f17-9765-406a-8690-52e4f04f8ae6" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Title" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="GoTo" />
+        <Property type="Flow" key="Key_Script" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.page.WaitForNavigationAsync()&#xD;&#xA;    ])&#xD;&#xA;})();&#xD;&#xA;// 페이지로 이동 + 페이지 로드 기다림" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[(async () => {
+        await Promise.all([
+        this.page.GoToAsync(this.url),
+        this.page.WaitForNavigationAsync()
+    ])
+})();
+// 페이지로 이동 + 페이지 로드 기다림]]></Script>
+    </Step>
+    <Step id="S9da14a3f46894dd38142ac0464570cc0" ver="250220822" createVer="250220822" type="Flow" name="Delay" dpName="Delay" dpValue="3 sec" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="a9fe1f75-035c-4239-abba-4f83aa705628" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Second" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="3" />
+        <Property type="Flow" key="Conditions_Millisecond" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[Delay(3000);]]></Script>
+    </Step>
+    <Step id="S2a6b0648a8634c83be6c33a2d9371723" ver="250220822" createVer="250220822" type="Flow" name="ExecuteScript" dpName="ExecuteScript" dpValue="get_date" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="4f53bba9-7e79-437d-90c5-d98b844b0031" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Title" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="get_date" />
+        <Property type="Flow" key="Key_Script" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;// 날짜 정보 엘리먼트 객체로 저장&#xD;&#xA;&#xD;&#xA;this.date = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.dateElement[0]).Result;&#xD;&#xA;// 엘리먼트 객체로부터 텍스트 추출&#xD;&#xA;this.date = this.date.toString();&#xD;&#xA;&#xD;&#xA;this.array_Dates.push(this.date);&#xD;&#xA;// 추출한 텍스트 배열에 저장" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;
+// 날짜 정보 엘리먼트 객체로 저장
+
+this.date = this.page.EvaluateFunctionAsync("e => e.innerText", this.dateElement[0]).Result;
+// 엘리먼트 객체로부터 텍스트 추출
+this.date = this.date.toString();
+
+this.array_Dates.push(this.date);
+// 추출한 텍스트 배열에 저장]]></Script>
+    </Step>
+    <Step id="S55375d09054c40509b79daa7e8c124a3" ver="250220822" createVer="250220822" type="Flow" name="EndLoop" dpName="End-Foreach" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseBlock" enabled="True" mainSet="0">
+      <Properties id="cd3c4e64-af62-40dd-bdeb-6c98c578753d" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="Sbf85e2ff158a459d86cc0f05b9a583a6" type="Flow" name="Foreach" />
+      </RelatedSteps>
+      <Script><![CDATA[}]]></Script>
+    </Step>
+    <Step id="S0a809992c53d4fb4ac56115612961d62" ver="250220822" createVer="250220822" type="Flow" name="Loop" dpName="For" dpValue="this.i &lt; this.array_Titles.length" dpValue2="" dpImage="" tag="" depth="1" stmttype="OpenBlock" enabled="True" mainSet="0">
+      <Properties id="e405fd16-858a-4b74-b045-36cb54e43823" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_InitializeIndex" controlType="Object" valueType="System.Object" formatType="Expression" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.i = 0" />
+        <Property type="Flow" key="Conditions_LoopCondition" controlType="Object" valueType="System.Object" formatType="Expression" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.i &lt; this.array_Titles.length" />
+        <Property type="Flow" key="Conditions_UpdateIndex" controlType="Object" valueType="System.Object" formatType="Expression" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.i++" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="Sfad3268986064213a6a64132fc815850" type="Flow" name="EndLoop" />
+      </RelatedSteps>
+      <Script><![CDATA[for (this.i = 0; this.i < this.array_Titles.length; this.i++) {]]></Script>
+    </Step>
+    <Step id="S99af0eab04c94f039f4a90e4c3b6a46e" ver="250220822" createVer="250220822" type="Flow" name="ExecuteScript" dpName="ExecuteScript" dpValue="Print" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="78b68fbe-fbc6-42a1-8a23-2cf3bf52402c" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Title" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Print" />
+        <Property type="Flow" key="Key_Script" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, &quot;_&quot;)+&quot; | &quot;+this.array_URLs[this.i]+&quot; | &quot;+this.array_Dates[this.i].replace(/ /g, &quot;_&quot;)+&quot;\n&quot;&#xD;&#xA;// 문자열 가공" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, "_")+" | "+this.array_URLs[this.i]+" | "+this.array_Dates[this.i].replace(/ /g, "_")+"\n"
+// 문자열 가공]]></Script>
+    </Step>
+    <Step id="Sfad3268986064213a6a64132fc815850" ver="250220822" createVer="250220822" type="Flow" name="EndLoop" dpName="End-For" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseBlock" enabled="True" mainSet="0">
+      <Properties id="56e94e45-ff96-40ec-b08a-67b0fe0487e8" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S0a809992c53d4fb4ac56115612961d62" type="Flow" name="Loop" />
+      </RelatedSteps>
+      <Script><![CDATA[}]]></Script>
+    </Step>
+    <Step id="S2adb223c2c3e42708e2f347c43135ffc" ver="250220822" createVer="250220822" type="Python" name="ExecutePython" dpName="ExecutePythonFile" dpValue="Global.ProjectDir+'WriteFile.py'" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="c85c8401-8cd8-470c-b77c-ef45d4c494ac" type="Python">
+        <Property type="Python" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Python" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Python" key="Input_FilePath" controlType="Python" valueType="System.String" formatType="String_FilePath" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Global.ProjectDir+'WriteFile.py'" order="1" />
+        <Property type="Python" key="Input_Arguments" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.resultText" order="2" />
+        <Property type="Python" key="Input_Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="10000" order="3" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[ActivityWorker.Play('Python', 'ExecutePython', this.activitylibraryitem_info_16);]]></Script>
+    </Step>
+  </Steps>
+  <Libraries>
+    <string>Chrome</string>
+    <string>FlowControl</string>
+    <string>Python</string>
+  </Libraries>
+  <JScript><![CDATA[function MyProcess() {
+
+    this.YES24_Browser;
+    this.page;
+    this.XPath_Titles = "";
+    this.XPath_Date = "";
+    this.titleElements;
+    this.el;
+    this.title;
+    this.url;
+    this.array_Titles = [];
+    this.array_URLs = [];
+    this.array_Dates = [];
+    this.dateElement;
+    this.date;
+    this.resultText = "";
+    this.FunctionAsync;
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('S12dc8cb8ff544f39a59f349bca118cc1', '[1] ChromeOpen');
+        this.YES24_Browser = StepPlayer.Run('Chrome.ChromeOpen', this.chromeopen_info_1);
+
+        //------------------------------------------------
+        STEP('S25bb5ded5c144938ba4d2bb866a140c6', '[2] ExecuteScript');
+        this.page = this.YES24_Browser.Page;
+        // 페이지 객체로 저장
+
+        this.XPath_Titles ='//*[@id="category_layout"]/tbody/tr/td[3]/p[1]/a[1]';
+        this.XPath_Date = '//*[@id="infoset_specific"]/div[2]/div/table/tbody/tr[1]/td';
+        // XPath 변수 저장
+
+        //------------------------------------------------
+        STEP('Se4ac0757e55944f48f90dc3fbaf04224', '[3] ExecuteScript');
+        this.page.WaitForXPathAsync(this.XPath_Titles);
+        // 페이지 뜰 때 까지 기다림
+
+        this.titleElements=this.page.XPathAsync(this.XPath_Titles).Result;
+        // 제목들 엘리먼트 객체들의 배열로 저장
+
+        //------------------------------------------------
+        STEP('Sed9f5412651c4ef08f1d03b6017eb7c6', '[4] Foreach');
+        for(this.el of this.titleElements) {
+
+            //------------------------------------------------
+            STEP('S50a655e3ba5245ab9d5adc4d7b36bc5f', '[5] ExecuteScript');
+            this.title = this.page.EvaluateFunctionAsync("e => e.innerText", this.el).Result;
+            // 엘리먼트에서 텍스트 추출
+
+            this.title = this.title.toString();
+
+            this.url = this.page.EvaluateFunctionAsync("e => e.href", this.el).Result;
+            // 엘리먼트에서 url 추출
+
+            this.url=this.url.toString();
+
+            if(this.title.includes("데이터")) { 
+                this.array_Titles.push(this.title)
+                this.array_URLs.push(this.url)
+            };
+            // 데이터를 포함할 때만 배열에 저장
+
+        //------------------------------------------------
+        }
+        STEP('S8d463776fd234355aead155aeb37272a', '[6] End-Foreach');
+
+        ////------------------------------------------------
+        //STEP('S9e13857b4e9f42edad17b61c901a8715', '[7] ExecuteScript');
+        //(async () => {
+        //        await Promise.all([
+        //        this.page.GoToAsync(this.url),
+        //        this.page.WaitForNavigationAsync()
+        //    ])
+
+        //        this.dateElement = await this.page.XPathAsync(this.XPath_Date).Result;
+
+        //        this.date = await this.page.EvaluateFunctionAsync("e => e.innerText", this.dateElement[0]);
+
+        //        this.date = await this.date.toString();
+
+        //        await this.array_Dates.push(this.date);
+        //})();
+
+
+        //------------------------------------------------
+        STEP('Sbf85e2ff158a459d86cc0f05b9a583a6', '[8] Foreach');
+        for(this.url of this.array_URLs) {
+
+            //------------------------------------------------
+            STEP('S4d4c3af43d134748b67cd9cdec7f2756', '[9] ExecuteScript');
+            (async () => {
+                    await Promise.all([
+                    this.page.GoToAsync(this.url),
+                    this.page.WaitForNavigationAsync()
+                ])
+            })();
+            // 페이지로 이동 + 페이지 로드 기다림
+
+            //------------------------------------------------
+            STEP('S9da14a3f46894dd38142ac0464570cc0', '[10] Delay');
+            Delay(3000);
+
+            //------------------------------------------------
+            STEP('S2a6b0648a8634c83be6c33a2d9371723', '[11] ExecuteScript');
+            this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;
+            // 날짜 정보 엘리먼트 객체로 저장
+
+            this.date = this.page.EvaluateFunctionAsync("e => e.innerText", this.dateElement[0]).Result;
+            // 엘리먼트 객체로부터 텍스트 추출
+            this.date = this.date.toString();
+
+            this.array_Dates.push(this.date);
+            // 추출한 텍스트 배열에 저장
+
+        //------------------------------------------------
+        }
+        STEP('S55375d09054c40509b79daa7e8c124a3', '[12] End-Foreach');
+
+        //------------------------------------------------
+        STEP('S0a809992c53d4fb4ac56115612961d62', '[13] For');
+        for (this.i = 0; this.i < this.array_Titles.length; this.i++) {
+
+            //------------------------------------------------
+            STEP('S99af0eab04c94f039f4a90e4c3b6a46e', '[14] ExecuteScript');
+            this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, "_")+" | "+this.array_URLs[this.i]+" | "+this.array_Dates[this.i].replace(/ /g, "_")+"\n"
+            // 문자열 가공
+
+        //------------------------------------------------
+        }
+        STEP('Sfad3268986064213a6a64132fc815850', '[15] End-For');
+
+        //------------------------------------------------
+        STEP('S2adb223c2c3e42708e2f347c43135ffc', '[16] ExecutePythonFile');
+        ActivityWorker.Play('Python', 'ExecutePython', this.activitylibraryitem_info_16);
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="S12dc8cb8ff544f39a59f349bca118cc1" group_name="e8969aeb-2a5e-4043-9bdb-4292478cc776_Init - 크롬오픈 및 변수 설정" folded="False" />
+      <StepNode step_id="S25bb5ded5c144938ba4d2bb866a140c6" group_name="e8969aeb-2a5e-4043-9bdb-4292478cc776_Init - 크롬오픈 및 변수 설정" folded="False" />
+      <StepNode step_id="Se4ac0757e55944f48f90dc3fbaf04224" group_name="428c34f9-99bf-410f-b640-0c3181920904_Untitled" folded="False" />
+      <StepNode step_id="Sed9f5412651c4ef08f1d03b6017eb7c6" group_name="" folded="False" />
+      <StepNode step_id="S50a655e3ba5245ab9d5adc4d7b36bc5f" group_name="dff5bc08-52b4-4d95-a547-3ee8b83f985a_Untitled" folded="False" />
+      <StepNode step_id="S8d463776fd234355aead155aeb37272a" group_name="" folded="False" />
+      <StepNode step_id="S9e13857b4e9f42edad17b61c901a8715" group_name="3a251e72-7ba3-4556-bb2b-c9689d3ed03e_Untitled" folded="False" />
+      <StepNode step_id="Sbf85e2ff158a459d86cc0f05b9a583a6" group_name="" folded="False" />
+      <StepNode step_id="S4d4c3af43d134748b67cd9cdec7f2756" group_name="fae01c43-d57b-40da-8e6f-5121829686fb_Untitled" folded="False" />
+      <StepNode step_id="S9da14a3f46894dd38142ac0464570cc0" group_name="fae01c43-d57b-40da-8e6f-5121829686fb_Untitled" folded="False" />
+      <StepNode step_id="S2a6b0648a8634c83be6c33a2d9371723" group_name="fae01c43-d57b-40da-8e6f-5121829686fb_Untitled" folded="False" />
+      <StepNode step_id="S55375d09054c40509b79daa7e8c124a3" group_name="" folded="False" />
+      <StepNode step_id="S0a809992c53d4fb4ac56115612961d62" group_name="" folded="False" />
+      <StepNode step_id="S99af0eab04c94f039f4a90e4c3b6a46e" group_name="c4786194-681e-47da-b071-fa7545f5b318_Untitled" folded="False" />
+      <StepNode step_id="Sfad3268986064213a6a64132fc815850" group_name="" folded="False" />
+      <StepNode step_id="S2adb223c2c3e42708e2f347c43135ffc" group_name="1aaf4963-b012-4265-b69e-df3e66373e37_Untitled" folded="False" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>XMp5gTZvSsGn53Y+jq1LvCCgiYM=</DigestValue></Reference></SignedInfo><SignatureValue>toAhpRKbFSDUoDxNwHj4jIqV6jSForGleI+WEkC/8bY+sE0/blVvpu10uv1ClGkuRP5YNFXZhXfN48GmKy5CzBMeE3udnCCQm7UpSDjzVSYbiWFhgseQBPo1qNvCrP7vzWlE+Ste4ZNs8/TXPJ81rtoMOCcEQER7vZ/z6wpMymStBt2hsHe8dD8QCVim3NV/o4A7aiP1AVSWEYnYOTyEzo6bNzoBaicmHzuI7wdxveNjx2OWCREz4Yxa1Dfs8oI5uvjgtYJNlRzXjksO8R7z2QT/G1C9LM1li8C0hOfBkNjZaoQlYWMZ3pwvNwN80f/9PUlESACu4iwJDE+Z1s0EwQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

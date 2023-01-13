@@ -1,0 +1,35 @@
+<Project id="346be02d-1388-45dc-8af4-8c6b769d1891" namespace="" name="brityWorks_practice" category="project" workType="foreground" version="1.00" lastPublishedDate="" lastPublishedBy="" createdDate="2023-01-10 13:15:50" createdBy="" latestProcess="MyProcess" designerVersion="2.5.000.00921">
+  <SharedTask isExpended="false" />
+  <NormalTask isExpended="false" />
+  <Event isExpended="false" />
+  <Process isExpended="true">
+    <LinkItem id="e78f3652-990e-430b-9088-c14619727ed0" category="Process" isChanged="Y" desc="default process" stepCount="16" name="MyProcess">
+      <Properties />
+    </LinkItem>
+  </Process>
+  <CustomLibraries isExpended="true" />
+  <LibraryTemplate isExpended="false" />
+  <Resources isExpended="false" />
+  <RemoteProcess isExpended="false" />
+  <Asset />
+  <Library />
+  <Variables />
+  <Properties />
+  <Libraries>
+    <string>Chrome</string>
+    <string>FlowControl</string>
+    <string>Python</string>
+  </Libraries>
+  <DisplayLibraries>
+    <string>Flow</string>
+    <string>Desktop</string>
+    <string>Chrome</string>
+    <string>Win</string>
+    <string>DataConverter</string>
+    <string>Excel</string>
+    <string>Pdf</string>
+    <string>Outlook</string>
+    <string>Net</string>
+    <string>Python</string>
+  </DisplayLibraries>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>v0x0f6+pVvQoa0vJg2e3TfOIT1c=</DigestValue></Reference></SignedInfo><SignatureValue>0VbGJ5W1bAzS1WVzuD2S23rum4Pq+mncO1tzpuuJp92rRTqu9NsyemmCIwglj1Vkgi1lVvfNnk7IGu9uEAorQYjLJXSAATbWoV+03uIond8PymM3kA5KfPGCHKWA3pFknfCiIiELF/rPYNHHJWND6B82rFfDjlA1GeVkNYs+1VO6qBznToU456wkPeFeVg6viuojnX7Xqk4edNfeS9MXTT0U0RNwMKRi8v58OaB1bkHMnpM+RsSzs6k6KtCtrcnGIueGGrqbbG/E6biSbHGE6ETiNghiWb2d5qqFYLBMc9rbAU8/9DpDJA/uXnczAb2ZldwCnvJWX721kWRtFhA7Xw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Project>

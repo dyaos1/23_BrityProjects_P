@@ -18,6 +18,9 @@
     <LinkItem id="ba6e0786-9db4-4209-ad27-7ca9923a327c" category="Process" isChanged="Y" desc="" stepCount="15" name="P_SendMail">
       <Properties />
     </LinkItem>
+    <LinkItem id="d089f5a6-d926-42f1-885b-c9915f686f38" category="Process" isChanged="Y" desc="" stepCount="5" name="P_test">
+      <Properties />
+    </LinkItem>
   </Process>
   <CustomLibraries isExpended="false" />
   <LibraryTemplate isExpended="false" />
@@ -46,4 +49,4 @@
     <string>Outlook</string>
     <string>Net</string>
   </DisplayLibraries>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>I3bxrai7VIKftijAj8tSShVtvyQ=</DigestValue></Reference></SignedInfo><SignatureValue>WKXQ+Pm2t6HMlynLoR5+d8Xlo+jyB01m9WvoLmKnwKN/Xzse+QChWEZT+j0xY6uzle9xfWTSWLoeBing2NfLMdaEa4oh2MXsQ2rCKtwL1BisZs1/rCv8qiNyS/JZmeSQXNPc1CrPo+Vb0/Hc7NsSdoQ7IYtQletinmFDqIxkjz6P8gqM8R2H0NyEFamigDDh+W04Gs5lf1dWa8/Pb+x195jxFijx8dkSEmZahOR3ZypF+sTW4mVlhKpoSrnwbsM2VGqXA5/AUSjD6XaV7DtyLkb0kY89jl1Sh4smZ4GqtgU4M1OpGL/U8vt5wAvj3CkDdiuSV3rHFsSBq27BxCMUaw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Project>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>TvloURJJ6959i6oG49NxP0HHI9s=</DigestValue></Reference></SignedInfo><SignatureValue>Q/hswIE7HK/QUyL7PtI6z8BRhevTEZ9Q3P8DcgXsaJ5WBB0uO+rwL/CKVSVNqxexL+WUlwS8kBc9AyE4F+qUpeDvy6Tp/EctCgnci3wKO/Eq6TGHtgkp1OgBHBJCpZ8IGhQeWLy6Ncgucg9UWMFtVGzAdZwKgnR952AZ2ZGglkuj7BXM9jbmkQS36NqMiqQCqBBIoxOvX+qnbCwHjm2FNlW3SeyhlGBMzYNKVLCXe9RmMse5WjZLe9QJdwNaVWYYhdrRTR29rk8jlaxkaoNLxGS9f6xdU5rpS2Yo6PRfOrVQuejP+8NfoOiriCX90Or+5bopYpOWLWSE3g0ZK+E0Vg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Project>

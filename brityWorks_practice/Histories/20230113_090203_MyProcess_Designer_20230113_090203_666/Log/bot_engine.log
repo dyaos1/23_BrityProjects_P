@@ -1,0 +1,827 @@
+﻿2023-01-13 09:00:46,028 [T1] INFO  EngineStarter
+BOT Engine Start - v2.5.000.00921
+BOT ID: D_20230113_090045_127
+BOT PID: 9580
+BOT PPID: 11388
+BOT Working Directory: C:\Users\k\AppData\Roaming\Brity RPA Designer
+
+2023-01-13 09:00:46,294 [T1] INFO  Config
+Initialize Config
+
+2023-01-13 09:00:46,325 [T1] DEBUG Config
+Config Loaded
+
+2023-01-13 09:00:46,341 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2023-01-13 09:00:46,341 [T1] INFO  Config
+Initialize Resource Config
+
+2023-01-13 09:00:46,372 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-13 09:00:46,483 [T1] INFO  Config
+All Config Initialized.
+
+2023-01-13 09:00:46,483 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2023-01-13 09:00:46,545 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2023-01-13 09:00:46,608 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2023-01-13 09:00:46,608 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2023-01-13 09:00:46,623 [T4] DEBUG JobService
+Connect to agent service
+
+2023-01-13 09:00:46,639 [T4] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2023-01-13 09:00:46,639 [T4] DEBUG JobService
+Open connection
+
+2023-01-13 09:00:46,655 [T4] DEBUG JobService
+Register engine to agent
+
+2023-01-13 09:00:46,655 [T4] DEBUG JobService
+Engine is connected to agent service.
+
+2023-01-13 09:00:46,655 [T4] DEBUG JobService
+Owner Process PID: 11388
+
+2023-01-13 09:00:46,670 [T4] INFO  JobService
+Start monitoring owner process is terminated.
+
+2023-01-13 09:00:46,670 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2023-01-13 09:00:46,670 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2023-01-13 09:00:49,175 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,1920,1080
+
+2023-01-13 09:00:49,921 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2023-01-13 09:00:50,124 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2023-01-13 09:00:50,124 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-13 09:00:50,124 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2023-01-13 09:02:03,870 [T13] INFO  JobService
+Start Job: MyProcess (Foreground)
+{
+  "UsePIP": false,
+  "UserID": null,
+  "UserPWD": null,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "JobWorkDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\Histories\\20230113_090203_MyProcess_Designer_20230113_090203_666",
+  "JobLogDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\Histories\\20230113_090203_MyProcess_Designer_20230113_090203_666\\Log",
+  "JobScreenshotDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\Histories\\20230113_090203_MyProcess_Designer_20230113_090203_666\\Log\\Screenshot",
+  "TotalProcessStepCount": 0,
+  "CurrentStepNo": 0,
+  "CurrentStepName": null,
+  "StartTime": "2023-01-13 09:02:03",
+  "EndTime": null,
+  "EngineID": "D_20230113_090045_127",
+  "EnginePID": 0,
+  "JobId": "Designer_20230113_090203_666",
+  "JobType": 1,
+  "UserAuthentication": null,
+  "ProcessPath": "C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\MyProcess.proc",
+  "ProcessId": "e78f3652-990e-430b-9088-c14619727ed0",
+  "ProcessVer": "",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 11388,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "State": 0
+}
+
+2023-01-13 09:02:04,048 [T12] DEBUG JobService
+Waiting library loading...
+
+2023-01-13 09:02:04,048 [T12] DEBUG Config
+Reload User Settings
+
+2023-01-13 09:02:04,048 [T12] INFO  JobService
+Config Loading Completed.
+
+2023-01-13 09:02:04,048 [T12] DEBUG JobService
+Config Loading Time: 0 ms.
+
+2023-01-13 09:02:04,064 [T12] INFO  JobManager
+Create JobManager instance for job MyProcess(Designer_20230113_090203_666)
+
+2023-01-13 09:02:04,079 [T3] INFO  JobRequest
+Start Callback Sender
+
+2023-01-13 09:02:04,079 [T3] DEBUG JobRequest
+Step Callback Interval: 500
+
+2023-01-13 09:02:04,079 [T12] INFO  JobRequest
+Job ID : Designer_20230113_090203_666
+Project Path  : C:\Users\k\Documents\Brity RPA Projects\brityWorks_practice\brityWorks_practice.proj
+Process Name  : MyProcess
+Engine Mode   : Designer
+Requester Type: DesignerRequester PID : 11388
+
+2023-01-13 09:02:04,126 [T12] DEBUG ProjectManager
+Set Project Information
+
+2023-01-13 09:02:04,142 [T12] INFO  JobRunner
+Initialize Script Engine
+
+2023-01-13 09:02:04,157 [T9] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2023-01-13 09:02:04,173 [T3] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtNumber, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtInteger, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtDouble, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtPoint, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtRect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtDate, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtDateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtArray1D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtArray2D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtXml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtJson, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString, Type:RPAGO.Custom.ExtendLibrary.DataConverter_String, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_DateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Point, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Rect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Xml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-13 09:02:04,384 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Json, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-13 09:02:04,806 [T9] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2023-01-13 09:02:04,822 [T3] DEBUG JobRequest
+Callback - State: Ready
+
+
+2023-01-13 09:02:04,822 [T12] INFO  JobRunnerHook
+HotKey Hook Started
+
+2023-01-13 09:02:04,822 [T12] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2023-01-13 09:02:04,822 [T9] INFO  JobRunner
+RunProcess start
+
+2023-01-13 09:02:04,822 [T9] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2023-01-13 09:02:04,822 [T9] INFO  JobRequest
+Last job life cycle state: Running
+
+2023-01-13 09:02:04,837 [T3] DEBUG JobRequest
+Callback - State: Starting
+
+
+2023-01-13 09:02:04,853 [T3] DEBUG JobRequest
+Callback - State: Running
+
+
+2023-01-13 09:02:05,188 [T9] INFO  ScreenCapture
+Initialize DirectX Screen Capture.
+
+2023-01-13 09:02:05,204 [T1] INFO  DirectXScreenCapturePlayer
+DirextX Target Screen Bounds: {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-13 09:02:05,251 [T1] INFO  DirectXScreenCapturePlayer
+Screen 0 Bounds : {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-13 09:02:05,266 [T12] DEBUG DirectXScreenCapturePlayer
+try capture screen to check DirectX screen.
+
+2023-01-13 09:02:05,282 [T9] INFO  ScreenCapture
+DirectX Screen Capture Initialized.
+
+2023-01-13 09:02:05,314 [T9] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2023-01-13 09:02:05,345 [T9] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - MyProcess
+##############################################################
+e78f3652-990e-430b-9088-c14619727ed0
+MyProcess
+
+
+2023-01-13 09:02:05,438 [T9] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 1: S12dc8cb8ff544f39a59f349bca118cc1 (1/17) - (1/16)
+ - [1] ChromeOpen
+
+
+2023-01-13 09:02:05,829 [T12] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-13 09:02:05,891 [T12] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-13 09:02:06,126 [T12] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-13 09:02:06,126 [T12] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-13 09:02:09,737 [T9] INFO  JobRequest
+ - STEP 2: S25bb5ded5c144938ba4d2bb866a140c6 (2/17) - (2/16)
+ - [2] ExecuteScript
+
+
+2023-01-13 09:02:09,764 [T9] INFO  JobRequest
+ - STEP 3: Se4ac0757e55944f48f90dc3fbaf04224 (3/17) - (3/16)
+ - [3] ExecuteScript
+
+
+2023-01-13 09:02:09,837 [T9] INFO  JobRequest
+ - STEP 4: Sed9f5412651c4ef08f1d03b6017eb7c6 (4/17) - (4/16)
+ - [4] Foreach
+
+
+2023-01-13 09:02:09,868 [T9] INFO  JobRequest
+ - STEP 5: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:09,946 [T9] INFO  JobRequest
+ - STEP 6: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,058 [T9] INFO  JobRequest
+ - STEP 7: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,090 [T9] INFO  JobRequest
+ - STEP 8: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,121 [T9] INFO  JobRequest
+ - STEP 9: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,148 [T9] INFO  JobRequest
+ - STEP 10: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,163 [T9] INFO  JobRequest
+ - STEP 11: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,179 [T9] INFO  JobRequest
+ - STEP 12: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,195 [T9] INFO  JobRequest
+ - STEP 13: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,210 [T9] INFO  JobRequest
+ - STEP 14: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,226 [T9] INFO  JobRequest
+ - STEP 15: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,242 [T9] INFO  JobRequest
+ - STEP 16: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,257 [T9] INFO  JobRequest
+ - STEP 17: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,272 [T9] INFO  JobRequest
+ - STEP 18: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,304 [T9] INFO  JobRequest
+ - STEP 19: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,332 [T9] INFO  JobRequest
+ - STEP 20: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,364 [T9] INFO  JobRequest
+ - STEP 21: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,379 [T9] INFO  JobRequest
+ - STEP 22: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,395 [T9] INFO  JobRequest
+ - STEP 23: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,410 [T9] INFO  JobRequest
+ - STEP 24: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,441 [T9] INFO  JobRequest
+ - STEP 25: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,460 [T9] INFO  JobRequest
+ - STEP 26: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,486 [T9] INFO  JobRequest
+ - STEP 27: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,518 [T9] INFO  JobRequest
+ - STEP 28: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,550 [T9] INFO  JobRequest
+ - STEP 29: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/17) - (5/16)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:02:10,564 [T9] INFO  JobRequest
+ - STEP 30: S8d463776fd234355aead155aeb37272a (6/17) - (6/16)
+ - [6] End-Foreach
+
+
+2023-01-13 09:02:10,569 [T9] INFO  JobRequest
+ - STEP 31: S8d88759101cf4919b37816f2ad34fba4 (7/17) - (7/16)
+ - [7] MessageBox
+
+
+2023-01-13 09:02:10,666 [T9] INFO  ScriptSupport
+Array=>
+0: 공익을 위한 데이터
+1: 데이터 과학 효율을 높이는 데이터 클리닝
+2: 빅데이터 분석 및 응용
+3: 데이터 전처리 및 통합분석 with KNIME
+4: 데이터를 엮는 사람들, 데이터 과학자
+5: 혼자 공부하는 데이터 분석 with 파이썬
+6: 김기창의 데이터 모델링 강의
+7: 데이터 시각화와 탐색 with POWER BI 2nd
+
+
+2023-01-13 09:02:14,460 [T9] INFO  JobRequest
+ - STEP 32: Sbf85e2ff158a459d86cc0f05b9a583a6 (9/17) - (8/16)
+ - [9] Foreach
+
+
+2023-01-13 09:02:14,474 [T9] INFO  JobRequest
+ - STEP 33: S4d4c3af43d134748b67cd9cdec7f2756 (10/17) - (9/16)
+ - [10] ExecuteScript
+
+
+2023-01-13 09:02:14,550 [T9] INFO  JobRequest
+ - STEP 34: S9da14a3f46894dd38142ac0464570cc0 (11/17) - (10/16)
+ - [11] Delay
+
+
+2023-01-13 09:02:17,579 [T9] INFO  JobRequest
+ - STEP 35: S2a6b0648a8634c83be6c33a2d9371723 (12/17) - (11/16)
+ - [12] ExecuteScript
+
+
+2023-01-13 09:02:17,609 [T9] INFO  JobRequest
+ - STEP 36: S4d4c3af43d134748b67cd9cdec7f2756 (10/17) - (11/16)
+ - [10] ExecuteScript
+
+
+2023-01-13 09:02:17,625 [T9] INFO  JobRequest
+ - STEP 37: S9da14a3f46894dd38142ac0464570cc0 (11/17) - (11/16)
+ - [11] Delay
+
+
+2023-01-13 09:02:20,649 [T9] INFO  JobRequest
+ - STEP 38: S2a6b0648a8634c83be6c33a2d9371723 (12/17) - (11/16)
+ - [12] ExecuteScript
+
+
+2023-01-13 09:02:20,664 [T9] INFO  JobRequest
+ - STEP 39: S4d4c3af43d134748b67cd9cdec7f2756 (10/17) - (11/16)
+ - [10] ExecuteScript
+
+
+2023-01-13 09:02:20,680 [T9] INFO  JobRequest
+ - STEP 40: S9da14a3f46894dd38142ac0464570cc0 (11/17) - (11/16)
+ - [11] Delay
+
+
+2023-01-13 09:02:23,709 [T9] INFO  JobRequest
+ - STEP 41: S2a6b0648a8634c83be6c33a2d9371723 (12/17) - (11/16)
+ - [12] ExecuteScript
+
+
+2023-01-13 09:02:23,756 [T9] INFO  JobRequest
+ - STEP 42: S4d4c3af43d134748b67cd9cdec7f2756 (10/17) - (11/16)
+ - [10] ExecuteScript
+
+
+2023-01-13 09:02:23,787 [T9] INFO  JobRequest
+ - STEP 43: S9da14a3f46894dd38142ac0464570cc0 (11/17) - (11/16)
+ - [11] Delay
+
+
+2023-01-13 09:02:26,806 [T9] INFO  JobRequest
+ - STEP 44: S2a6b0648a8634c83be6c33a2d9371723 (12/17) - (11/16)
+ - [12] ExecuteScript
+
+
+2023-01-13 09:02:26,853 [T9] INFO  JobRequest
+ - STEP 45: S4d4c3af43d134748b67cd9cdec7f2756 (10/17) - (11/16)
+ - [10] ExecuteScript
+
+
+2023-01-13 09:02:26,871 [T9] INFO  JobRequest
+ - STEP 46: S9da14a3f46894dd38142ac0464570cc0 (11/17) - (11/16)
+ - [11] Delay
+
+
+2023-01-13 09:02:29,891 [T9] INFO  JobRequest
+ - STEP 47: S2a6b0648a8634c83be6c33a2d9371723 (12/17) - (11/16)
+ - [12] ExecuteScript
+
+
+2023-01-13 09:02:29,922 [T9] INFO  JobRequest
+ - STEP 48: S4d4c3af43d134748b67cd9cdec7f2756 (10/17) - (11/16)
+ - [10] ExecuteScript
+
+
+2023-01-13 09:02:29,953 [T9] INFO  JobRequest
+ - STEP 49: S9da14a3f46894dd38142ac0464570cc0 (11/17) - (11/16)
+ - [11] Delay
+
+
+2023-01-13 09:02:32,976 [T9] INFO  JobRequest
+ - STEP 50: S2a6b0648a8634c83be6c33a2d9371723 (12/17) - (11/16)
+ - [12] ExecuteScript
+
+
+2023-01-13 09:02:32,991 [T9] INFO  JobRequest
+ - STEP 51: S4d4c3af43d134748b67cd9cdec7f2756 (10/17) - (11/16)
+ - [10] ExecuteScript
+
+
+2023-01-13 09:02:33,007 [T9] INFO  JobRequest
+ - STEP 52: S9da14a3f46894dd38142ac0464570cc0 (11/17) - (11/16)
+ - [11] Delay
+
+
+2023-01-13 09:02:36,029 [T9] INFO  JobRequest
+ - STEP 53: S2a6b0648a8634c83be6c33a2d9371723 (12/17) - (11/16)
+ - [12] ExecuteScript
+
+
+2023-01-13 09:02:36,075 [T9] INFO  JobRequest
+ - STEP 54: S4d4c3af43d134748b67cd9cdec7f2756 (10/17) - (11/16)
+ - [10] ExecuteScript
+
+
+2023-01-13 09:02:36,092 [T9] INFO  JobRequest
+ - STEP 55: S9da14a3f46894dd38142ac0464570cc0 (11/17) - (11/16)
+ - [11] Delay
+
+
+2023-01-13 09:02:39,111 [T9] INFO  JobRequest
+ - STEP 56: S2a6b0648a8634c83be6c33a2d9371723 (12/17) - (11/16)
+ - [12] ExecuteScript
+
+
+2023-01-13 09:02:39,173 [T9] INFO  JobRequest
+ - STEP 57: S55375d09054c40509b79daa7e8c124a3 (13/17) - (12/16)
+ - [13] End-Foreach
+
+
+2023-01-13 09:02:39,189 [T9] INFO  JobRequest
+ - STEP 58: S0a809992c53d4fb4ac56115612961d62 (14/17) - (13/16)
+ - [14] For
+
+
+2023-01-13 09:02:39,204 [T9] INFO  JobRequest
+ - STEP 59: S99af0eab04c94f039f4a90e4c3b6a46e (15/17) - (14/16)
+ - [15] ExecuteScript
+
+
+2023-01-13 09:02:39,220 [T9] INFO  JobRequest
+ - STEP 60: S99af0eab04c94f039f4a90e4c3b6a46e (15/17) - (14/16)
+ - [15] ExecuteScript
+
+
+2023-01-13 09:02:39,236 [T9] INFO  JobRequest
+ - STEP 61: S99af0eab04c94f039f4a90e4c3b6a46e (15/17) - (14/16)
+ - [15] ExecuteScript
+
+
+2023-01-13 09:02:39,251 [T9] INFO  JobRequest
+ - STEP 62: S99af0eab04c94f039f4a90e4c3b6a46e (15/17) - (14/16)
+ - [15] ExecuteScript
+
+
+2023-01-13 09:02:39,267 [T9] INFO  JobRequest
+ - STEP 63: S99af0eab04c94f039f4a90e4c3b6a46e (15/17) - (14/16)
+ - [15] ExecuteScript
+
+
+2023-01-13 09:02:39,283 [T9] INFO  JobRequest
+ - STEP 64: S99af0eab04c94f039f4a90e4c3b6a46e (15/17) - (14/16)
+ - [15] ExecuteScript
+
+
+2023-01-13 09:02:39,298 [T9] INFO  JobRequest
+ - STEP 65: S99af0eab04c94f039f4a90e4c3b6a46e (15/17) - (14/16)
+ - [15] ExecuteScript
+
+
+2023-01-13 09:02:39,316 [T9] INFO  JobRequest
+ - STEP 66: S99af0eab04c94f039f4a90e4c3b6a46e (15/17) - (14/16)
+ - [15] ExecuteScript
+
+
+2023-01-13 09:02:39,331 [T9] INFO  JobRequest
+ - STEP 67: Sfad3268986064213a6a64132fc815850 (16/17) - (15/16)
+ - [16] End-For
+
+
+2023-01-13 09:02:39,347 [T9] INFO  JobRequest
+ - STEP 68: S2adb223c2c3e42708e2f347c43135ffc (17/17) - (16/16)
+ - [17] ExecutePythonFile
+
+
+2023-01-13 09:02:48,888 [T9] FINE  JobRunner
+RunTask ExceptionOccured. TASK: MyProcess => 'FilePath' is NOT assigned.
+
+''
+=> ReferenceError: WriteFile is not defined
+
+※본 액티비티는 선언되지 않은 로컬 변수를 지원하지 않습니다.
+    변수창에서 변수를 직접 생성하여 사용 해주세요.
+    변수 생성 후 this.var1 또는 Global.var2 처럼 지정하여 사용할 수 있습니다."
+
+2023-01-13 09:02:48,936 [T9] DEBUG JobRunner
+Failed to set result value of 'Output' type properties - Invalid State
+
+2023-01-13 09:02:48,937 [T9] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - MyProcess
+##############################################################
+e78f3652-990e-430b-9088-c14619727ed0
+MyProcess
+
+
+2023-01-13 09:02:48,953 [T9] ERROR JobRunner
+Process: MyProcess
+Step: ExecutePythonFile (17/17)
+
+'FilePath' is NOT assigned.
+
+''
+=> ReferenceError: WriteFile is not defined
+
+※본 액티비티는 선언되지 않은 로컬 변수를 지원하지 않습니다.
+    변수창에서 변수를 직접 생성하여 사용 해주세요.
+    변수 생성 후 this.var1 또는 Global.var2 처럼 지정하여 사용할 수 있습니다."
+
+[CallStack]
+  - MyProcess: [17] ExecutePythonFile
+
+[Global Variables]
+  - RESULT = <null> (Any)
+
+[MyProcess Variables]
+  - YES24_Browser = <object:ChromeBrowserObject> (Any)
+  - page = <object:PuppeteerSharp.Page> (Any)
+  - XPath_Titles = '//*[@id="category_layout"]/tbody/tr/td[3]/p[1]/a[1]' (String)
+  - XPath_Date = '//*[@id="infoset_specific"]/div[2]/div/table/tbody/tr[1]/td' (String)
+  - titleElements = <object:PuppeteerSharp.ElementHandle[]> (Array1D)
+  - el = JSHandle@node (Any)
+  - title = 'XAI, 설명 가능한 AI' (String)
+  - url = 'http://www.yes24.com/Product/Goods/115596915' (String)
+  - array_Titles = ['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...6 (Array1D)
+  - array_URLs = ['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...7 (Array1D)
+  - array_Dates = ['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...6 (Array1D)
+  - dateElement = <object:PuppeteerSharp.ElementHandle[]> (Array1D)
+  - date = '2022년 12월 08일' (String)
+  - resultText = 'undefined공익을 위한 데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년 01월 30일\n데이터 과학 효율을 높이는 데이 ...7 (String)
+  - FunctionAsync = <undefined> (Undefined)
+
+2023-01-13 09:02:48,954 [T9] DEBUG JobManager
+Set Result State: ExceptionOccured
+
+2023-01-13 09:02:50,785 [T9] DEBUG JobRunner
+OnProcessFailed
+
+2023-01-13 09:02:50,786 [T9] INFO  JobRunner
+Start to clean up resources.
+
+2023-01-13 09:02:50,790 [T11] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2023-01-13 09:02:50,793 [T9] DEBUG JobRunner
+Remove all libraries
+
+2023-01-13 09:02:50,809 [T9] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2023-01-13 09:02:50,816 [T9] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2023-01-13 09:02:50,821 [T9] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2023-01-13 09:02:50,821 [T9] INFO  JobRunner
+All Resources Clear
+
+2023-01-13 09:02:50,823 [T9] INFO  JobRunner
+Make report.
+
+2023-01-13 09:02:50,863 [T9] DEBUG JobRunner
+OnCompleted
+
+2023-01-13 09:02:50,863 [T9] DEBUG JobRunner
+SendJobResult: ExceptionOccured
+
+2023-01-13 09:02:50,863 [T9] INFO  JobRequest
+##############################################################
+### STATE: ExceptionOccured
+##############################################################
+Process: MyProcess
+Step: ExecutePythonFile (17/17)
+
+'FilePath' is NOT assigned.
+
+''
+=> ReferenceError: WriteFile is not defined
+
+※본 액티비티는 선언되지 않은 로컬 변수를 지원하지 않습니다.
+    변수창에서 변수를 직접 생성하여 사용 해주세요.
+    변수 생성 후 this.var1 또는 Global.var2 처럼 지정하여 사용할 수 있습니다."
+
+[CallStack]
+  - MyProcess: [17] ExecutePythonFile
+
+[Global Variables]
+  - RESULT = <null> (Any)
+
+[MyProcess Variables]
+  - YES24_Browser = <object:ChromeBrowserObject> (Any)
+  - page = <object:PuppeteerSharp.Page> (Any)
+  - XPath_Titles = '//*[@id="category_layout"]/tbody/tr/td[3]/p[1]/a[1]' (String)
+  - XPath_Date = '//*[@id="infoset_specific"]/div[2]/div/table/tbody/tr[1]/td' (String)
+  - titleElements = <object:PuppeteerSharp.ElementHandle[]> (Array1D)
+  - el = JSHandle@node (Any)
+  - title = 'XAI, 설명 가능한 AI' (String)
+  - url = 'http://www.yes24.com/Product/Goods/115596915' (String)
+  - array_Titles = ['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...6 (Array1D)
+  - array_URLs = ['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...7 (Array1D)
+  - array_Dates = ['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...6 (Array1D)
+  - dateElement = <object:PuppeteerSharp.ElementHandle[]> (Array1D)
+  - date = '2022년 12월 08일' (String)
+  - resultText = 'undefined공익을 위한 데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년 01월 30일\n데이터 과학 효율을 높이는 데이 ...7 (String)
+  - FunctionAsync = <undefined> (Undefined)
+
+
+2023-01-13 09:02:50,863 [T9] INFO  JobRequest
+Last job life cycle state: ExceptionOccured
+
+2023-01-13 09:02:50,878 [T9] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2023-01-13 09:02:50,894 [T3] DEBUG JobRequest
+Callback - State: ExceptionOccured
+Process: MyProcess
+Step: ExecutePythonFile (17/17)
+
+'FilePath' is NOT assigned.
+
+''
+=> ReferenceError: WriteFile is not defined
+
+※본 액티비티는 선언되지 않은 로컬 변수를 지원하지 않습니다.
+    변수창에서 변수를 직접 생성하여 사용 해주세요.
+    변수 생성 후 this.var1 또는 Global.var2 처럼 지정하여 사용할 수 있습니다."
+
+[CallStack]
+  - MyProcess: [17] ExecutePythonFile
+
+[Global Variables]
+  - RESULT = <null> (Any)
+
+[MyProcess Variables]
+  - YES24_Browser = <object:ChromeBrowserObject> (Any)
+  - page = <object:PuppeteerSharp.Page> (Any)
+  - XPath_Titles = '//*[@id="category_layout"]/tbody/tr/td[3]/p[1]/a[1]' (String)
+  - XPath_Date = '//*[@id="infoset_specific"]/div[2]/div/table/tbody/tr[1]/td' (String)
+  - titleElements = <object:PuppeteerSharp.ElementHandle[]> (Array1D)
+  - el = JSHandle@node (Any)
+  - title = 'XAI, 설명 가능한 AI' (String)
+  - url = 'http://www.yes24.com/Product/Goods/115596915' (String)
+  - array_Titles = ['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...6 (Array1D)
+  - array_URLs = ['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...7 (Array1D)
+  - array_Dates = ['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...6 (Array1D)
+  - dateElement = <object:PuppeteerSharp.ElementHandle[]> (Array1D)
+  - date = '2022년 12월 08일' (String)
+  - resultText = 'undefined공익을 위한 데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년 01월 30일\n데이터 과학 효율을 높이는 데이 ...7 (String)
+  - FunctionAsync = <undefined> (Undefined)
+
+2023-01-13 09:02:50,894 [T3] INFO  JobRequest
+Callback - JobCompleted
+
+2023-01-13 09:02:50,894 [T3] DEBUG JobRequest
+End of Callback Sender
+
+2023-01-13 09:02:50,910 [T9] INFO  JobRunner
+RunProcess end
+

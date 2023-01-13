@@ -1,0 +1,919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="e78f3652-990e-430b-9088-c14619727ed0" name="MyProcess" result="Pass" start="2023-01-13T00:31:43.490" end="2023-01-13T00:32:18.071" jobId="Designer_20230113_093141_818">
+  <Step id="S12dc8cb8ff544f39a59f349bca118cc1" taskName="MyProcess" type="Chrome" name="ChromeOpen" displayName="ChromeOpen" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-13T00:31:43.552" end="2023-01-13T00:31:50.985" displayTime="7.4s">
+    <Variables>
+      <Variable name="YES24_Browser" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.YES24_Browser : &lt;object:ChromeBrowserObject&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="Chrome" runtimeType="String" key="CHROME_TypeOfBrowser" displayKey="Browser Type" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_BrowserType" displayKey="Headless Mode" visible="true" required="false" />
+      <Property value="'http://www.yes24.com/24/Category/NewProductList/001001003025?sumGb=04/'" runtimeType="String" key="CHROME_URL" displayKey="URL" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="CHROME_ChromePath" displayKey="Browser Path" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_ExtensionList" displayKey="Included Extensions" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_DownloadPath" displayKey="Download Path" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S25bb5ded5c144938ba4d2bb866a140c6" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-13T00:31:51.011" end="2023-01-13T00:31:51.011" displayTime="0s">
+    <Variables>
+      <Variable name="YES24_Browser" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:ChromeBrowserObject&gt;" />
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+      <Variable name="XPath_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="''" />
+      <Variable name="XPath_Date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="''" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="init_variables" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.page = this.YES24_Browser.Page;&#xD;&#xA;&#xD;&#xA;this.XPath_Titles ='//*[@id=&quot;category_layout&quot;]/tbody/tr/td[3 ...97" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Se4ac0757e55944f48f90dc3fbaf04224" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="1" num="3" result="Pass" start="2023-01-13T00:31:51.027" end="2023-01-13T00:31:51.119" displayTime="0.1s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="XPath_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'//*[@id=&quot;category_layout&quot;]/tbody/tr/td[3]/p[1]/a[1]'" />
+      <Variable name="titleElements" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Get_Titles&amp;URLs" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.page.WaitForXPathAsync(this.XPath_Titles);&#xD;&#xA;this.titleElements=this.page.XPathAsync(this.XPath_ ...15" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sed9f5412651c4ef08f1d03b6017eb7c6" taskName="MyProcess" type="Flow" name="Foreach" displayName="Foreach" callDepth="1" depth="1" num="4" result="Pass" start="2023-01-13T00:31:51.127" end="2023-01-13T00:31:51.142" displayTime="0s">
+    <Variables>
+      <Variable name="titleElements" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" runtimeType="Array1D" key="Conditions_ForList" displayKey="For List" visible="true" required="true" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Conditions_EachItem" displayKey="Each Item" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Conditions_ForOfOrIn" displayKey="For-of / For-in" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.158" end="2023-01-13T00:31:51.220" displayTime="0.1s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.236" end="2023-01-13T00:31:51.257" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'공익을 위한 데이터'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116904880'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터']" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.259" end="2023-01-13T00:31:51.259" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'데이터 과학 효율을 높이는 데이터 클리닝'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116868049'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝']" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.290" end="2023-01-13T00:31:51.290" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'실용 SQL'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116860700'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝']" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.306" end="2023-01-13T00:31:51.322" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'진짜 쓰는 윈도우 11'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116855306'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝']" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.337" end="2023-01-13T00:31:51.352" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'윈도우 11 무작정 따라하기 에센셜북'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116788212'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝']" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.380" end="2023-01-13T00:31:51.396" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'MariaDB로 배우는 따라 하며 배우는 SQL 프로그래밍'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116754661'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝']" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049']" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.412" end="2023-01-13T00:31:51.412" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'빅데이터 분석 및 응용'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116752832'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용']" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...44" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.427" end="2023-01-13T00:31:51.427" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'업무에 바로 쓰는 AWS 입문'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116626210'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용']" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...44" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.459" end="2023-01-13T00:31:51.474" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'데이터 전처리 및 통합분석 with KNIME'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116619011'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME']" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...92" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.490" end="2023-01-13T00:31:51.500" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'데이터를 엮는 사람들, 데이터 과학자'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116615853'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...9" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...140" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.516" end="2023-01-13T00:31:51.516" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'NGINX 쿡북'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116438200'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...9" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...140" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.532" end="2023-01-13T00:31:51.532" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'솔루션 아키텍트 핸드북 2/e'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116413707'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...9" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...140" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.547" end="2023-01-13T00:31:51.564" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'혼자 공부하는 데이터 분석 with 파이썬'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116253011'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...36" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...188" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.581" end="2023-01-13T00:31:51.607" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'파이썬으로 하는 마케팅 연구와 분석'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116223002'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...36" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...188" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.622" end="2023-01-13T00:31:51.622" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'2023 이기적 리눅스마스터 2급 기본서'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116222478'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...36" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...188" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.638" end="2023-01-13T00:31:51.638" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'된다! 맥북&amp;아이맥 - 맥OS 벤투라 판'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116071239'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...36" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...188" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.669" end="2023-01-13T00:31:51.669" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'AWS 쿡북'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116037883'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...36" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...188" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.685" end="2023-01-13T00:31:51.685" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'김기창의 데이터 모델링 강의'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115991108'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...55" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...236" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.716" end="2023-01-13T00:31:51.732" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'트랜스포머를 활용한 자연어 처리'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115633781'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...55" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...236" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.747" end="2023-01-13T00:31:51.763" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'코딩없이 클릭만으로 머신러닝 AI 모델 개발하기'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115633270'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...55" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...236" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.779" end="2023-01-13T00:31:51.794" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'데이터 시각화와 탐색 with POWER BI 2nd'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115596915'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.810" end="2023-01-13T00:31:51.826" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'규칙으로 배우는 임베디드 시스템 : CPU 이론 및 펌웨어 개발 규칙'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115535222'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.841" end="2023-01-13T00:31:51.857" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'풀스택 리액트, 타입스크립트, 노드'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115477414'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S50a655e3ba5245ab9d5adc4d7b36bc5f" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-13T00:31:51.872" end="2023-01-13T00:31:51.872" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="el" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="JSHandle@node" />
+      <Variable name="title" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'그림으로 이해하는 가상화와 컨테이너'" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115457586'" />
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="EvaluateFunction" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title = this.page.EvaluateFunctionAsync(&quot;e =&gt; e.innerText&quot;, this.el).Result;&#xD;&#xA;&#xD;&#xA;this.title = th ...242" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S8d463776fd234355aead155aeb37272a" taskName="MyProcess" type="Flow" name="EndLoop" displayName="End-Foreach" callDepth="1" depth="2" num="6" result="Pass" start="2023-01-13T00:31:51.888" end="2023-01-13T00:31:51.888" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sbf85e2ff158a459d86cc0f05b9a583a6" taskName="MyProcess" type="Flow" name="Foreach" displayName="Foreach" callDepth="1" depth="1" num="8" result="Pass" start="2023-01-13T00:31:51.904" end="2023-01-13T00:31:51.904" displayTime="0s">
+    <Variables>
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115456487'" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" runtimeType="Array1D" key="Conditions_ForList" displayKey="For List" visible="true" required="true" />
+      <Property value="'http://www.yes24.com/Product/Goods/115456487'" runtimeType="String" key="Conditions_EachItem" displayKey="Each Item" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Conditions_ForOfOrIn" displayKey="For-of / For-in" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4d4c3af43d134748b67cd9cdec7f2756" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="9" result="Pass" start="2023-01-13T00:31:51.919" end="2023-01-13T00:31:51.945" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116904880'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="GoTo" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.pa ...42" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9da14a3f46894dd38142ac0464570cc0" taskName="MyProcess" type="Flow" name="Delay" displayName="Delay" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-13T00:31:51.951" end="2023-01-13T00:31:54.957" displayTime="3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="3" runtimeType="Integer" key="Conditions_Second" displayKey="Second" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_Millisecond" displayKey="Millisecond" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S2a6b0648a8634c83be6c33a2d9371723" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="11" result="Pass" start="2023-01-13T00:31:54.972" end="2023-01-13T00:31:54.988" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="XPath_Date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'//*[@id=&quot;infoset_specific&quot;]/div[2]/div/table/tbody/tr[1]/td'" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="[]" />
+      <Variable name="dateElement" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+      <Variable name="date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="get_date" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;&#xD;&#xA;this.date = this.page.EvaluateFu ...134" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4d4c3af43d134748b67cd9cdec7f2756" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="9" result="Pass" start="2023-01-13T00:31:55.004" end="2023-01-13T00:31:55.011" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116868049'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="GoTo" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.pa ...42" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9da14a3f46894dd38142ac0464570cc0" taskName="MyProcess" type="Flow" name="Delay" displayName="Delay" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-13T00:31:55.019" end="2023-01-13T00:31:58.033" displayTime="3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="3" runtimeType="Integer" key="Conditions_Second" displayKey="Second" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_Millisecond" displayKey="Millisecond" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S2a6b0648a8634c83be6c33a2d9371723" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="11" result="Pass" start="2023-01-13T00:31:58.048" end="2023-01-13T00:31:58.064" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="XPath_Date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'//*[@id=&quot;infoset_specific&quot;]/div[2]/div/table/tbody/tr[1]/td'" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일']" />
+      <Variable name="dateElement" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" />
+      <Variable name="date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'2023년 01월 30일'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="get_date" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;&#xD;&#xA;this.date = this.page.EvaluateFu ...134" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4d4c3af43d134748b67cd9cdec7f2756" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="9" result="Pass" start="2023-01-13T00:31:58.080" end="2023-01-13T00:31:58.088" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116752832'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="GoTo" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.pa ...42" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9da14a3f46894dd38142ac0464570cc0" taskName="MyProcess" type="Flow" name="Delay" displayName="Delay" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-13T00:31:58.095" end="2023-01-13T00:32:01.099" displayTime="3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="3" runtimeType="Integer" key="Conditions_Second" displayKey="Second" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_Millisecond" displayKey="Millisecond" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S2a6b0648a8634c83be6c33a2d9371723" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="11" result="Pass" start="2023-01-13T00:32:01.114" end="2023-01-13T00:32:01.130" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="XPath_Date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'//*[@id=&quot;infoset_specific&quot;]/div[2]/div/table/tbody/tr[1]/td'" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일']" />
+      <Variable name="dateElement" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" />
+      <Variable name="date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'2023년 01월 31일'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="get_date" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;&#xD;&#xA;this.date = this.page.EvaluateFu ...134" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4d4c3af43d134748b67cd9cdec7f2756" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="9" result="Pass" start="2023-01-13T00:32:01.145" end="2023-01-13T00:32:01.155" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116619011'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="GoTo" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.pa ...42" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9da14a3f46894dd38142ac0464570cc0" taskName="MyProcess" type="Flow" name="Delay" displayName="Delay" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-13T00:32:01.161" end="2023-01-13T00:32:04.170" displayTime="3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="3" runtimeType="Integer" key="Conditions_Second" displayKey="Second" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_Millisecond" displayKey="Millisecond" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S2a6b0648a8634c83be6c33a2d9371723" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="11" result="Pass" start="2023-01-13T00:32:04.186" end="2023-01-13T00:32:04.217" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="XPath_Date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'//*[@id=&quot;infoset_specific&quot;]/div[2]/div/table/tbody/tr[1]/td'" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일']" />
+      <Variable name="dateElement" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" />
+      <Variable name="date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'2023년 01월 10일'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="get_date" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;&#xD;&#xA;this.date = this.page.EvaluateFu ...134" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4d4c3af43d134748b67cd9cdec7f2756" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="9" result="Pass" start="2023-01-13T00:32:04.232" end="2023-01-13T00:32:04.246" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116615853'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="GoTo" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.pa ...42" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9da14a3f46894dd38142ac0464570cc0" taskName="MyProcess" type="Flow" name="Delay" displayName="Delay" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-13T00:32:04.249" end="2023-01-13T00:32:07.263" displayTime="3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="3" runtimeType="Integer" key="Conditions_Second" displayKey="Second" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_Millisecond" displayKey="Millisecond" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S2a6b0648a8634c83be6c33a2d9371723" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="11" result="Pass" start="2023-01-13T00:32:07.279" end="2023-01-13T00:32:07.310" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="XPath_Date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'//*[@id=&quot;infoset_specific&quot;]/div[2]/div/table/tbody/tr[1]/td'" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일']" />
+      <Variable name="dateElement" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" />
+      <Variable name="date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'2023년 01월 02일'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="get_date" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;&#xD;&#xA;this.date = this.page.EvaluateFu ...134" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4d4c3af43d134748b67cd9cdec7f2756" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="9" result="Pass" start="2023-01-13T00:32:07.326" end="2023-01-13T00:32:07.336" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/116253011'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="GoTo" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.pa ...42" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9da14a3f46894dd38142ac0464570cc0" taskName="MyProcess" type="Flow" name="Delay" displayName="Delay" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-13T00:32:07.342" end="2023-01-13T00:32:10.355" displayTime="3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="3" runtimeType="Integer" key="Conditions_Second" displayKey="Second" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_Millisecond" displayKey="Millisecond" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S2a6b0648a8634c83be6c33a2d9371723" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="11" result="Pass" start="2023-01-13T00:32:10.371" end="2023-01-13T00:32:10.402" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="XPath_Date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'//*[@id=&quot;infoset_specific&quot;]/div[2]/div/table/tbody/tr[1]/td'" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일']" />
+      <Variable name="dateElement" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" />
+      <Variable name="date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'2023년 01월 11일'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="get_date" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;&#xD;&#xA;this.date = this.page.EvaluateFu ...134" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4d4c3af43d134748b67cd9cdec7f2756" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="9" result="Pass" start="2023-01-13T00:32:10.418" end="2023-01-13T00:32:10.429" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115991108'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="GoTo" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.pa ...42" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9da14a3f46894dd38142ac0464570cc0" taskName="MyProcess" type="Flow" name="Delay" displayName="Delay" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-13T00:32:10.436" end="2023-01-13T00:32:13.454" displayTime="3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="3" runtimeType="Integer" key="Conditions_Second" displayKey="Second" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_Millisecond" displayKey="Millisecond" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S2a6b0648a8634c83be6c33a2d9371723" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="11" result="Pass" start="2023-01-13T00:32:13.469" end="2023-01-13T00:32:13.500" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="XPath_Date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'//*[@id=&quot;infoset_specific&quot;]/div[2]/div/table/tbody/tr[1]/td'" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...2" />
+      <Variable name="dateElement" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" />
+      <Variable name="date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'2023년 01월 02일'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="get_date" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;&#xD;&#xA;this.date = this.page.EvaluateFu ...134" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4d4c3af43d134748b67cd9cdec7f2756" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="9" result="Pass" start="2023-01-13T00:32:13.516" end="2023-01-13T00:32:13.522" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="url" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'http://www.yes24.com/Product/Goods/115596915'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="GoTo" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="(async () =&gt; {&#xD;&#xA;        await Promise.all([&#xD;&#xA;        this.page.GoToAsync(this.url),&#xD;&#xA;        this.pa ...42" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9da14a3f46894dd38142ac0464570cc0" taskName="MyProcess" type="Flow" name="Delay" displayName="Delay" callDepth="1" depth="2" num="10" result="Pass" start="2023-01-13T00:32:13.532" end="2023-01-13T00:32:16.541" displayTime="3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="3" runtimeType="Integer" key="Conditions_Second" displayKey="Second" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_Millisecond" displayKey="Millisecond" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S2a6b0648a8634c83be6c33a2d9371723" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="11" result="Pass" start="2023-01-13T00:32:16.557" end="2023-01-13T00:32:16.588" displayTime="0s">
+    <Variables>
+      <Variable name="page" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:PuppeteerSharp.Page&gt;" />
+      <Variable name="XPath_Date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'//*[@id=&quot;infoset_specific&quot;]/div[2]/div/table/tbody/tr[1]/td'" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...19" />
+      <Variable name="dateElement" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" />
+      <Variable name="date" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'2022년 12월 10일'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="get_date" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.dateElement = this.page.XPathAsync(this.XPath_Date).Result;&#xD;&#xA;&#xD;&#xA;this.date = this.page.EvaluateFu ...134" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S55375d09054c40509b79daa7e8c124a3" taskName="MyProcess" type="Flow" name="EndLoop" displayName="End-Foreach" callDepth="1" depth="2" num="12" result="Pass" start="2023-01-13T00:32:16.604" end="2023-01-13T00:32:16.604" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S0a809992c53d4fb4ac56115612961d62" taskName="MyProcess" type="Flow" name="Loop" displayName="For" callDepth="1" depth="1" num="13" result="Pass" start="2023-01-13T00:32:16.619" end="2023-01-13T00:32:16.619" displayTime="0s">
+    <Variables>
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Conditions_InitializeIndex" displayKey="Initialize" visible="true" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Conditions_LoopCondition" displayKey="Condition" visible="true" required="true" />
+      <Property value="0" runtimeType="Integer" key="Conditions_UpdateIndex" displayKey="Update" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S99af0eab04c94f039f4a90e4c3b6a46e" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="14" result="Pass" start="2023-01-13T00:32:16.635" end="2023-01-13T00:32:16.635" displayTime="0s">
+    <Variables>
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...36" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="''" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="function Print(msg) { Bot.Print(msg); }" runtimeType="Any" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, &quot;_&quot;)+&quot;\t&quot;+this.array_URLs[ ...61" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S99af0eab04c94f039f4a90e4c3b6a46e" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="14" result="Pass" start="2023-01-13T00:32:16.651" end="2023-01-13T00:32:16.651" displayTime="0s">
+    <Variables>
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...36" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'공익을_위한_데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년_01월_30일\n'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="function Print(msg) { Bot.Print(msg); }" runtimeType="Any" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, &quot;_&quot;)+&quot;\t&quot;+this.array_URLs[ ...61" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S99af0eab04c94f039f4a90e4c3b6a46e" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="14" result="Pass" start="2023-01-13T00:32:16.666" end="2023-01-13T00:32:16.666" displayTime="0s">
+    <Variables>
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...36" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'공익을_위한_데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년_01월_30일\n데이터_과학_효율을_높이는_데이터_클리닝\tht ...60" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="function Print(msg) { Bot.Print(msg); }" runtimeType="Any" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, &quot;_&quot;)+&quot;\t&quot;+this.array_URLs[ ...61" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S99af0eab04c94f039f4a90e4c3b6a46e" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="14" result="Pass" start="2023-01-13T00:32:16.682" end="2023-01-13T00:32:16.682" displayTime="0s">
+    <Variables>
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...36" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'공익을_위한_데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년_01월_30일\n데이터_과학_효율을_높이는_데이터_클리닝\tht ...135" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="function Print(msg) { Bot.Print(msg); }" runtimeType="Any" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, &quot;_&quot;)+&quot;\t&quot;+this.array_URLs[ ...61" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S99af0eab04c94f039f4a90e4c3b6a46e" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="14" result="Pass" start="2023-01-13T00:32:16.697" end="2023-01-13T00:32:16.697" displayTime="0s">
+    <Variables>
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...36" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'공익을_위한_데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년_01월_30일\n데이터_과학_효율을_높이는_데이터_클리닝\tht ...223" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="function Print(msg) { Bot.Print(msg); }" runtimeType="Any" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, &quot;_&quot;)+&quot;\t&quot;+this.array_URLs[ ...61" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S99af0eab04c94f039f4a90e4c3b6a46e" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="14" result="Pass" start="2023-01-13T00:32:16.713" end="2023-01-13T00:32:16.713" displayTime="0s">
+    <Variables>
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...36" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'공익을_위한_데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년_01월_30일\n데이터_과학_효율을_높이는_데이터_클리닝\tht ...306" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="function Print(msg) { Bot.Print(msg); }" runtimeType="Any" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, &quot;_&quot;)+&quot;\t&quot;+this.array_URLs[ ...61" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S99af0eab04c94f039f4a90e4c3b6a46e" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="14" result="Pass" start="2023-01-13T00:32:16.728" end="2023-01-13T00:32:16.728" displayTime="0s">
+    <Variables>
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...36" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'공익을_위한_데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년_01월_30일\n데이터_과학_효율을_높이는_데이터_클리닝\tht ...392" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="function Print(msg) { Bot.Print(msg); }" runtimeType="Any" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, &quot;_&quot;)+&quot;\t&quot;+this.array_URLs[ ...61" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S99af0eab04c94f039f4a90e4c3b6a46e" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="2" num="14" result="Pass" start="2023-01-13T00:32:16.744" end="2023-01-13T00:32:16.744" displayTime="0s">
+    <Variables>
+      <Variable name="array_Titles" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['공익을 위한 데이터', '데이터 과학 효율을 높이는 데이터 클리닝', '빅데이터 분석 및 응용', '데이터 전처리 및 통합분석 with KNIME', '데이터를 엮는 사람들,  ...88" />
+      <Variable name="array_URLs" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['http://www.yes24.com/Product/Goods/116904880', 'http://www.yes24.com/Product/Goods/116868049', 'ht ...284" />
+      <Variable name="array_Dates" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array1D" value="['2023년 01월 30일', '2023년 01월 31일', '2023년 01월 10일', '2023년 01월 02일', '2023년 01월 11일', '2023년 01월 02일 ...36" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'공익을_위한_데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년_01월_30일\n데이터_과학_효율을_높이는_데이터_클리닝\tht ...470" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="function Print(msg) { Bot.Print(msg); }" runtimeType="Any" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.resultText = this.resultText+this.array_Titles[this.i].replace(/ /g, &quot;_&quot;)+&quot;\t&quot;+this.array_URLs[ ...61" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sfad3268986064213a6a64132fc815850" taskName="MyProcess" type="Flow" name="EndLoop" displayName="End-For" callDepth="1" depth="2" num="15" result="Pass" start="2023-01-13T00:32:16.760" end="2023-01-13T00:32:16.760" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S2adb223c2c3e42708e2f347c43135ffc" taskName="MyProcess" type="Python" name="ExecutePython" displayName="ExecutePythonFile" callDepth="1" depth="1" num="16" result="Pass" start="2023-01-13T00:32:16.775" end="2023-01-13T00:32:18.071" displayTime="1.3s">
+    <Variables>
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="false" runtimeType="String" value="'공익을_위한_데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년_01월_30일\n데이터_과학_효율을_높이는_데이터_클리닝\tht ...562" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\WriteFile.py'" runtimeType="String" key="Input_FilePath" displayKey="FilePath" visible="true" required="true" />
+      <Property value="'공익을_위한_데이터\thttp://www.yes24.com/Product/Goods/116904880\t2023년_01월_30일\n데이터_과학_효율을_높이는_데이터_클리닝\tht ...562" runtimeType="String" key="Input_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="10000" runtimeType="Integer" key="Input_Timeout" displayKey="Timeout(ms)" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

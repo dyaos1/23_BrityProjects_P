@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="66e2e474-c95e-4be8-a99d-2421926f3c47" name="P_test3" result="Pass" start="2023-01-12T23:42:25.135" end="2023-01-12T23:42:30.520" jobId="Designer_20230113_084218_387">
+  <Step id="Se994f26e1687479890e9d074e76a0f81" taskName="P_test3" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-12T23:42:25.213" end="2023-01-12T23:42:27.432" displayTime="2.2s">
+    <Variables>
+      <Variable name="var1" scope="Normal" owner="P_test3" declareType="String" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="asdf" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.var1 = 'hello world 2'" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4f0b16ccbdad4f159f8acfafde3e56f4" taskName="P_test3" type="Desktop" name="MessageBox" displayName="MessageBox" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-12T23:42:27.463" end="2023-01-12T23:42:29.205" displayTime="1.7s">
+    <Variables>
+      <Variable name="var1" scope="Normal" owner="P_test3" declareType="String" isChanged="false" isChangable="true" runtimeType="String" value="'hello world 2'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'hello world 2'" runtimeType="String" key="Conditions_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Command_Timeout" displayKey="Timeout (Sec)" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sd46b5ad06f09422da36f41742f363d0b" taskName="P_test3" type="Python" name="ExecutePython" displayName="ExecutePythonFile" callDepth="1" depth="1" num="3" result="Pass" start="2023-01-12T23:42:29.221" end="2023-01-12T23:42:30.520" displayTime="1.3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\WriteFile.py'" runtimeType="String" key="Input_FilePath" displayKey="FilePath" visible="true" required="true" />
+      <Property value="'Hello'" runtimeType="String" key="Input_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="10000" runtimeType="Integer" key="Input_Timeout" displayKey="Timeout(ms)" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

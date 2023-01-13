@@ -1,0 +1,704 @@
+﻿2023-01-13 09:02:51,993 [T1] INFO  EngineStarter
+BOT Engine Start - v2.5.000.00921
+BOT ID: D_20230113_090250_910
+BOT PID: 2360
+BOT PPID: 11388
+BOT Working Directory: C:\Users\k\AppData\Roaming\Brity RPA Designer
+
+2023-01-13 09:02:52,280 [T1] INFO  Config
+Initialize Config
+
+2023-01-13 09:02:52,326 [T1] DEBUG Config
+Config Loaded
+
+2023-01-13 09:02:52,326 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2023-01-13 09:02:52,326 [T1] INFO  Config
+Initialize Resource Config
+
+2023-01-13 09:02:52,358 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-13 09:02:52,498 [T1] INFO  Config
+All Config Initialized.
+
+2023-01-13 09:02:52,498 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2023-01-13 09:02:52,564 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2023-01-13 09:02:52,627 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2023-01-13 09:02:52,627 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2023-01-13 09:02:52,642 [T4] DEBUG JobService
+Connect to agent service
+
+2023-01-13 09:02:52,658 [T4] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2023-01-13 09:02:52,658 [T4] DEBUG JobService
+Open connection
+
+2023-01-13 09:02:52,673 [T4] DEBUG JobService
+Register engine to agent
+
+2023-01-13 09:02:52,673 [T4] DEBUG JobService
+Engine is connected to agent service.
+
+2023-01-13 09:02:52,673 [T4] DEBUG JobService
+Owner Process PID: 11388
+
+2023-01-13 09:02:52,673 [T4] INFO  JobService
+Start monitoring owner process is terminated.
+
+2023-01-13 09:02:52,689 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2023-01-13 09:02:52,689 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2023-01-13 09:02:54,733 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,1920,1080
+
+2023-01-13 09:02:55,499 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2023-01-13 09:02:55,686 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2023-01-13 09:02:55,686 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-13 09:02:55,686 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2023-01-13 09:03:26,302 [T14] INFO  JobService
+Start Job: MyProcess (Foreground)
+{
+  "UsePIP": false,
+  "UserID": null,
+  "UserPWD": null,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "JobWorkDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\Histories\\20230113_090326_MyProcess_Designer_20230113_090326_114",
+  "JobLogDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\Histories\\20230113_090326_MyProcess_Designer_20230113_090326_114\\Log",
+  "JobScreenshotDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\Histories\\20230113_090326_MyProcess_Designer_20230113_090326_114\\Log\\Screenshot",
+  "TotalProcessStepCount": 0,
+  "CurrentStepNo": 0,
+  "CurrentStepName": null,
+  "StartTime": "2023-01-13 09:03:26",
+  "EndTime": null,
+  "EngineID": "D_20230113_090250_910",
+  "EnginePID": 0,
+  "JobId": "Designer_20230113_090326_114",
+  "JobType": 1,
+  "UserAuthentication": null,
+  "ProcessPath": "C:\\Users\\k\\Documents\\Brity RPA Projects\\brityWorks_practice\\MyProcess.proc",
+  "ProcessId": "e78f3652-990e-430b-9088-c14619727ed0",
+  "ProcessVer": "",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 11388,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "State": 0
+}
+
+2023-01-13 09:03:26,474 [T11] DEBUG JobService
+Waiting library loading...
+
+2023-01-13 09:03:26,474 [T11] DEBUG Config
+Reload User Settings
+
+2023-01-13 09:03:26,474 [T11] INFO  JobService
+Config Loading Completed.
+
+2023-01-13 09:03:26,474 [T11] DEBUG JobService
+Config Loading Time: 0 ms.
+
+2023-01-13 09:03:26,489 [T11] INFO  JobManager
+Create JobManager instance for job MyProcess(Designer_20230113_090326_114)
+
+2023-01-13 09:03:26,505 [T11] INFO  JobRequest
+Job ID : Designer_20230113_090326_114
+Project Path  : C:\Users\k\Documents\Brity RPA Projects\brityWorks_practice\brityWorks_practice.proj
+Process Name  : MyProcess
+Engine Mode   : Designer
+Requester Type: DesignerRequester PID : 11388
+
+2023-01-13 09:03:26,505 [T12] INFO  JobRequest
+Start Callback Sender
+
+2023-01-13 09:03:26,505 [T12] DEBUG JobRequest
+Step Callback Interval: 500
+
+2023-01-13 09:03:26,552 [T11] DEBUG ProjectManager
+Set Project Information
+
+2023-01-13 09:03:26,567 [T11] INFO  JobRunner
+Initialize Script Engine
+
+2023-01-13 09:03:26,583 [T15] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2023-01-13 09:03:26,599 [T12] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2023-01-13 09:03:26,808 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtNumber, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-13 09:03:26,808 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtInteger, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-13 09:03:26,808 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtDouble, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-13 09:03:26,808 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtPoint, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-13 09:03:26,808 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtRect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtDate, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtDateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtArray1D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtArray2D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtXml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtJson, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtString, Type:RPAGO.Custom.ExtendLibrary.DataConverter_String, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtString_DateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Point, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Rect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Xml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-13 09:03:26,824 [T15] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Json, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-13 09:03:27,252 [T15] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2023-01-13 09:03:27,268 [T12] DEBUG JobRequest
+Callback - State: Ready
+
+
+2023-01-13 09:03:27,268 [T11] INFO  JobRunnerHook
+HotKey Hook Started
+
+2023-01-13 09:03:27,268 [T11] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2023-01-13 09:03:27,268 [T15] INFO  JobRunner
+RunProcess start
+
+2023-01-13 09:03:27,268 [T15] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2023-01-13 09:03:27,268 [T15] INFO  JobRequest
+Last job life cycle state: Running
+
+2023-01-13 09:03:27,284 [T12] DEBUG JobRequest
+Callback - State: Starting
+
+
+2023-01-13 09:03:27,299 [T12] DEBUG JobRequest
+Callback - State: Running
+
+
+2023-01-13 09:03:27,549 [T15] INFO  ScreenCapture
+Initialize DirectX Screen Capture.
+
+2023-01-13 09:03:27,565 [T1] INFO  DirectXScreenCapturePlayer
+DirextX Target Screen Bounds: {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-13 09:03:27,611 [T1] INFO  DirectXScreenCapturePlayer
+Screen 0 Bounds : {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-13 09:03:27,611 [T11] DEBUG DirectXScreenCapturePlayer
+try capture screen to check DirectX screen.
+
+2023-01-13 09:03:27,643 [T15] INFO  ScreenCapture
+DirectX Screen Capture Initialized.
+
+2023-01-13 09:03:27,674 [T15] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2023-01-13 09:03:27,705 [T15] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - MyProcess
+##############################################################
+e78f3652-990e-430b-9088-c14619727ed0
+MyProcess
+
+
+2023-01-13 09:03:27,768 [T15] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 1: S12dc8cb8ff544f39a59f349bca118cc1 (1/16) - (1/15)
+ - [1] ChromeOpen
+
+
+2023-01-13 09:03:30,152 [T18] DEBUG ChromeRemoteConnect
+GetRemoteBrowserUsingEndPoint Fail : 하나 이상의 오류가 발생했습니다.
+
+2023-01-13 09:03:30,230 [T18] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-13 09:03:30,230 [T18] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-13 09:03:30,464 [T18] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-13 09:03:30,464 [T18] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-01-13 09:03:35,259 [T15] INFO  JobRequest
+ - STEP 2: S25bb5ded5c144938ba4d2bb866a140c6 (2/16) - (2/15)
+ - [2] ExecuteScript
+
+
+2023-01-13 09:03:35,279 [T15] INFO  JobRequest
+ - STEP 3: Se4ac0757e55944f48f90dc3fbaf04224 (3/16) - (3/15)
+ - [3] ExecuteScript
+
+
+2023-01-13 09:03:35,411 [T15] INFO  JobRequest
+ - STEP 4: Sed9f5412651c4ef08f1d03b6017eb7c6 (4/16) - (4/15)
+ - [4] Foreach
+
+
+2023-01-13 09:03:35,442 [T15] INFO  JobRequest
+ - STEP 5: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,520 [T15] INFO  JobRequest
+ - STEP 6: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,551 [T15] INFO  JobRequest
+ - STEP 7: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,567 [T15] INFO  JobRequest
+ - STEP 8: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,583 [T15] INFO  JobRequest
+ - STEP 9: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,598 [T15] INFO  JobRequest
+ - STEP 10: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,614 [T15] INFO  JobRequest
+ - STEP 11: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,629 [T15] INFO  JobRequest
+ - STEP 12: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,645 [T15] INFO  JobRequest
+ - STEP 13: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,677 [T15] INFO  JobRequest
+ - STEP 14: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,708 [T15] INFO  JobRequest
+ - STEP 15: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,724 [T15] INFO  JobRequest
+ - STEP 16: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,745 [T15] INFO  JobRequest
+ - STEP 17: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,760 [T15] INFO  JobRequest
+ - STEP 18: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,787 [T15] INFO  JobRequest
+ - STEP 19: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,803 [T15] INFO  JobRequest
+ - STEP 20: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,822 [T15] INFO  JobRequest
+ - STEP 21: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,853 [T15] INFO  JobRequest
+ - STEP 22: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,869 [T15] INFO  JobRequest
+ - STEP 23: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,900 [T15] INFO  JobRequest
+ - STEP 24: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,916 [T15] INFO  JobRequest
+ - STEP 25: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,931 [T15] INFO  JobRequest
+ - STEP 26: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,947 [T15] INFO  JobRequest
+ - STEP 27: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,963 [T15] INFO  JobRequest
+ - STEP 28: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,978 [T15] INFO  JobRequest
+ - STEP 29: S50a655e3ba5245ab9d5adc4d7b36bc5f (5/16) - (5/15)
+ - [5] ExecuteScript
+
+
+2023-01-13 09:03:35,998 [T15] INFO  JobRequest
+ - STEP 30: S8d463776fd234355aead155aeb37272a (6/16) - (6/15)
+ - [6] End-Foreach
+
+
+2023-01-13 09:03:36,013 [T15] INFO  JobRequest
+ - STEP 31: Sbf85e2ff158a459d86cc0f05b9a583a6 (8/16) - (7/15)
+ - [8] Foreach
+
+
+2023-01-13 09:03:36,028 [T15] INFO  JobRequest
+ - STEP 32: S4d4c3af43d134748b67cd9cdec7f2756 (9/16) - (8/15)
+ - [9] ExecuteScript
+
+
+2023-01-13 09:03:36,059 [T15] INFO  JobRequest
+ - STEP 33: S9da14a3f46894dd38142ac0464570cc0 (10/16) - (9/15)
+ - [10] Delay
+
+
+2023-01-13 09:03:39,088 [T15] INFO  JobRequest
+ - STEP 34: S2a6b0648a8634c83be6c33a2d9371723 (11/16) - (10/15)
+ - [11] ExecuteScript
+
+
+2023-01-13 09:03:39,119 [T15] INFO  JobRequest
+ - STEP 35: S4d4c3af43d134748b67cd9cdec7f2756 (9/16) - (10/15)
+ - [9] ExecuteScript
+
+
+2023-01-13 09:03:39,135 [T15] INFO  JobRequest
+ - STEP 36: S9da14a3f46894dd38142ac0464570cc0 (10/16) - (10/15)
+ - [10] Delay
+
+
+2023-01-13 09:03:42,165 [T15] INFO  JobRequest
+ - STEP 37: S2a6b0648a8634c83be6c33a2d9371723 (11/16) - (10/15)
+ - [11] ExecuteScript
+
+
+2023-01-13 09:03:42,212 [T15] INFO  JobRequest
+ - STEP 38: S4d4c3af43d134748b67cd9cdec7f2756 (9/16) - (10/15)
+ - [9] ExecuteScript
+
+
+2023-01-13 09:03:42,243 [T15] INFO  JobRequest
+ - STEP 39: S9da14a3f46894dd38142ac0464570cc0 (10/16) - (10/15)
+ - [10] Delay
+
+
+2023-01-13 09:03:45,265 [T15] INFO  JobRequest
+ - STEP 40: S2a6b0648a8634c83be6c33a2d9371723 (11/16) - (10/15)
+ - [11] ExecuteScript
+
+
+2023-01-13 09:03:45,312 [T15] INFO  JobRequest
+ - STEP 41: S4d4c3af43d134748b67cd9cdec7f2756 (9/16) - (10/15)
+ - [9] ExecuteScript
+
+
+2023-01-13 09:03:45,327 [T15] INFO  JobRequest
+ - STEP 42: S9da14a3f46894dd38142ac0464570cc0 (10/16) - (10/15)
+ - [10] Delay
+
+
+2023-01-13 09:03:48,351 [T15] INFO  JobRequest
+ - STEP 43: S2a6b0648a8634c83be6c33a2d9371723 (11/16) - (10/15)
+ - [11] ExecuteScript
+
+
+2023-01-13 09:03:48,383 [T15] INFO  JobRequest
+ - STEP 44: S4d4c3af43d134748b67cd9cdec7f2756 (9/16) - (10/15)
+ - [9] ExecuteScript
+
+
+2023-01-13 09:03:48,414 [T15] INFO  JobRequest
+ - STEP 45: S9da14a3f46894dd38142ac0464570cc0 (10/16) - (10/15)
+ - [10] Delay
+
+
+2023-01-13 09:03:51,432 [T15] INFO  JobRequest
+ - STEP 46: S2a6b0648a8634c83be6c33a2d9371723 (11/16) - (10/15)
+ - [11] ExecuteScript
+
+
+2023-01-13 09:03:51,479 [T15] INFO  JobRequest
+ - STEP 47: S4d4c3af43d134748b67cd9cdec7f2756 (9/16) - (10/15)
+ - [9] ExecuteScript
+
+
+2023-01-13 09:03:51,495 [T15] INFO  JobRequest
+ - STEP 48: S9da14a3f46894dd38142ac0464570cc0 (10/16) - (10/15)
+ - [10] Delay
+
+
+2023-01-13 09:03:54,515 [T15] INFO  JobRequest
+ - STEP 49: S2a6b0648a8634c83be6c33a2d9371723 (11/16) - (10/15)
+ - [11] ExecuteScript
+
+
+2023-01-13 09:03:54,547 [T15] INFO  JobRequest
+ - STEP 50: S4d4c3af43d134748b67cd9cdec7f2756 (9/16) - (10/15)
+ - [9] ExecuteScript
+
+
+2023-01-13 09:03:54,563 [T15] INFO  JobRequest
+ - STEP 51: S9da14a3f46894dd38142ac0464570cc0 (10/16) - (10/15)
+ - [10] Delay
+
+
+2023-01-13 09:03:57,594 [T15] INFO  JobRequest
+ - STEP 52: S2a6b0648a8634c83be6c33a2d9371723 (11/16) - (10/15)
+ - [11] ExecuteScript
+
+
+2023-01-13 09:03:57,641 [T15] INFO  JobRequest
+ - STEP 53: S4d4c3af43d134748b67cd9cdec7f2756 (9/16) - (10/15)
+ - [9] ExecuteScript
+
+
+2023-01-13 09:03:57,672 [T15] INFO  JobRequest
+ - STEP 54: S9da14a3f46894dd38142ac0464570cc0 (10/16) - (10/15)
+ - [10] Delay
+
+
+2023-01-13 09:04:00,700 [T15] INFO  JobRequest
+ - STEP 55: S2a6b0648a8634c83be6c33a2d9371723 (11/16) - (10/15)
+ - [11] ExecuteScript
+
+
+2023-01-13 09:04:00,747 [T15] INFO  JobRequest
+ - STEP 56: S55375d09054c40509b79daa7e8c124a3 (12/16) - (11/15)
+ - [12] End-Foreach
+
+
+2023-01-13 09:04:00,762 [T15] INFO  JobRequest
+ - STEP 57: S0a809992c53d4fb4ac56115612961d62 (13/16) - (12/15)
+ - [13] For
+
+
+2023-01-13 09:04:00,778 [T15] INFO  JobRequest
+ - STEP 58: S99af0eab04c94f039f4a90e4c3b6a46e (14/16) - (13/15)
+ - [14] ExecuteScript
+
+
+2023-01-13 09:04:00,794 [T15] INFO  JobRequest
+ - STEP 59: S99af0eab04c94f039f4a90e4c3b6a46e (14/16) - (13/15)
+ - [14] ExecuteScript
+
+
+2023-01-13 09:04:00,809 [T15] INFO  JobRequest
+ - STEP 60: S99af0eab04c94f039f4a90e4c3b6a46e (14/16) - (13/15)
+ - [14] ExecuteScript
+
+
+2023-01-13 09:04:00,825 [T15] INFO  JobRequest
+ - STEP 61: S99af0eab04c94f039f4a90e4c3b6a46e (14/16) - (13/15)
+ - [14] ExecuteScript
+
+
+2023-01-13 09:04:00,841 [T15] INFO  JobRequest
+ - STEP 62: S99af0eab04c94f039f4a90e4c3b6a46e (14/16) - (13/15)
+ - [14] ExecuteScript
+
+
+2023-01-13 09:04:00,856 [T15] INFO  JobRequest
+ - STEP 63: S99af0eab04c94f039f4a90e4c3b6a46e (14/16) - (13/15)
+ - [14] ExecuteScript
+
+
+2023-01-13 09:04:00,872 [T15] INFO  JobRequest
+ - STEP 64: S99af0eab04c94f039f4a90e4c3b6a46e (14/16) - (13/15)
+ - [14] ExecuteScript
+
+
+2023-01-13 09:04:00,888 [T15] INFO  JobRequest
+ - STEP 65: S99af0eab04c94f039f4a90e4c3b6a46e (14/16) - (13/15)
+ - [14] ExecuteScript
+
+
+2023-01-13 09:04:00,903 [T15] INFO  JobRequest
+ - STEP 66: Sfad3268986064213a6a64132fc815850 (15/16) - (14/15)
+ - [15] End-For
+
+
+2023-01-13 09:04:00,919 [T15] INFO  JobRequest
+ - STEP 67: S2adb223c2c3e42708e2f347c43135ffc (16/16) - (15/15)
+ - [16] ExecutePythonFile
+
+
+2023-01-13 09:04:02,228 [T15] INFO  JobRunner
+[PASS] TASK: MyProcess
+
+2023-01-13 09:04:02,243 [T15] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - MyProcess
+##############################################################
+e78f3652-990e-430b-9088-c14619727ed0
+MyProcess
+
+
+2023-01-13 09:04:02,275 [T15] INFO  JobRunner
+RunProcess - Job Result: {}
+
+2023-01-13 09:04:02,275 [T15] DEBUG JobManager
+Set Result State: Completed
+
+2023-01-13 09:04:02,275 [T15] DEBUG JobRunner
+OnProcessCompleted
+
+2023-01-13 09:04:02,275 [T9] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2023-01-13 09:04:02,275 [T15] INFO  JobRunner
+Start to clean up resources.
+
+2023-01-13 09:04:02,275 [T15] DEBUG JobRunner
+Remove all libraries
+
+2023-01-13 09:04:02,275 [T15] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2023-01-13 09:04:02,290 [T15] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2023-01-13 09:04:02,290 [T15] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2023-01-13 09:04:02,290 [T15] INFO  JobRunner
+All Resources Clear
+
+2023-01-13 09:04:02,290 [T15] INFO  JobRunner
+Make report.
+
+2023-01-13 09:04:02,321 [T15] DEBUG JobRunner
+OnCompleted
+
+2023-01-13 09:04:02,321 [T15] DEBUG JobRunner
+SendJobResult: Completed
+
+2023-01-13 09:04:02,321 [T15] INFO  JobRequest
+##############################################################
+### STATE: Completed
+##############################################################
+{}
+
+
+2023-01-13 09:04:02,321 [T15] INFO  JobRequest
+Last job life cycle state: Completed
+
+2023-01-13 09:04:02,353 [T12] DEBUG JobRequest
+Callback - State: Completed
+{}
+
+2023-01-13 09:04:02,353 [T15] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2023-01-13 09:04:02,368 [T12] INFO  JobRequest
+Callback - JobCompleted
+
+2023-01-13 09:04:02,368 [T12] DEBUG JobRequest
+End of Callback Sender
+
+2023-01-13 09:04:02,384 [T15] INFO  JobRunner
+RunProcess end
+
