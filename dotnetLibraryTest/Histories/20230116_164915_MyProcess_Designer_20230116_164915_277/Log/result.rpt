@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="782c58e7-fe17-43cb-b0b5-76b4a0fc911e" name="MyProcess" result="Fail" detail="TypeError: Cannot read property 'Page' of undefined&#xA;&#xA;Recent Warning Messages =&gt;&#xA;[CATCH_STEP_EXCEPTION] Process: MyProcess&#xA;Step: ExecuteScript (2/5)&#xA;&#xA;TypeError: Cannot read property 'Page' of undefined" start="2023-01-16T07:49:17.057" end="2023-01-16T07:49:25.934" jobId="Designer_20230116_164915_277">
+  <Step id="Sae9b68bc26ff45f99c5a1ea2e4318646" taskName="MyProcess" type="Chrome" name="ChromeOpen" displayName="ChromeOpen" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-16T07:49:17.126" end="2023-01-16T07:49:21.381" displayTime="4.3s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : &lt;object:ChromeBrowserObject&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="Chrome" runtimeType="String" key="CHROME_TypeOfBrowser" displayKey="Browser Type" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_BrowserType" displayKey="Headless Mode" visible="true" required="false" />
+      <Property value="'http://www.yes24.com/24/Category/NewProductList/001001003025?sumGb=04'" runtimeType="String" key="CHROME_URL" displayKey="URL" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="CHROME_ChromePath" displayKey="Browser Path" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_ExtensionList" displayKey="Included Extensions" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_DownloadPath" displayKey="Download Path" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S19d4fedc54f14e248a1e44934b599dca" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="1" num="2" result="Fail" detail="[CATCH_STEP_EXCEPTION] Process: MyProcess&#xA;Step: ExecuteScript (2/5)&#xA;&#xA;TypeError: Cannot read property 'Page' of undefined&#xA;TypeError: Cannot read property 'Page' of undefined" start="2023-01-16T07:49:21.409" end="2023-01-16T07:49:25.934" displayTime="4.5s">
+    <Variables>
+      <Variable name="ChromeOpen" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+      <Variable name="title_element" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="asd" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title_element = this.ChromeOpen.Page.XPathAsync('//*[@id=&quot;category_layout&quot;]/tbody/tr[1]/td[3]/p ...18" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

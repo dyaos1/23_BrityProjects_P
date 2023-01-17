@@ -1,0 +1,82 @@
+<Process id="782c58e7-fe17-43cb-b0b5-76b4a0fc911e" type="process" workType="foreground" name="MyProcess" version="" designerVersion="2.5.000.00921" lastPublishedServer="" readonly="false" isValid="true" DesignedBy="Designer" Template="">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="default process" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="5" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Pro64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="1920x1080" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-13 11:28:59" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-17 15:22:03" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables>
+    <Variable name="ChromeOpen" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="title_element" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+  </Variables>
+  <Steps>
+    <Step id="S460bf93230ad4561818c5197a2d66ca1" ver="250220822" createVer="250220822" type="Lottery" name="LottoNumberGenerator" dpName="NumberGenerator" dpValue="RESULT" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="6dd8088d-2b79-4c43-b9a3-4ef670e9dca6" type="Lottery">
+        <Property type="Lottery" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Lottery" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Lottery" key="Output_ResultNumber" controlType="OutputControlType" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Lottery" key="Input_FavoriteNumber" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="30" />
+        <Property type="Lottery" key="Input_HateNumber" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="13" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RESULT = ActivityWorker.Play('Lottery', 'LottoNumberGenerator', this.activitylibraryitem_info_1);]]></Script>
+    </Step>
+    <Step id="S76fb40b11a554b428b956972d8a68948" ver="250220822" createVer="250220822" type="Desktop" name="MessageBox" dpName="MessageBox" dpValue="RESULT" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="f443df16-54e6-4348-9ec6-e9490096eec5" type="Desktop">
+        <Property type="Desktop" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Conditions_Arguments" controlType="Object" valueType="System.Object" formatType="Any" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Desktop" key="Command_Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[MsgBox(RESULT);]]></Script>
+    </Step>
+  </Steps>
+  <Libraries>
+    <string>Lottery</string>
+    <string>System</string>
+  </Libraries>
+  <JScript><![CDATA[function MyProcess() {
+
+    this.ChromeOpen;
+    this.title_element;
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('S460bf93230ad4561818c5197a2d66ca1', '[1] NumberGenerator');
+        RESULT = ActivityWorker.Play('Lottery', 'LottoNumberGenerator', this.activitylibraryitem_info_1);
+
+        //------------------------------------------------
+        STEP('S76fb40b11a554b428b956972d8a68948', '[2] MessageBox');
+        MsgBox(RESULT);
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="S460bf93230ad4561818c5197a2d66ca1" group_name="268f943d-0efa-4902-858d-4e2e8515a3dd_Untitled" folded="False" />
+      <StepNode step_id="S76fb40b11a554b428b956972d8a68948" group_name="e8d9447e-8b4d-4023-a310-3205f0d6e98a_Untitled" folded="False" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>lsjzqoMJ6XXDaqOq6X20S9WMDng=</DigestValue></Reference></SignedInfo><SignatureValue>RdEBIViVxBRAqG/FzJhApf/N+x4d30S3RHq5JffwEOtsJSA5BjtooGavhIt1LJzw125ywu0Eaw3b0neA3/YGVEkCcvtLsKztA+psmYnPXgqH/UL//qnCpj6zvcVfgpLfxSxUkc7i2l5/D5GOgyi34pBX083pSfcyzrZpW0e3fYIEVCIPHQ0vqRT7qZz6kO/vqZ6EBNfen3okhQP/xC8lU/95ZUhvHElxBDHLEK1l/7598TpinONALcc8Jn/nM6sIOehGK8IjeqMpR+Sx4s/8Cm+993gPrktXlvri5rlINzmcLDnCuiarzoXt4rkG+LfT/bES6r0yk3kYrqvC8ZveBA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

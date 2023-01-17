@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="782c58e7-fe17-43cb-b0b5-76b4a0fc911e" name="MyProcess" result="Fail" detail="Error: 파일이나 어셈블리 'PuppeteerSharp, Version=9.0.0.0, Culture=neutral, PublicKeyToken=db12f80f85d8ba23' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 찾은 어셈블리의 매니페스트 정의와 어셈블리 참조가 일치하지 않습니다. (예외가 발생한 HRESULT: 0x80131040)&#xA;&#xA;Recent Warning Messages =&gt;&#xA;[CATCH_STEP_EXCEPTION] Process: MyProcess&#xA;Step: myFirstActivity (3/5)&#xA;&#xA;Error: 파일이나 어셈블리 'PuppeteerSharp, Version=9.0.0.0, Culture=neutral, PublicKeyToken=db12f80f85d8ba23' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 찾은 어셈블리의 매니페스트 정의와 어셈블리 참조가 일치하지 않습니다. (예외가 발생한 HRESULT: 0x80131040)" start="2023-01-16T07:49:48.213" end="2023-01-16T07:50:15.787" jobId="Designer_20230116_164946_938">
+  <Step id="Sae9b68bc26ff45f99c5a1ea2e4318646" taskName="MyProcess" type="Chrome" name="ChromeOpen" displayName="ChromeOpen" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-16T07:49:48.230" end="2023-01-16T07:50:02.192" displayTime="14s">
+    <Variables>
+      <Variable name="ChromeOpen" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.ChromeOpen : &lt;object:ChromeBrowserObject&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="Chrome" runtimeType="String" key="CHROME_TypeOfBrowser" displayKey="Browser Type" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="CHROME_BrowserType" displayKey="Headless Mode" visible="true" required="false" />
+      <Property value="'http://www.yes24.com/24/Category/NewProductList/001001003025?sumGb=04'" runtimeType="String" key="CHROME_URL" displayKey="URL" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="CHROME_ChromePath" displayKey="Browser Path" visible="true" required="false" />
+      <Property value="True" runtimeType="Boolean" key="CHROME_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_ExtensionList" displayKey="Included Extensions" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_DownloadPath" displayKey="Download Path" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S19d4fedc54f14e248a1e44934b599dca" taskName="MyProcess" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-16T07:50:02.203" end="2023-01-16T07:50:02.271" displayTime="0.1s">
+    <Variables>
+      <Variable name="ChromeOpen" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;object:ChromeBrowserObject&gt;" />
+      <Variable name="title_element" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="asd" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="this.title_element = this.ChromeOpen.Page.XPathAsync('//*[@id=&quot;category_layout&quot;]/tbody/tr[1]/td[3]/p ...18" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sf97ac3cf356d44dfb990abd49c9ba5bb" taskName="MyProcess" type="forTest2" name="myFirstActivity" displayName="myFirstActivity" callDepth="1" depth="1" num="3" result="Fail" detail="[CATCH_STEP_EXCEPTION] Process: MyProcess&#xA;Step: myFirstActivity (3/5)&#xA;&#xA;Error: 파일이나 어셈블리 'PuppeteerSharp, Version=9.0.0.0, Culture=neutral, PublicKeyToken=db12f80f85d8ba23' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 찾은 어셈블리의 매니페스트 정의와 어셈블리 참조가 일치하지 않습니다. (예외가 발생한 HRESULT: 0x80131040)&#xA;Error: 파일이나 어셈블리 'PuppeteerSharp, Version=9.0.0.0, Culture=neutral, PublicKeyToken=db12f80f85d8ba23' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 찾은 어셈블리의 매니페스트 정의와 어셈블리 참조가 일치하지 않습니다. (예외가 발생한 HRESULT: 0x80131040)" start="2023-01-16T07:50:02.283" end="2023-01-16T07:50:15.786" displayTime="13.5s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+      <Variable name="ChromeOpen" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="false" runtimeType="Any" value="&lt;object:ChromeBrowserObject&gt;" />
+      <Variable name="title_element" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="false" runtimeType="Array1D" value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : " runtimeType="String" key="Group1_A" displayKey="A" visible="true" required="true" />
+      <Property value="&lt;object:PuppeteerSharp.ElementHandle[]&gt;" runtimeType="Array1D" key="Group2_B1" displayKey="B1" visible="true" required="false" />
+      <Property value="&lt;object:PuppeteerSharp.Page&gt;" runtimeType="Any" key="Group2_B2" displayKey="B2" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

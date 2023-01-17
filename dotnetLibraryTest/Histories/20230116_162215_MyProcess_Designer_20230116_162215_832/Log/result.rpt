@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="782c58e7-fe17-43cb-b0b5-76b4a0fc911e" name="MyProcess" result="Pass" start="2023-01-16T07:22:16.299" end="2023-01-16T07:22:18.083" jobId="Designer_20230116_162215_832">
+  <Step id="S885fe9c464b24839b2f7db32bc60b1b5" taskName="MyProcess" type="forTest2" name="myFirstActivity" displayName="myFirstActivity" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-16T07:22:16.306" end="2023-01-16T07:22:16.366" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+      <Variable name="var2" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="false" runtimeType="String" value="'world'" />
+      <Variable name="var1" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="false" runtimeType="String" value="'hello'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : '[hello world]'" runtimeType="String" key="Group1_A" displayKey="A" visible="true" required="true" />
+      <Property value="'hello'" runtimeType="String" key="Group2_B1" displayKey="B1" visible="true" required="false" />
+      <Property value="'world'" runtimeType="String" key="Group2_B2" displayKey="B2" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S03f7f6f7d6234140a50c974cbac71c53" taskName="MyProcess" type="Desktop" name="MessageBox" displayName="MessageBox" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-16T07:22:16.385" end="2023-01-16T07:22:18.083" displayTime="1.7s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'[hello world]'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'[hello world]'" runtimeType="String" key="Conditions_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Command_Timeout" displayKey="Timeout (Sec)" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

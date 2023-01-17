@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="782c58e7-fe17-43cb-b0b5-76b4a0fc911e" name="MyProcess" result="Stop" start="2023-01-17T06:22:07.741" end="2023-01-17T06:22:50.675" jobId="Designer_20230117_152205_824">
+  <Step id="S460bf93230ad4561818c5197a2d66ca1" taskName="MyProcess" type="Lottery" name="LottoNumberGenerator" displayName="NumberGenerator" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-17T06:22:07.804" end="2023-01-17T06:22:07.944" displayTime="0.1s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : System.Collections.Generic.List`1[System.Int32]" runtimeType="Any" key="Output_ResultNumber" displayKey="ResultNumber" visible="true" required="true" />
+      <Property value="30" runtimeType="Integer" key="Input_FavoriteNumber" displayKey="FavoriteNumber" visible="true" required="true" />
+      <Property value="13" runtimeType="Integer" key="Input_HateNumber" displayKey="HateNumber" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S76fb40b11a554b428b956972d8a68948" taskName="MyProcess" type="Desktop" name="MessageBox" displayName="MessageBox" callDepth="1" depth="1" num="2" result="Stop" start="2023-01-17T06:22:07.960" end="2023-01-17T06:22:50.675" displayTime="42.7s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="System.Collections.Generic.List`1[System.Int32]" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="System.Collections.Generic.List`1[System.Int32]" runtimeType="Any" key="Conditions_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Command_Timeout" displayKey="Timeout (Sec)" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>
